@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>EV3Dev-lang-Java</title>
+
+    <meta name="description" content="EV3Dev-lang-Java">
+    <meta name="author" content="Juan Antonio Breña Moral">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui"> 
+
+    <link rel="stylesheet" href="Styles/reveal.css">
+    <link rel="stylesheet" href="Styles/theme/serif.css" id="theme">  
+    <link rel="stylesheet" href="Styles/main.css">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="Styles/zenburn.css">
+
+    <link rel="stylesheet" href="Styles/gh-fork-ribbon.css">
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" href="gh-fork-ribbon.ie.css">
+    <![endif]-->
+
+    <!-- Cache -->
+    <meta http-equiv="cache-control" content="no-store" />
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />             
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section data-background="./Media/Images/Base1_5.png">
+                <h1>EV3Dev-lang-Java</h1>
+                <h3>A Java library designed to interact with the hardware managed by EV3Dev using the LeJOS way.</h3>
+                <p>
+<a href="https://github.com/jabrena/ev3dev-lang-java" target="_blank">Github project</a>&nbsp;|&nbsp;
+<a href="https://github.com/jabrena/ev3dev-lang-java/issues" target="_blank">Create a issue</a>&nbsp;|&nbsp;
+<a href="./docs/api/" target="_blank">Javadoc</a>
+                </p>
+            </section>
+            <section>
+                <section data-background="./Media/Images/Base1_5.png">
+                    <h2>Why use this library?</h2>
+                    <p>
+<a href="https://github.com/jabrena/ev3dev-lang-java" target="_blank">EV3-lang-java</a> is a library to manage Lego Mindstorms hardware using <a href="http://www.lejos.org/" target="_blank">LeJOS</a> concepts over <a href="http://www.ev3dev.org/" target="_blank">EV3Dev</a>, a <a href="https://www.debian.org/index.en.html" target="_blank">Debian</a> Linux-based operating.
+                    </p>
+                </section>
+                <section data-background="./Media/Images/Base1_5.png">
+                    <h2>Why use this library?</h2>
+                    <h3>What is the innovation in this library?</h3>
+                    <ul>
+                        <li>Java library running on EV3Dev</li>
+                        <li>Support for Raspberry Pi</li>
+                        <li>Modular design</li>
+                    </ul>
+                </section>
+                <section data-background="./Media/Images/Base1_5.png">
+                    <h2>Why use this library?</h2>
+                    <p>
+This library put the focus in the interaction with the hardware so it doesn't cover areas as: <a href="https://en.wikipedia.org/wiki/Mobile_robot_navigation" target="_blank">Mobile Robot Navigation</a>, <a href="https://en.wikipedia.org/wiki/Computer_vision" target="_blank">Computer Vision</a>, <a href="https://en.wikipedia.org/wiki/Behavior-based_robotics" target="_blank">Behaviour based robotics</a>, etc...
+                    </p>
+                    <p>
+For other areas, you will use other libraries. Following a modular architecture to increase the flexibility.
+                    </p>
+                </section>
+            </section>
+
+            <section data-background="./Media/Images/Base1_5.png">
+                <h2>Features (v0.2.0)</h1>
+                <ul>
+                    <li>Regulated Motor Support</li>
+                    <li>Unregulated Motor Support</li>
+                    <li>Sensor Support</li>
+                    <li>OpenCV Computer Vision Support</li>
+                    <li>Sounds</li>
+                    <li>LeJOS Sensor filter Support</li>
+                    <li>eSpeak TTS (Text to speech) Support</li>
+                </ul>
+            </section>
+            <section>
+               <section data-background="./Media/Images/Base1_5.png">
+                    <h2>Hardware supported</h2>
+                    <ul>
+                        <li><a href="https://education.lego.com/es-es/lego-education-product-database/mindstorms-ev3/45544-lego-mindstorms-education-ev3-core-set" target="_blank">45544 LEGO MINDSTORMS Education EV3 Core Set</a></li>
+                    </ul>
+                    <p>
+                        <img src="./Media/Images/ev3_45544.png" width="80%"/>
+                    </p>
+                </section>
+               <section data-background="./Media/Images/Base1_5.png">
+                    <h2>Hardware supported</h2>
+                    <ul>
+                        <li><a href="http://www.lego.com/en-us/mindstorms/products/31313-mindstorms-ev3" target="_blank">31313 LEGO MINDSTORMS EV3</a></li>
+                    </ul>
+                    <p>
+                        <img src="./Media/Images/31313.png" width="50%"/>
+                    </p>
+                </section>
+               <section data-background="./Media/Images/Base1_5.png">
+                    <h2>Hardware supported</h2>
+                    <ul>
+                        <li><a href="http://www.dexterindustries.com/brickpi/" target="_blank">Dexter Industries Brick Pi+</a> (COMING SOON)</li>
+                    </ul>
+                    <p>
+                        <img src="./Media/Images/BrickPi.png" width="40%"/>
+                    </p>
+                </section>
+               <section data-background="./Media/Images/Base1_5.png">
+                    <h2>Hardware supported</h2>
+                    <ul>
+                        <li><a href="http://www.mindsensors.com/teaching-stem-with-robotics/13-pistorms-base-kit">Mindsensors PiStorms Base Kit</a> (COMING SOON)</li>
+                    </ul>
+                    <p>
+                        <img src="./Media/Images/PiStorms.png" width="35%"/>
+                    </p>
+                </section>
+            </section>            
+            <section>
+                <section data-background="./Media/Images/Base1_5.png">
+                    <h2 class="black">Getting Started</h2>
+                    <p class="black">
+Learn to use this library step by step.
+                    </p>
+                </section>
+                <section data-background="./Media/Images/Base1_5.png">
+                    <h2>1. Install EV3Dev (1h.)</h2>
+                    <p>
+<a href="http://www.ev3dev.org/docs/getting-started/" target="_blank">Install the operating system</a> to use this library.
+                    </p>
+                    <p>
+                        <img src="./Media/Images/microsd.png" width="23%"/>
+                        <img src="./Media/Images/ev3brick.png" width="34%"/>
+                        <img src="./Media/Images/ev3dev1.png" width="30%"/>
+                    </p>
+                    <p>
+Later, make a SSH connection to upgrade your brick:
+                    </p>
+                    <pre><code data-trim contenteditable>
+apt-get update
+apt-get upgrade
+apt-get dist-upgrade   
+                    </code></pre>  
+                </section>
+                <section data-background="./Media/Images/Base1_5.png">
+                    <h2>2. Install Java JDK (1h.)</h2>
+                    <p>
+Install with the <a href="https://wiki.debian.org/Apt" target="_blank">package manager Apt</a> Java JDK, OpenCV for Java and some commons Java build tools.
+                    </p>
+                    <pre><code data-trim contenteditable>
+sudo apt-get install default-jdk
+sudo apt-get install libopencv2.4-java
+sudo apt-get install maven
+sudo apt-get install ant 
+                    </code></pre>  
+                </section>
+                <section data-background="./Media/Images/Base1_5.png">
+                    <h2>3. Create a Hello World Maven project (2m.)</h2>
+                    <p>
+Create a folder with the name: helloworld and create a new Maven project.
+                    </p>
+                    <pre><code data-trim contenteditable>
+mvn archetype:generate 
+-DgroupId=ev3dev.java.examples 
+-DartifactId=helloworld 
+-DarchetypeArtifactId=maven-archetype-quickstart 
+-DinteractiveMode=false
+cd helloworld
+mvn eclipse:eclipse
+                    </code></pre>  
+                </section>
+                <section data-background="./Media/Images/Base1_5.png">
+                    <h2>4. Import in Eclipse IDE your Maven Project (5m.)</h2>
+                    <p>
+Import in Eclipse your new Java project.
+                    </p>
+                    <p>
+                        <img src="./Media/Images/eclipse_logo.png" width="23%"/>
+                        <img src="./Media/Images/HelloWorld.png" width="50%"/>
+                    </p>
+                </section>
+                <section data-background="./Media/Images/Base1_5.png">
+                    <h2>5. Add the dependency (5m.)</h2>
+                    <p>
+Update your pom.xml file the add the repository:
+                    </p>
+                    <pre><code data-trim contenteditable>
+<repository>
+    <id>jitpack.io</id>
+    <url>https://jitpack.io</url>
+</repository>
+                    </code></pre>
+                    <p>
+and the artifact:
+                    </p>                    
+                    <pre><code data-trim contenteditable>
+<dependency>
+    <groupId>com.github.jabrena</groupId>
+    <artifactId>ev3dev-lang-java</artifactId>
+    <version>v0.2.0</version>
+</dependency>    
+                    </code></pre>
+                </section>
+                <section data-background="./Media/Images/Base1_5.png">
+                    <h2>6. Code an example (5m.)</h2>
+                    <p>
+Create a new Java Class with the name "Test" and copy and paste this example:
+                    </p>  
+                    <pre><code data-trim contenteditable>
+package ev3dev.java.examples;
+
+import ev3dev.hardware.Battery;
+import ev3dev.hardware.port.MotorPort;
+import ev3dev.hardware.port.SensorPort;
+import ev3dev.hardware.motor.EV3LargeRegulatedMotor;
+import ev3dev.hardware.sensor.ev3.EV3IRSensor;
+import lejos.robotics.SampleProvider;
+import lejos.utility.Delay;
+
+public class BumperCar {
+    
+    //Robot Definition
+    private final static EV3LargeRegulatedMotor mA = new EV3LargeRegulatedMotor(MotorPort.A);
+    private final static EV3LargeRegulatedMotor mB = new EV3LargeRegulatedMotor(MotorPort.B);
+    private final static EV3IRSensor ir1 = new EV3IRSensor(SensorPort.S2);
+
+    //Configuration
+    private final static int motorSpeed = 500;
+    
+    public static void main(String[] args) {
+        
+        final SampleProvider sp = ir1.getDistanceMode();
+        int distance = 255;
+
+        final int distance_threshold = 35;
+        
+        //Robot control loop
+        final int iteration_threshold = 100;
+        for(int i = 0; i <= iteration_threshold; i++) {
+            forward();
+
+            float [] sample = new float[sp.sampleSize()];
+            sp.fetchSample(sample, 0);
+            distance = (int)sample[0];
+            if(distance <= distance_threshold){
+                backwardWithTurn();
+            }
+
+            System.out.println("Iteration: " + i);
+            System.out.println("Battery: " + Battery.getVoltage());
+            System.out.println("Distance: " + distance);
+            System.out.println();
+        }
+
+        mA.stop();
+        mB.stop();
+        System.exit(0);
+    }
+    
+    private static void forward(){
+        mA.setSpeed(motorSpeed);
+        mB.setSpeed(motorSpeed);
+        mA.forward();
+        mB.forward();
+    }
+    
+    private static void backwardWithTurn(){
+        mA.backward();
+        mB.backward();
+        Delay.msDelay(1000);
+        mA.stop();
+        mB.stop();
+        mA.backward();
+        mB.forward();
+        Delay.msDelay(1000);
+        mA.stop();
+        mB.stop();
+    }
+}
+                    </code></pre>
+                </section>
+                <section data-background="./Media/Images/Base1_5.png">
+                    <h2>7. Build & deploy (15m.)</h2>
+                    <p>
+Create the artifact (*.jar):
+                    </p>
+                    <pre><code data-trim contenteditable>
+mvn package
+                    </code></pre>
+                    <p>
+and deploy your .jar in your brick
+                    </p>
+                    <pre><code data-trim contenteditable>
+scp ev3-lang-java-0.2-SNAPSHOT.jar your_username@remotehost:/home
+scp helloworld-1.0-SNAPSHOT.jar your_username@remotehost:/home
+                    </code></pre>
+                </section>                              
+                <section data-background="./Media/Images/Base1_5.png">
+                    <h2>8. Run your example (2m.)</h2>
+                    <p>
+Connect with your brick:
+                    </p>
+                    <pre><code data-trim contenteditable>
+ssh your_username@remotehost
+your_password
+cd /home
+                    </code></pre>
+                    <p>
+and finally, run your example:
+                    </p>
+                    <pre><code data-trim contenteditable>
+java -cp 
+    helloworld-1.0-SNAPSHOT.jar:ev3-lang-java-0.2-SNAPSHOT.jar 
+    ev3dev.java.examples.Test
+                    </code></pre>
+                </section> 
+            </section>
+            <section data-background="./Media/Images/Base1_5.png">
+                <h2>Contribute</h2>
+                <p>
+You are welcome to participate in this Open Source project. Fork this repo to enjoy in the process.
+                </p>
+                <p>
+<a href="https://github.com/jabrena/ev3dev-lang-java" target="_blank">https://github.com/jabrena/ev3dev-lang-java</a>
+                </p>
+            </section>
+            <section data-background="./Media/Images/Base1_5.png">
+                <h2>References</h2>
+                <ul>
+                    <li><a href="http://www.java.com/en/about/whatis_java.jsp" target="_blank">What is Java?</a></li>
+                    <li><a href="http://mindstorms.lego.com" target="_blank">Lego Mindstorms</a></li>
+                    <li><a href="http://www.ev3dev.org/" target="_blank">EV3Dev</a></li>
+                    <li><a href="http://www.lejos.org/" target="_blank">LeJOS</a></li>
+                    <li><a href="http://opencv.org/" target="_blank">OpenCV</a></li>
+                    <li><a href="https://eclipse.org/" target="_blank">Eclipse</a></li>
+                    <li><a href="https://maven.apache.org/" target="_blank">Maven</a></li>
+                </ul>
+            </section>
+            <section>
+                <p>
+                    <img src="./Media/Images/java.png" width="17%"/>
+                    &nbsp;
+                    <img src="./Media/Images/lejos.png" width="10%" />
+                    &nbsp;&nbsp;&nbsp;
+                    <img src="./Media/Images/ev3devLogo.png" />
+                    &nbsp;&nbsp;&nbsp;
+                    <img src="./Media/Images/debian.png" width="13%" />
+                </p>
+            </section>         
+        </div>
+    </div>
+
+    <div class="github-fork-ribbon-wrapper left">
+        <div class="github-fork-ribbon">
+            <a href="https://github.com/jabrena/ev3dev-lang-java">Fork me on GitHub</a>
+        </div>
+    </div>
+
+    <script src="Scripts/head.min.js"></script>
+    <script src="Scripts/reveal.js"></script>
+    <script>
+
+        // Full list of configuration options available at:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+            // Enable slide navigation via mouse wheel
+            mouseWheel: true,
+            // Hides the address bar on mobile devices
+            hideAddressBar: true,
+
+            transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+            // Optional reveal.js plugins
+            dependencies: [
+                // Syntax highlight for <code> elements 
+                { src: 'Scripts/plugins/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+            ]
+
+        });
+
+    </script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-343143-18', 'auto');
+      ga('send', 'pageview');
+
+    </script>   
+</body>
+</html>

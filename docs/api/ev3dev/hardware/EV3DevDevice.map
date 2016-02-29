@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./EV3DevDevice.html" title="ev3dev.hardware.EV3DevDevice" alt="" coords="945,241,1266,442"/>
+<area shape="rect" id="node1" href="./EV3DevDevice.html" title="&lt;TABLE&gt;" alt="" coords="934,235,1277,447"/>
+<area shape="rect" id="node3_1" href="./motor/BaseRegulatedMotor.html" title="ev3dev.hardware.motor.BaseRegulatedMotor" alt="" coords="16,502,925,1231"/>
+<area shape="rect" id="node3" href="./motor/BaseRegulatedMotor.html" title="&lt;TABLE&gt;" alt="" coords="5,497,936,1237"/>
+<area shape="rect" id="node4_2" href="./motor/BasicMotor.html" title="ev3dev.hardware.motor.BasicMotor" alt="" coords="971,686,1240,1047"/>
+<area shape="rect" id="node4" href="./motor/BasicMotor.html" title="&lt;TABLE&gt;" alt="" coords="960,681,1251,1053"/>
+<area shape="rect" id="node5_3" href="./sensor/BaseSensor.html" title="ev3dev.hardware.sensor.BaseSensor" alt="" coords="1285,662,1613,1071"/>
+<area shape="rect" id="node5" href="./sensor/BaseSensor.html" title="&lt;TABLE&gt;" alt="" coords="1275,657,1624,1077"/>
+<area shape="rect" id="node2_4" href="./EV3DevSysfs.html" title="ev3dev.hardware.EV3DevSysfs" alt="" coords="937,11,1273,181"/>
+<area shape="rect" id="node2" href="./EV3DevSysfs.html" title="&lt;TABLE&gt;" alt="" coords="927,6,1284,186"/>
+</map>
