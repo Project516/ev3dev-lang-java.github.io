@@ -10,12 +10,12 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// ev3dev.hardware.actuators.motors.BaseRegulatedMotor
-	c179 [label=<<table title="ev3dev.hardware.actuators.motors.BaseRegulatedMotor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BaseRegulatedMotor.html">
+	c175 [label=<<table title="ev3dev.hardware.actuators.motors.BaseRegulatedMotor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BaseRegulatedMotor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> BaseRegulatedMotor </font></td></tr>
 		</table></td></tr>
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="left" balign="left"> # speed : float </td></tr>
+<tr><td align="left" balign="left"> - speed : int </td></tr>
 <tr><td align="left" balign="left"> # acceleration : int </td></tr>
 <tr><td align="left" balign="left"> - regulationFlag : boolean </td></tr>
 		</table></td></tr>
@@ -44,15 +44,15 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./BaseRegulatedMotor.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// ev3dev.hardware.actuators.motors.BasicMotor
-	c180 [label=<<table title="ev3dev.hardware.actuators.motors.BasicMotor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BasicMotor.html">
+	c176 [label=<<table title="ev3dev.hardware.actuators.motors.BasicMotor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BasicMotor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> BasicMotor </font></td></tr>
 		</table></td></tr>
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="left" balign="left">  </td></tr>
+<tr><td align="left" balign="left"> - power : int </td></tr>
 		</table></td></tr>
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="left" balign="left"> + BasicMotor(portName : String) </td></tr>
+<tr><td align="left" balign="left"> + BasicMotor(motorPort : String) </td></tr>
 <tr><td align="left" balign="left"> + setPower(power : int) </td></tr>
 <tr><td align="left" balign="left"> + getPower() : int </td></tr>
 <tr><td align="left" balign="left"> # updateState(newMode : String) </td></tr>
@@ -66,7 +66,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./BasicMotor.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// ev3dev.hardware.actuators.motors.EV3LargeRegulatedMotor
-	c181 [label=<<table title="ev3dev.hardware.actuators.motors.EV3LargeRegulatedMotor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EV3LargeRegulatedMotor.html">
+	c177 [label=<<table title="ev3dev.hardware.actuators.motors.EV3LargeRegulatedMotor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EV3LargeRegulatedMotor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> EV3LargeRegulatedMotor </td></tr>
 		</table></td></tr>
@@ -85,7 +85,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./EV3LargeRegulatedMotor.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// ev3dev.hardware.actuators.motors.EV3MediumRegulatedMotor
-	c182 [label=<<table title="ev3dev.hardware.actuators.motors.EV3MediumRegulatedMotor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EV3MediumRegulatedMotor.html">
+	c178 [label=<<table title="ev3dev.hardware.actuators.motors.EV3MediumRegulatedMotor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EV3MediumRegulatedMotor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> EV3MediumRegulatedMotor </td></tr>
 		</table></td></tr>
@@ -104,7 +104,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./EV3MediumRegulatedMotor.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// ev3dev.hardware.actuators.motors.NXTRegulatedMotor
-	c183 [label=<<table title="ev3dev.hardware.actuators.motors.NXTRegulatedMotor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./NXTRegulatedMotor.html">
+	c179 [label=<<table title="ev3dev.hardware.actuators.motors.NXTRegulatedMotor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./NXTRegulatedMotor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> NXTRegulatedMotor </td></tr>
 		</table></td></tr>
@@ -123,7 +123,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./NXTRegulatedMotor.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// ev3dev.hardware.actuators.motors.UnregulatedMotor
-	c184 [label=<<table title="ev3dev.hardware.actuators.motors.UnregulatedMotor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./UnregulatedMotor.html">
+	c180 [label=<<table title="ev3dev.hardware.actuators.motors.UnregulatedMotor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./UnregulatedMotor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> UnregulatedMotor </td></tr>
 		</table></td></tr>
@@ -135,12 +135,12 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./UnregulatedMotor.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	//ev3dev.hardware.actuators.motors.EV3LargeRegulatedMotor extends ev3dev.hardware.actuators.motors.BaseRegulatedMotor
-	c179:p -> c181:p [dir=back,arrowtail=empty];
+	c175:p -> c177:p [dir=back,arrowtail=empty];
 	//ev3dev.hardware.actuators.motors.EV3MediumRegulatedMotor extends ev3dev.hardware.actuators.motors.BaseRegulatedMotor
-	c179:p -> c182:p [dir=back,arrowtail=empty];
+	c175:p -> c178:p [dir=back,arrowtail=empty];
 	//ev3dev.hardware.actuators.motors.NXTRegulatedMotor extends ev3dev.hardware.actuators.motors.BaseRegulatedMotor
-	c179:p -> c183:p [dir=back,arrowtail=empty];
+	c175:p -> c179:p [dir=back,arrowtail=empty];
 	//ev3dev.hardware.actuators.motors.UnregulatedMotor extends ev3dev.hardware.actuators.motors.BasicMotor
-	c180:p -> c184:p [dir=back,arrowtail=empty];
+	c176:p -> c180:p [dir=back,arrowtail=empty];
 }
 

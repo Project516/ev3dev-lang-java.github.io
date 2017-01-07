@@ -10,7 +10,7 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// ev3dev.hardware.EV3DevDevice
-	c8006 [label=<<table title="ev3dev.hardware.EV3DevDevice" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EV3DevDevice.html">
+	c7486 [label=<<table title="ev3dev.hardware.EV3DevDevice" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EV3DevDevice.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> EV3DevDevice </font></td></tr>
 		</table></td></tr>
@@ -26,7 +26,7 @@ digraph G {
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="left" balign="left"> + EV3DevDevice() </td></tr>
 <tr><td align="left" balign="left"> + getPlatform() : String </td></tr>
-<tr><td align="left" balign="left"> # connect(type : String, portName : String) </td></tr>
+<tr><td align="left" balign="left"> # detect(type : String, portName : String) </td></tr>
 <tr><td align="left" balign="left"> # getStringAttribute(attribute : String) : String </td></tr>
 <tr><td align="left" balign="left"> # getIntegerAttribute(attribute : String) : int </td></tr>
 <tr><td align="left" balign="left"> # setStringAttribute(attribute : String, value : String) </td></tr>
@@ -34,7 +34,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./EV3DevDevice.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// ev3dev.hardware.SupportedPlatform
-	c8010 [label=<<table title="ev3dev.hardware.SupportedPlatform" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./SupportedPlatform.html">
+	c7490 [label=<<table title="ev3dev.hardware.SupportedPlatform" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./SupportedPlatform.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> SupportedPlatform </td></tr>
@@ -49,6 +49,6 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./SupportedPlatform.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	//ev3dev.hardware.EV3DevDevice implements ev3dev.hardware.SupportedPlatform
-	c8010:p -> c8006:p [dir=back,arrowtail=empty,style=dashed];
+	c7490:p -> c7486:p [dir=back,arrowtail=empty,style=dashed];
 }
 

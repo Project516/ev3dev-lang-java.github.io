@@ -10,7 +10,7 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// ev3dev.hardware.EV3DevDevice
-	c7581 [label=<<table title="ev3dev.hardware.EV3DevDevice" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../EV3DevDevice.html">
+	c7071 [label=<<table title="ev3dev.hardware.EV3DevDevice" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../EV3DevDevice.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> EV3DevDevice </font></td></tr>
 <tr><td align="center" balign="center"><font point-size="7.0"> ev3dev.hardware </font></td></tr>
@@ -27,7 +27,7 @@ digraph G {
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="left" balign="left"> + EV3DevDevice() </td></tr>
 <tr><td align="left" balign="left"> + getPlatform() : java.lang.String </td></tr>
-<tr><td align="left" balign="left"> # connect(type : java.lang.String, portName : java.lang.String) </td></tr>
+<tr><td align="left" balign="left"> # detect(type : java.lang.String, portName : java.lang.String) </td></tr>
 <tr><td align="left" balign="left"> # getStringAttribute(attribute : java.lang.String) : java.lang.String </td></tr>
 <tr><td align="left" balign="left"> # getIntegerAttribute(attribute : java.lang.String) : int </td></tr>
 <tr><td align="left" balign="left"> # setStringAttribute(attribute : java.lang.String, value : java.lang.String) </td></tr>
@@ -35,7 +35,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="../EV3DevDevice.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// ev3dev.hardware.actuators.Sound
-	c7586 [label=<<table title="ev3dev.hardware.actuators.Sound" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Sound.html">
+	c7076 [label=<<table title="ev3dev.hardware.actuators.Sound" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./Sound.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Sound </td></tr>
 		</table></td></tr>
@@ -61,6 +61,6 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./Sound.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	//ev3dev.hardware.actuators.Sound extends ev3dev.hardware.EV3DevDevice
-	c7581:p -> c7586:p [dir=back,arrowtail=empty];
+	c7071:p -> c7076:p [dir=back,arrowtail=empty];
 }
 

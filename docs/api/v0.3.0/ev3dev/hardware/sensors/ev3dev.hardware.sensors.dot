@@ -10,7 +10,7 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// ev3dev.hardware.sensors.BaseSensor
-	c361 [label=<<table title="ev3dev.hardware.sensors.BaseSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BaseSensor.html">
+	c353 [label=<<table title="ev3dev.hardware.sensors.BaseSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BaseSensor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> BaseSensor </td></tr>
 		</table></td></tr>
@@ -41,7 +41,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./BaseSensor.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// ev3dev.hardware.sensors.Battery
-	c362 [label=<<table title="ev3dev.hardware.sensors.Battery" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Battery.html">
+	c354 [label=<<table title="ev3dev.hardware.sensors.Battery" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Battery.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> Battery </td></tr>
 		</table></td></tr>
@@ -60,7 +60,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./Battery.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// ev3dev.hardware.sensors.EV3DevSensorDeviceCommands
-	c363 [label=<<table title="ev3dev.hardware.sensors.EV3DevSensorDeviceCommands" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EV3DevSensorDeviceCommands.html">
+	c355 [label=<<table title="ev3dev.hardware.sensors.EV3DevSensorDeviceCommands" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EV3DevSensorDeviceCommands.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> EV3DevSensorDeviceCommands </td></tr>
@@ -79,7 +79,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./EV3DevSensorDeviceCommands.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// ev3dev.hardware.sensors.Power
-	c364 [label=<<table title="ev3dev.hardware.sensors.Power" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Power.html">
+	c356 [label=<<table title="ev3dev.hardware.sensors.Power" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./Power.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> Power </td></tr>
@@ -93,7 +93,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./Power.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// ev3dev.hardware.sensors.SensorMode
-	c365 [label=<<table title="ev3dev.hardware.sensors.SensorMode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SensorMode.html">
+	c357 [label=<<table title="ev3dev.hardware.sensors.SensorMode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SensorMode.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> SensorMode </td></tr>
@@ -106,7 +106,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./SensorMode.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// ev3dev.hardware.sensors.SensorModes
-	c366 [label=<<table title="ev3dev.hardware.sensors.SensorModes" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SensorModes.html">
+	c358 [label=<<table title="ev3dev.hardware.sensors.SensorModes" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SensorModes.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> SensorModes </td></tr>
@@ -125,16 +125,16 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./SensorModes.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	//ev3dev.hardware.sensors.BaseSensor implements ev3dev.hardware.sensors.EV3DevSensorDeviceCommands
-	c363:p -> c361:p [dir=back,arrowtail=empty,style=dashed];
+	c355:p -> c353:p [dir=back,arrowtail=empty,style=dashed];
 	//ev3dev.hardware.sensors.BaseSensor implements ev3dev.hardware.sensors.SensorModes
-	c366:p -> c361:p [dir=back,arrowtail=empty,style=dashed];
+	c358:p -> c353:p [dir=back,arrowtail=empty,style=dashed];
 	//ev3dev.hardware.sensors.Battery implements ev3dev.hardware.sensors.EV3DevSensorDeviceCommands
-	c363:p -> c362:p [dir=back,arrowtail=empty,style=dashed];
+	c355:p -> c354:p [dir=back,arrowtail=empty,style=dashed];
 	//ev3dev.hardware.sensors.Battery implements ev3dev.hardware.sensors.Power
-	c364:p -> c362:p [dir=back,arrowtail=empty,style=dashed];
+	c356:p -> c354:p [dir=back,arrowtail=empty,style=dashed];
 	//ev3dev.hardware.sensors.SensorModes implements ev3dev.hardware.sensors.SensorMode
-	c365:p -> c366:p [dir=back,arrowtail=empty,style=dashed];
+	c357:p -> c358:p [dir=back,arrowtail=empty,style=dashed];
 	// ev3dev.hardware.sensors.BaseSensor NAVASSOC ev3dev.hardware.sensors.SensorMode
-	c361:p -> c365:p [taillabel="", label="", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c353:p -> c357:p [taillabel="", label="", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 }
 

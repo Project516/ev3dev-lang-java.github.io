@@ -10,7 +10,7 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// ev3dev.hardware.sensors.ev3.EV3ColorSensor
-	c452 [label=<<table title="ev3dev.hardware.sensors.ev3.EV3ColorSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EV3ColorSensor.html">
+	c442 [label=<<table title="ev3dev.hardware.sensors.ev3.EV3ColorSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EV3ColorSensor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> EV3ColorSensor </td></tr>
 		</table></td></tr>
@@ -42,7 +42,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./EV3ColorSensor.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// ev3dev.hardware.sensors.ev3.EV3ColorSensor.ColorIDMode
-	c453 [label=<<table title="ev3dev.hardware.sensors.ev3.EV3ColorSensor.ColorIDMode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EV3ColorSensor.ColorIDMode.html">
+	c443 [label=<<table title="ev3dev.hardware.sensors.ev3.EV3ColorSensor.ColorIDMode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EV3ColorSensor.ColorIDMode.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ColorIDMode </td></tr>
 		</table></td></tr>
@@ -57,7 +57,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./EV3ColorSensor.ColorIDMode.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// ev3dev.hardware.sensors.ev3.EV3ColorSensor.RedMode
-	c454 [label=<<table title="ev3dev.hardware.sensors.ev3.EV3ColorSensor.RedMode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EV3ColorSensor.RedMode.html">
+	c444 [label=<<table title="ev3dev.hardware.sensors.ev3.EV3ColorSensor.RedMode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EV3ColorSensor.RedMode.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> RedMode </td></tr>
 		</table></td></tr>
@@ -73,7 +73,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./EV3ColorSensor.RedMode.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// ev3dev.hardware.sensors.ev3.EV3ColorSensor.AmbientMode
-	c455 [label=<<table title="ev3dev.hardware.sensors.ev3.EV3ColorSensor.AmbientMode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EV3ColorSensor.AmbientMode.html">
+	c445 [label=<<table title="ev3dev.hardware.sensors.ev3.EV3ColorSensor.AmbientMode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EV3ColorSensor.AmbientMode.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> AmbientMode </td></tr>
 		</table></td></tr>
@@ -89,7 +89,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./EV3ColorSensor.AmbientMode.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// ev3dev.hardware.sensors.ev3.EV3ColorSensor.RGBMode
-	c456 [label=<<table title="ev3dev.hardware.sensors.ev3.EV3ColorSensor.RGBMode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EV3ColorSensor.RGBMode.html">
+	c446 [label=<<table title="ev3dev.hardware.sensors.ev3.EV3ColorSensor.RGBMode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EV3ColorSensor.RGBMode.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> RGBMode </td></tr>
 		</table></td></tr>
@@ -105,7 +105,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./EV3ColorSensor.RGBMode.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// ev3dev.hardware.sensors.ev3.EV3DevSensorMode
-	c457 [label=<<table title="ev3dev.hardware.sensors.ev3.EV3DevSensorMode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EV3DevSensorMode.html">
+	c447 [label=<<table title="ev3dev.hardware.sensors.ev3.EV3DevSensorMode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EV3DevSensorMode.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> EV3DevSensorMode </font></td></tr>
 		</table></td></tr>
@@ -119,7 +119,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./EV3DevSensorMode.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// ev3dev.hardware.sensors.ev3.EV3GyroSensor
-	c458 [label=<<table title="ev3dev.hardware.sensors.ev3.EV3GyroSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EV3GyroSensor.html">
+	c448 [label=<<table title="ev3dev.hardware.sensors.ev3.EV3GyroSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EV3GyroSensor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> EV3GyroSensor </td></tr>
 		</table></td></tr>
@@ -136,7 +136,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./EV3GyroSensor.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// ev3dev.hardware.sensors.ev3.EV3GyroSensor.RateMode
-	c459 [label=<<table title="ev3dev.hardware.sensors.ev3.EV3GyroSensor.RateMode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EV3GyroSensor.RateMode.html">
+	c449 [label=<<table title="ev3dev.hardware.sensors.ev3.EV3GyroSensor.RateMode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EV3GyroSensor.RateMode.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> RateMode </td></tr>
 		</table></td></tr>
@@ -153,7 +153,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./EV3GyroSensor.RateMode.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// ev3dev.hardware.sensors.ev3.EV3GyroSensor.AngleMode
-	c460 [label=<<table title="ev3dev.hardware.sensors.ev3.EV3GyroSensor.AngleMode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EV3GyroSensor.AngleMode.html">
+	c450 [label=<<table title="ev3dev.hardware.sensors.ev3.EV3GyroSensor.AngleMode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EV3GyroSensor.AngleMode.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> AngleMode </td></tr>
 		</table></td></tr>
@@ -170,7 +170,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./EV3GyroSensor.AngleMode.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// ev3dev.hardware.sensors.ev3.EV3GyroSensor.RateAndAngleMode
-	c461 [label=<<table title="ev3dev.hardware.sensors.ev3.EV3GyroSensor.RateAndAngleMode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EV3GyroSensor.RateAndAngleMode.html">
+	c451 [label=<<table title="ev3dev.hardware.sensors.ev3.EV3GyroSensor.RateAndAngleMode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EV3GyroSensor.RateAndAngleMode.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> RateAndAngleMode </td></tr>
 		</table></td></tr>
@@ -187,7 +187,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./EV3GyroSensor.RateAndAngleMode.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// ev3dev.hardware.sensors.ev3.EV3IRSensor
-	c462 [label=<<table title="ev3dev.hardware.sensors.ev3.EV3IRSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EV3IRSensor.html">
+	c452 [label=<<table title="ev3dev.hardware.sensors.ev3.EV3IRSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EV3IRSensor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> EV3IRSensor </td></tr>
 		</table></td></tr>
@@ -201,7 +201,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./EV3IRSensor.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// ev3dev.hardware.sensors.ev3.EV3IRSensor.DistanceMode
-	c463 [label=<<table title="ev3dev.hardware.sensors.ev3.EV3IRSensor.DistanceMode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EV3IRSensor.DistanceMode.html">
+	c453 [label=<<table title="ev3dev.hardware.sensors.ev3.EV3IRSensor.DistanceMode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EV3IRSensor.DistanceMode.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> DistanceMode </td></tr>
 		</table></td></tr>
@@ -217,7 +217,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./EV3IRSensor.DistanceMode.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// ev3dev.hardware.sensors.ev3.EV3TouchSensor
-	c464 [label=<<table title="ev3dev.hardware.sensors.ev3.EV3TouchSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EV3TouchSensor.html">
+	c454 [label=<<table title="ev3dev.hardware.sensors.ev3.EV3TouchSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EV3TouchSensor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> EV3TouchSensor </td></tr>
 		</table></td></tr>
@@ -231,7 +231,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./EV3TouchSensor.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// ev3dev.hardware.sensors.ev3.EV3TouchSensor.TouchMode
-	c465 [label=<<table title="ev3dev.hardware.sensors.ev3.EV3TouchSensor.TouchMode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EV3TouchSensor.TouchMode.html">
+	c455 [label=<<table title="ev3dev.hardware.sensors.ev3.EV3TouchSensor.TouchMode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EV3TouchSensor.TouchMode.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> TouchMode </td></tr>
 		</table></td></tr>
@@ -246,7 +246,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./EV3TouchSensor.TouchMode.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// ev3dev.hardware.sensors.ev3.EV3UltrasonicSensor
-	c466 [label=<<table title="ev3dev.hardware.sensors.ev3.EV3UltrasonicSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EV3UltrasonicSensor.html">
+	c456 [label=<<table title="ev3dev.hardware.sensors.ev3.EV3UltrasonicSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EV3UltrasonicSensor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> EV3UltrasonicSensor </td></tr>
 		</table></td></tr>
@@ -265,7 +265,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./EV3UltrasonicSensor.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// ev3dev.hardware.sensors.ev3.EV3UltrasonicSensor.DistanceMode
-	c467 [label=<<table title="ev3dev.hardware.sensors.ev3.EV3UltrasonicSensor.DistanceMode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EV3UltrasonicSensor.DistanceMode.html">
+	c457 [label=<<table title="ev3dev.hardware.sensors.ev3.EV3UltrasonicSensor.DistanceMode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EV3UltrasonicSensor.DistanceMode.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> DistanceMode </td></tr>
 		</table></td></tr>
@@ -282,7 +282,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./EV3UltrasonicSensor.DistanceMode.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// ev3dev.hardware.sensors.ev3.EV3UltrasonicSensor.ListenMode
-	c468 [label=<<table title="ev3dev.hardware.sensors.ev3.EV3UltrasonicSensor.ListenMode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EV3UltrasonicSensor.ListenMode.html">
+	c458 [label=<<table title="ev3dev.hardware.sensors.ev3.EV3UltrasonicSensor.ListenMode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./EV3UltrasonicSensor.ListenMode.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> ListenMode </td></tr>
 		</table></td></tr>
@@ -298,26 +298,26 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./EV3UltrasonicSensor.ListenMode.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	//ev3dev.hardware.sensors.ev3.EV3ColorSensor.ColorIDMode extends ev3dev.hardware.sensors.ev3.EV3DevSensorMode
-	c457:p -> c453:p [dir=back,arrowtail=empty];
+	c447:p -> c443:p [dir=back,arrowtail=empty];
 	//ev3dev.hardware.sensors.ev3.EV3ColorSensor.RedMode extends ev3dev.hardware.sensors.ev3.EV3DevSensorMode
-	c457:p -> c454:p [dir=back,arrowtail=empty];
+	c447:p -> c444:p [dir=back,arrowtail=empty];
 	//ev3dev.hardware.sensors.ev3.EV3ColorSensor.AmbientMode extends ev3dev.hardware.sensors.ev3.EV3DevSensorMode
-	c457:p -> c455:p [dir=back,arrowtail=empty];
+	c447:p -> c445:p [dir=back,arrowtail=empty];
 	//ev3dev.hardware.sensors.ev3.EV3ColorSensor.RGBMode extends ev3dev.hardware.sensors.ev3.EV3DevSensorMode
-	c457:p -> c456:p [dir=back,arrowtail=empty];
+	c447:p -> c446:p [dir=back,arrowtail=empty];
 	//ev3dev.hardware.sensors.ev3.EV3GyroSensor.RateMode extends ev3dev.hardware.sensors.ev3.EV3DevSensorMode
-	c457:p -> c459:p [dir=back,arrowtail=empty];
+	c447:p -> c449:p [dir=back,arrowtail=empty];
 	//ev3dev.hardware.sensors.ev3.EV3GyroSensor.AngleMode extends ev3dev.hardware.sensors.ev3.EV3DevSensorMode
-	c457:p -> c460:p [dir=back,arrowtail=empty];
+	c447:p -> c450:p [dir=back,arrowtail=empty];
 	//ev3dev.hardware.sensors.ev3.EV3GyroSensor.RateAndAngleMode extends ev3dev.hardware.sensors.ev3.EV3DevSensorMode
-	c457:p -> c461:p [dir=back,arrowtail=empty];
+	c447:p -> c451:p [dir=back,arrowtail=empty];
 	//ev3dev.hardware.sensors.ev3.EV3IRSensor.DistanceMode extends ev3dev.hardware.sensors.ev3.EV3DevSensorMode
-	c457:p -> c463:p [dir=back,arrowtail=empty];
+	c447:p -> c453:p [dir=back,arrowtail=empty];
 	//ev3dev.hardware.sensors.ev3.EV3TouchSensor.TouchMode extends ev3dev.hardware.sensors.ev3.EV3DevSensorMode
-	c457:p -> c465:p [dir=back,arrowtail=empty];
+	c447:p -> c455:p [dir=back,arrowtail=empty];
 	//ev3dev.hardware.sensors.ev3.EV3UltrasonicSensor.DistanceMode extends ev3dev.hardware.sensors.ev3.EV3DevSensorMode
-	c457:p -> c467:p [dir=back,arrowtail=empty];
+	c447:p -> c457:p [dir=back,arrowtail=empty];
 	//ev3dev.hardware.sensors.ev3.EV3UltrasonicSensor.ListenMode extends ev3dev.hardware.sensors.ev3.EV3DevSensorMode
-	c457:p -> c468:p [dir=back,arrowtail=empty];
+	c447:p -> c458:p [dir=back,arrowtail=empty];
 }
 

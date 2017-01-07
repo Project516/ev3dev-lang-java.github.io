@@ -1,10 +1,10 @@
 <map id="G" name="G">
-<area shape="rect" id="node1_0" href="../../EV3DevMotorDevice.html" title="ev3dev.hardware.EV3DevMotorDevice" alt="" coords="15,11,430,429"/>
-<area shape="rect" id="node1" href="../../EV3DevMotorDevice.html" title="&lt;TABLE&gt;" alt="" coords="5,5,441,435"/>
-<area shape="rect" id="node2_1" href="./BasicMotor.html" title="ev3dev.hardware.actuators.motors.BasicMotor" alt="" coords="287,488,481,704"/>
-<area shape="rect" id="node2" href="./BasicMotor.html" title="&lt;TABLE&gt;" alt="" coords="276,483,492,709"/>
-<area shape="rect" id="node3_2" href="./UnregulatedMotor.html" title="ev3dev.hardware.actuators.motors.UnregulatedMotor" alt="" coords="271,763,497,832"/>
-<area shape="rect" id="node3" href="./UnregulatedMotor.html" title="&lt;TABLE&gt;" alt="" coords="260,757,508,837"/>
-<area shape="rect" id="node4_3" href="../../../../lejos/robotics/DCMotor.html" title="lejos.robotics.DCMotor" alt="" coords="476,165,617,275"/>
-<area shape="rect" id="node4" href="../../../../lejos/robotics/DCMotor.html" title="&lt;TABLE&gt;" alt="" coords="465,159,628,281"/>
+<area shape="rect" id="node1_0" href="../../EV3DevMotorDevice.html" title="ev3dev.hardware.EV3DevMotorDevice" alt="" coords="16,11,264,445"/>
+<area shape="rect" id="node1" href="../../EV3DevMotorDevice.html" title="&lt;TABLE&gt;" alt="" coords="5,6,275,450"/>
+<area shape="rect" id="node2_1" href="./BasicMotor.html" title="ev3dev.hardware.actuators.motors.BasicMotor" alt="" coords="163,504,357,720"/>
+<area shape="rect" id="node2" href="./BasicMotor.html" title="&lt;TABLE&gt;" alt="" coords="152,499,368,725"/>
+<area shape="rect" id="node3_2" href="./UnregulatedMotor.html" title="ev3dev.hardware.actuators.motors.UnregulatedMotor" alt="" coords="147,779,373,848"/>
+<area shape="rect" id="node3" href="./UnregulatedMotor.html" title="&lt;TABLE&gt;" alt="" coords="136,773,384,853"/>
+<area shape="rect" id="node4_3" href="../../../../lejos/robotics/DCMotor.html" title="lejos.robotics.DCMotor" alt="" coords="309,173,451,283"/>
+<area shape="rect" id="node4" href="../../../../lejos/robotics/DCMotor.html" title="&lt;TABLE&gt;" alt="" coords="299,167,461,289"/>
 </map>

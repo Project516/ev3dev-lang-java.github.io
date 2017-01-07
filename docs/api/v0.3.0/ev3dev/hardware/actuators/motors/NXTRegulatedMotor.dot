@@ -10,12 +10,12 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// ev3dev.hardware.actuators.motors.BaseRegulatedMotor
-	c5972 [label=<<table title="ev3dev.hardware.actuators.motors.BaseRegulatedMotor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BaseRegulatedMotor.html">
+	c5583 [label=<<table title="ev3dev.hardware.actuators.motors.BaseRegulatedMotor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BaseRegulatedMotor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"><font face="Helvetica-Oblique"> BaseRegulatedMotor </font></td></tr>
 		</table></td></tr>
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
-<tr><td align="left" balign="left"> # speed : float </td></tr>
+<tr><td align="left" balign="left"> - speed : int </td></tr>
 <tr><td align="left" balign="left"> # acceleration : int </td></tr>
 <tr><td align="left" balign="left"> - regulationFlag : boolean </td></tr>
 		</table></td></tr>
@@ -44,7 +44,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./BaseRegulatedMotor.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// ev3dev.hardware.actuators.motors.NXTRegulatedMotor
-	c5976 [label=<<table title="ev3dev.hardware.actuators.motors.NXTRegulatedMotor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./NXTRegulatedMotor.html">
+	c5587 [label=<<table title="ev3dev.hardware.actuators.motors.NXTRegulatedMotor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./NXTRegulatedMotor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> NXTRegulatedMotor </td></tr>
 		</table></td></tr>
@@ -63,6 +63,6 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./NXTRegulatedMotor.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	//ev3dev.hardware.actuators.motors.NXTRegulatedMotor extends ev3dev.hardware.actuators.motors.BaseRegulatedMotor
-	c5972:p -> c5976:p [dir=back,arrowtail=empty];
+	c5583:p -> c5587:p [dir=back,arrowtail=empty];
 }
 

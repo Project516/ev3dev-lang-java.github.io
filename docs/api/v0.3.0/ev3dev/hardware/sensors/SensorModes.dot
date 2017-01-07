@@ -10,7 +10,7 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// ev3dev.hardware.sensors.BaseSensor
-	c7089 [label=<<table title="ev3dev.hardware.sensors.BaseSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BaseSensor.html">
+	c6591 [label=<<table title="ev3dev.hardware.sensors.BaseSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./BaseSensor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> BaseSensor </td></tr>
 		</table></td></tr>
@@ -41,7 +41,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./BaseSensor.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// ev3dev.hardware.sensors.SensorMode
-	c7093 [label=<<table title="ev3dev.hardware.sensors.SensorMode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SensorMode.html">
+	c6595 [label=<<table title="ev3dev.hardware.sensors.SensorMode" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SensorMode.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> SensorMode </td></tr>
@@ -54,7 +54,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./SensorMode.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// ev3dev.hardware.sensors.SensorModes
-	c7094 [label=<<table title="ev3dev.hardware.sensors.SensorModes" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./SensorModes.html">
+	c6596 [label=<<table title="ev3dev.hardware.sensors.SensorModes" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./SensorModes.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> SensorModes </td></tr>
@@ -73,10 +73,10 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./SensorModes.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	//ev3dev.hardware.sensors.BaseSensor implements ev3dev.hardware.sensors.SensorModes
-	c7094:p -> c7089:p [dir=back,arrowtail=empty,style=dashed];
+	c6596:p -> c6591:p [dir=back,arrowtail=empty,style=dashed];
 	//ev3dev.hardware.sensors.SensorModes implements ev3dev.hardware.sensors.SensorMode
-	c7093:p -> c7094:p [dir=back,arrowtail=empty,style=dashed];
+	c6595:p -> c6596:p [dir=back,arrowtail=empty,style=dashed];
 	// ev3dev.hardware.sensors.BaseSensor NAVASSOC ev3dev.hardware.sensors.SensorMode
-	c7089:p -> c7093:p [taillabel="", label="", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
+	c6591:p -> c6595:p [taillabel="", label="", headlabel="*", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 }
 

@@ -1,8 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node1_0" href="./EV3DevDevice.html" title="ev3dev.hardware.EV3DevDevice" alt="" coords="15,307,305,464"/>
-<area shape="rect" id="node1" href="./EV3DevDevice.html" title="&lt;TABLE&gt;" alt="" coords="5,301,315,469"/>
-<area shape="rect" id="node2_1" href="./EV3DevDeviceCommands.html" title="ev3dev.hardware.EV3DevDeviceCommands" alt="" coords="220,11,412,168"/>
-<area shape="rect" id="node2" href="./EV3DevDeviceCommands.html" title="&lt;TABLE&gt;" alt="" coords="209,5,423,173"/>
-<area shape="rect" id="node3_2" href="../robotics/tts/Espeak.html" title="ev3dev.robotics.tts.Espeak" alt="" coords="351,227,593,543"/>
-<area shape="rect" id="node3" href="../robotics/tts/Espeak.html" title="&lt;TABLE&gt;" alt="" coords="340,222,604,549"/>
-</map>

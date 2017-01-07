@@ -10,7 +10,7 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// ev3dev.hardware.DeviceNotSupportedException
-	c2650 [label=<<table title="ev3dev.hardware.DeviceNotSupportedException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./DeviceNotSupportedException.html">
+	c2339 [label=<<table title="ev3dev.hardware.DeviceNotSupportedException" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./DeviceNotSupportedException.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> DeviceNotSupportedException </td></tr>
 		</table></td></tr>

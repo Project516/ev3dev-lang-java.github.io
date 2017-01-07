@@ -10,7 +10,7 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// ev3dev.hardware.ports.MotorPort
-	c270 [label=<<table title="ev3dev.hardware.ports.MotorPort" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MotorPort.html">
+	c264 [label=<<table title="ev3dev.hardware.ports.MotorPort" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MotorPort.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> MotorPort </td></tr>
@@ -26,7 +26,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./MotorPort.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// ev3dev.hardware.ports.MotorPortBrickPi
-	c271 [label=<<table title="ev3dev.hardware.ports.MotorPortBrickPi" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MotorPortBrickPi.html">
+	c265 [label=<<table title="ev3dev.hardware.ports.MotorPortBrickPi" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MotorPortBrickPi.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> MotorPortBrickPi </td></tr>
@@ -42,7 +42,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./MotorPortBrickPi.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// ev3dev.hardware.ports.MotorPortPiStorms
-	c272 [label=<<table title="ev3dev.hardware.ports.MotorPortPiStorms" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MotorPortPiStorms.html">
+	c266 [label=<<table title="ev3dev.hardware.ports.MotorPortPiStorms" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./MotorPortPiStorms.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> MotorPortPiStorms </td></tr>
@@ -58,7 +58,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./MotorPortPiStorms.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// ev3dev.hardware.ports.SensorPort
-	c273 [label=<<table title="ev3dev.hardware.ports.SensorPort" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SensorPort.html">
+	c267 [label=<<table title="ev3dev.hardware.ports.SensorPort" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SensorPort.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> SensorPort </td></tr>
@@ -74,7 +74,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./SensorPort.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// ev3dev.hardware.ports.SensorPortBrickPi
-	c274 [label=<<table title="ev3dev.hardware.ports.SensorPortBrickPi" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SensorPortBrickPi.html">
+	c268 [label=<<table title="ev3dev.hardware.ports.SensorPortBrickPi" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SensorPortBrickPi.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> SensorPortBrickPi </td></tr>
@@ -90,7 +90,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./SensorPortBrickPi.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// ev3dev.hardware.ports.SensorPortPiStorms
-	c275 [label=<<table title="ev3dev.hardware.ports.SensorPortPiStorms" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SensorPortPiStorms.html">
+	c269 [label=<<table title="ev3dev.hardware.ports.SensorPortPiStorms" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="./SensorPortPiStorms.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> SensorPortPiStorms </td></tr>

@@ -10,7 +10,7 @@ digraph G {
 	nodesep=0.25;
 	ranksep=0.5;
 	// ev3dev.hardware.sensors.ev3.EV3ColorSensor
-	c2165 [label=<<table title="ev3dev.hardware.sensors.ev3.EV3ColorSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../ev3dev/hardware/sensors/ev3/EV3ColorSensor.html">
+	c1866 [label=<<table title="ev3dev.hardware.sensors.ev3.EV3ColorSensor" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" href="../../ev3dev/hardware/sensors/ev3/EV3ColorSensor.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> EV3ColorSensor </td></tr>
 <tr><td align="center" balign="center"><font point-size="7.0"> ev3dev.hardware.sensors.ev3 </font></td></tr>
@@ -43,7 +43,7 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="../../ev3dev/hardware/sensors/ev3/EV3ColorSensor.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	// lejos.robotics.ColorIdentifier
-	c2190 [label=<<table title="lejos.robotics.ColorIdentifier" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ColorIdentifier.html">
+	c1889 [label=<<table title="lejos.robotics.ColorIdentifier" border="0" cellborder="1" cellspacing="0" cellpadding="2" port="p" bgcolor="lemonChiffon" href="./ColorIdentifier.html">
 		<tr><td><table border="0" cellspacing="0" cellpadding="1">
 <tr><td align="center" balign="center"> &#171;interface&#187; </td></tr>
 <tr><td align="center" balign="center"> ColorIdentifier </td></tr>
@@ -56,6 +56,6 @@ digraph G {
 		</table></td></tr>
 		</table>>, URL="./ColorIdentifier.html", fontname="Helvetica", fontcolor="black", fontsize=9.0];
 	//ev3dev.hardware.sensors.ev3.EV3ColorSensor implements lejos.robotics.ColorIdentifier
-	c2190:p -> c2165:p [dir=back,arrowtail=empty,style=dashed];
+	c1889:p -> c1866:p [dir=back,arrowtail=empty,style=dashed];
 }
 
