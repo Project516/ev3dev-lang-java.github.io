@@ -1,0 +1,18 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./Device.html" title="ev3dev.hardware.Device" alt="" coords="165,19,368,117"/>
+<area shape="rect" id="node1" href="./Device.html" title="&lt;TABLE&gt;" alt="" coords="155,13,379,123"/>
+<area shape="rect" id="node4_1" href="./EV3DevDevice.html" title="ev3dev.hardware.EV3DevDevice" alt="" coords="230,184,519,429"/>
+<area shape="rect" id="node4" href="./EV3DevDevice.html" title="&lt;TABLE&gt;" alt="" coords="219,179,530,435"/>
+<area shape="rect" id="node2_2" href="./DeviceException.html" title="ev3dev.hardware.DeviceException" alt="" coords="597,26,917,110"/>
+<area shape="rect" id="node2" href="./DeviceException.html" title="&lt;TABLE&gt;" alt="" coords="587,21,928,115"/>
+<area shape="rect" id="node3_3" href="./DeviceNotSupportedException.html" title="ev3dev.hardware.DeviceNotSupportedException" alt="" coords="963,33,1253,103"/>
+<area shape="rect" id="node3" href="./DeviceNotSupportedException.html" title="&lt;TABLE&gt;" alt="" coords="953,28,1263,108"/>
+<area shape="rect" id="node5_4" href="./EV3DevMotorDevice.html" title="ev3dev.hardware.EV3DevMotorDevice" alt="" coords="16,489,328,895"/>
+<area shape="rect" id="node5" href="./EV3DevMotorDevice.html" title="&lt;TABLE&gt;" alt="" coords="5,483,339,901"/>
+<area shape="rect" id="node6_5" href="./EV3DevSensorDevice.html" title="ev3dev.hardware.EV3DevSensorDevice" alt="" coords="374,657,783,727"/>
+<area shape="rect" id="node6" href="./EV3DevSensorDevice.html" title="&lt;TABLE&gt;" alt="" coords="363,652,794,732"/>
+<area shape="rect" id="node7_6" href="./PlatformNotSupportedException.html" title="ev3dev.hardware.PlatformNotSupportedException" alt="" coords="1298,33,1595,103"/>
+<area shape="rect" id="node7" href="./PlatformNotSupportedException.html" title="&lt;TABLE&gt;" alt="" coords="1287,28,1606,108"/>
+<area shape="rect" id="node8_7" href="./SupportedPlatform.html" title="ev3dev.hardware.SupportedPlatform" alt="" coords="413,11,552,125"/>
+<area shape="rect" id="node8" href="./SupportedPlatform.html" title="&lt;TABLE&gt;" alt="" coords="403,6,563,130"/>
+</map>

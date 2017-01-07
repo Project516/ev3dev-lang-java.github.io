@@ -1,0 +1,18 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./Device.html" title="ev3dev.hardware.Device" alt="" coords="769,19,972,117"/>
+<area shape="rect" id="node1" href="./Device.html" title="&lt;TABLE&gt;" alt="" coords="759,13,983,123"/>
+<area shape="rect" id="node2_1" href="./EV3DevDevice.html" title="ev3dev.hardware.EV3DevDevice" alt="" coords="834,184,1123,429"/>
+<area shape="rect" id="node2" href="./EV3DevDevice.html" title="&lt;TABLE&gt;" alt="" coords="823,179,1134,435"/>
+<area shape="rect" id="node3_2" href="./EV3DevMotorDevice.html" title="ev3dev.hardware.EV3DevMotorDevice" alt="" coords="16,489,328,895"/>
+<area shape="rect" id="node3" href="./EV3DevMotorDevice.html" title="&lt;TABLE&gt;" alt="" coords="5,483,339,901"/>
+<area shape="rect" id="node4_3" href="./EV3DevSensorDevice.html" title="ev3dev.hardware.EV3DevSensorDevice" alt="" coords="374,657,783,727"/>
+<area shape="rect" id="node4" href="./EV3DevSensorDevice.html" title="&lt;TABLE&gt;" alt="" coords="363,652,794,732"/>
+<area shape="rect" id="node6_4" href="./actuators/Sound.html" title="ev3dev.hardware.actuators.Sound" alt="" coords="829,549,1129,835"/>
+<area shape="rect" id="node6" href="./actuators/Sound.html" title="&lt;TABLE&gt;" alt="" coords="818,543,1139,841"/>
+<area shape="rect" id="node7_5" href="./sensors/Battery.html" title="ev3dev.hardware.sensors.Battery" alt="" coords="1174,600,1461,784"/>
+<area shape="rect" id="node7" href="./sensors/Battery.html" title="&lt;TABLE&gt;" alt="" coords="1163,595,1471,789"/>
+<area shape="rect" id="node8_6" href="../../examples/hardware/PlatformTest.html" title="examples.hardware.PlatformTest" alt="" coords="1506,644,1691,740"/>
+<area shape="rect" id="node8" href="../../examples/hardware/PlatformTest.html" title="&lt;TABLE&gt;" alt="" coords="1495,639,1702,745"/>
+<area shape="rect" id="node5_7" href="./SupportedPlatform.html" title="ev3dev.hardware.SupportedPlatform" alt="" coords="1017,11,1156,125"/>
+<area shape="rect" id="node5" href="./SupportedPlatform.html" title="&lt;TABLE&gt;" alt="" coords="1007,6,1167,130"/>
+</map>
