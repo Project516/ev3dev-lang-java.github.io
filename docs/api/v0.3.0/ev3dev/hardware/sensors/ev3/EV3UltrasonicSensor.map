@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="../BaseSensor.html" title="ev3dev.hardware.sensors.BaseSensor" alt="" coords="15,11,531,371"/>
+<area shape="rect" id="node1" href="../BaseSensor.html" title="&lt;TABLE&gt;" alt="" coords="5,5,542,376"/>
+<area shape="rect" id="node2_1" href="./EV3UltrasonicSensor.html" title="ev3dev.hardware.sensors.ev3.EV3UltrasonicSensor" alt="" coords="151,430,395,602"/>
+<area shape="rect" id="node2" href="./EV3UltrasonicSensor.html" title="&lt;TABLE&gt;" alt="" coords="141,425,406,607"/>
+<area shape="rect" id="node3_2" href="../../../../lejos/robotics/SampleProvider.html" title="lejos.robotics.SampleProvider" alt="" coords="153,662,393,773"/>
+<area shape="rect" id="node3" href="../../../../lejos/robotics/SampleProvider.html" title="&lt;TABLE&gt;" alt="" coords="143,657,404,778"/>
+</map>

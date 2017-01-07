@@ -38,18 +38,18 @@
         <div class="slides">
             <section data-background="./Media/Images/Base1_5.png">
                 <h1>EV3Dev-lang-Java</h1>
-                <h3>A Java library designed to interact with the hardware managed by EV3Dev using the LeJOS way.</h3>
+                <h3>A Java library to interact with EV3Dev hardware.</h3>
                 <p>
 <a href="https://github.com/jabrena/ev3dev-lang-java" target="_blank">Github project</a>&nbsp;|&nbsp;
 <a href="https://github.com/jabrena/ev3dev-lang-java/issues" target="_blank">Create a issue</a>&nbsp;|&nbsp;
-<a href="./docs/api/" target="_blank">Javadoc</a>
+<a href="./docs/api/v0.3.0/index.html" target="_blank">Javadoc</a>
                 </p>
             </section>
             <section>
                 <section data-background="./Media/Images/Base1_5.png">
                     <h2>Why use this library?</h2>
                     <p>
-<a href="https://github.com/jabrena/ev3dev-lang-java" target="_blank">EV3-lang-java</a> is a library to manage Lego Mindstorms hardware using <a href="http://www.lejos.org/" target="_blank">LeJOS</a> concepts over <a href="http://www.ev3dev.org/" target="_blank">EV3Dev</a>, a <a href="https://www.debian.org/index.en.html" target="_blank">Debian</a> Linux-based operating.
+<a href="https://github.com/jabrena/ev3dev-lang-java" target="_blank">EV3-lang-java</a> is a Java library to manage Lego Mindstorms hardware using <a href="http://www.lejos.org/" target="_blank">LeJOS</a> concepts over <a href="http://www.ev3dev.org/" target="_blank">EV3Dev</a>, a <a href="https://www.debian.org/index.en.html" target="_blank">Debian</a> Linux-based operating.
                     </p>
                 </section>
                 <section data-background="./Media/Images/Base1_5.png">
@@ -59,6 +59,7 @@
                         <li>Java library running on EV3Dev</li>
                         <li>Support for Raspberry Pi</li>
                         <li>Modular design</li>
+                        <li>Logging support</li>
                     </ul>
                 </section>
                 <section data-background="./Media/Images/Base1_5.png">
@@ -73,7 +74,7 @@ For other areas, you will use other libraries. Following a modular architecture 
             </section>
 
             <section data-background="./Media/Images/Base1_5.png">
-                <h2>Features (v0.2.0)</h1>
+                <h2>Features <a href="./docs/api/v0.3.0/index.html" target="_blank">(v0.3.0)</a></h1>
                 <ul>
                     <li>Regulated Motor Support</li>
                     <li>Unregulated Motor Support</li>
@@ -82,6 +83,7 @@ For other areas, you will use other libraries. Following a modular architecture 
                     <li>Sounds</li>
                     <li>LeJOS Sensor filter Support</li>
                     <li>eSpeak TTS (Text to speech) Support</li>
+                    <li>Log support</li>
                 </ul>
             </section>
             <section>
@@ -128,198 +130,10 @@ For other areas, you will use other libraries. Following a modular architecture 
                     <p class="black">
 Learn to use this library step by step.
                     </p>
-                </section>
-                <section data-background="./Media/Images/Base1_5.png">
-                    <h2>1. Install EV3Dev (1h.)</h2>
                     <p>
-<a href="http://www.ev3dev.org/docs/getting-started/" target="_blank">Install the operating system</a> to use this library.
-                    </p>
-                    <p>
-                        <img src="./Media/Images/microsd.png" width="23%"/>
-                        <img src="./Media/Images/ev3brick.png" width="34%"/>
-                        <img src="./Media/Images/ev3dev1.png" width="30%"/>
-                    </p>
-                    <p>
-Later, make a SSH connection to upgrade your brick:
-                    </p>
-                    <pre><code data-trim contenteditable>
-apt-get update
-apt-get upgrade
-apt-get dist-upgrade   
-                    </code></pre>  
-                </section>
-                <section data-background="./Media/Images/Base1_5.png">
-                    <h2>2. Install Java JDK (1h.)</h2>
-                    <p>
-Install with the <a href="https://wiki.debian.org/Apt" target="_blank">package manager Apt</a> Java JDK, OpenCV for Java and some commons Java build tools.
-                    </p>
-                    <pre><code data-trim contenteditable>
-sudo apt-get install default-jdk
-sudo apt-get install libopencv2.4-java
-sudo apt-get install maven
-sudo apt-get install ant 
-                    </code></pre>  
-                </section>
-                <section data-background="./Media/Images/Base1_5.png">
-                    <h2>3. Create a Hello World Maven project (2m.)</h2>
-                    <p>
-Create a folder with the name: helloworld and create a new Maven project.
-                    </p>
-                    <pre><code data-trim contenteditable>
-mvn archetype:generate 
--DgroupId=ev3dev.java.examples 
--DartifactId=helloworld 
--DarchetypeArtifactId=maven-archetype-quickstart 
--DinteractiveMode=false
-cd helloworld
-mvn eclipse:eclipse
-                    </code></pre>  
-                </section>
-                <section data-background="./Media/Images/Base1_5.png">
-                    <h2>4. Import in Eclipse IDE your Maven Project (5m.)</h2>
-                    <p>
-Import in Eclipse your new Java project.
-                    </p>
-                    <p>
-                        <img src="./Media/Images/eclipse_logo.png" width="23%"/>
-                        <img src="./Media/Images/HelloWorld.png" width="50%"/>
+Visit the project: <a href="https://github.com/ev3dev-lang-java/examples" target="_blank">ev3dev-lang-java/examples</a>
                     </p>
                 </section>
-                <section data-background="./Media/Images/Base1_5.png">
-                    <h2>5. Add the dependency (5m.)</h2>
-                    <p>
-Update your pom.xml file the add the repository:
-                    </p>
-                    <pre><code data-trim contenteditable>
-<repository>
-    <id>jitpack.io</id>
-    <url>https://jitpack.io</url>
-</repository>
-                    </code></pre>
-                    <p>
-and the artifact:
-                    </p>                    
-                    <pre><code data-trim contenteditable>
-<dependency>
-    <groupId>com.github.jabrena</groupId>
-    <artifactId>ev3dev-lang-java</artifactId>
-    <version>v0.2.0</version>
-</dependency>    
-                    </code></pre>
-                </section>
-                <section data-background="./Media/Images/Base1_5.png">
-                    <h2>6. Code an example (5m.)</h2>
-                    <p>
-Create a new Java Class with the name "Test" and copy and paste this example:
-                    </p>  
-                    <pre><code data-trim contenteditable>
-package ev3dev.java.examples;
-
-import ev3dev.hardware.Battery;
-import ev3dev.hardware.port.MotorPort;
-import ev3dev.hardware.port.SensorPort;
-import ev3dev.hardware.motor.EV3LargeRegulatedMotor;
-import ev3dev.hardware.sensor.ev3.EV3IRSensor;
-import lejos.robotics.SampleProvider;
-import lejos.utility.Delay;
-
-public class BumperCar {
-    
-    //Robot Definition
-    private final static EV3LargeRegulatedMotor mA = new EV3LargeRegulatedMotor(MotorPort.A);
-    private final static EV3LargeRegulatedMotor mB = new EV3LargeRegulatedMotor(MotorPort.B);
-    private final static EV3IRSensor ir1 = new EV3IRSensor(SensorPort.S2);
-
-    //Configuration
-    private final static int motorSpeed = 500;
-    
-    public static void main(String[] args) {
-        
-        final SampleProvider sp = ir1.getDistanceMode();
-        int distance = 255;
-
-        final int distance_threshold = 35;
-        
-        //Robot control loop
-        final int iteration_threshold = 100;
-        for(int i = 0; i <= iteration_threshold; i++) {
-            forward();
-
-            float [] sample = new float[sp.sampleSize()];
-            sp.fetchSample(sample, 0);
-            distance = (int)sample[0];
-            if(distance <= distance_threshold){
-                backwardWithTurn();
-            }
-
-            System.out.println("Iteration: " + i);
-            System.out.println("Battery: " + Battery.getVoltage());
-            System.out.println("Distance: " + distance);
-            System.out.println();
-        }
-
-        mA.stop();
-        mB.stop();
-        System.exit(0);
-    }
-    
-    private static void forward(){
-        mA.setSpeed(motorSpeed);
-        mB.setSpeed(motorSpeed);
-        mA.forward();
-        mB.forward();
-    }
-    
-    private static void backwardWithTurn(){
-        mA.backward();
-        mB.backward();
-        Delay.msDelay(1000);
-        mA.stop();
-        mB.stop();
-        mA.backward();
-        mB.forward();
-        Delay.msDelay(1000);
-        mA.stop();
-        mB.stop();
-    }
-}
-                    </code></pre>
-                </section>
-                <section data-background="./Media/Images/Base1_5.png">
-                    <h2>7. Build & deploy (15m.)</h2>
-                    <p>
-Create the artifact (*.jar):
-                    </p>
-                    <pre><code data-trim contenteditable>
-mvn package
-                    </code></pre>
-                    <p>
-and deploy your .jar in your brick
-                    </p>
-                    <pre><code data-trim contenteditable>
-scp ev3-lang-java-0.2-SNAPSHOT.jar your_username@remotehost:/home
-scp helloworld-1.0-SNAPSHOT.jar your_username@remotehost:/home
-                    </code></pre>
-                </section>                              
-                <section data-background="./Media/Images/Base1_5.png">
-                    <h2>8. Run your example (2m.)</h2>
-                    <p>
-Connect with your brick:
-                    </p>
-                    <pre><code data-trim contenteditable>
-ssh your_username@remotehost
-your_password
-cd /home
-                    </code></pre>
-                    <p>
-and finally, run your example:
-                    </p>
-                    <pre><code data-trim contenteditable>
-java -cp 
-    helloworld-1.0-SNAPSHOT.jar:ev3-lang-java-0.2-SNAPSHOT.jar 
-    ev3dev.java.examples.Test
-                    </code></pre>
-                </section> 
             </section>
             <section data-background="./Media/Images/Base1_5.png">
                 <h2>Contribute</h2>
@@ -338,8 +152,6 @@ You are welcome to participate in this Open Source project. Fork this repo to en
                     <li><a href="http://www.ev3dev.org/" target="_blank">EV3Dev</a></li>
                     <li><a href="http://www.lejos.org/" target="_blank">LeJOS</a></li>
                     <li><a href="http://opencv.org/" target="_blank">OpenCV</a></li>
-                    <li><a href="https://eclipse.org/" target="_blank">Eclipse</a></li>
-                    <li><a href="https://maven.apache.org/" target="_blank">Maven</a></li>
                 </ul>
             </section>
             <section>
