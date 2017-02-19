@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./BaseRegulatedMotor.html" title="ev3dev.actuators.motors.BaseRegulatedMotor" alt="" coords="62,505,882,882"/>
+<area shape="rect" id="node1" href="./BaseRegulatedMotor.html" title="&lt;TABLE&gt;" alt="" coords="51,499,893,887"/>
+<area shape="rect" id="node2_1" href="./EV3LargeRegulatedMotor.html" title="ev3dev.actuators.motors.EV3LargeRegulatedMotor" alt="" coords="16,942,285,1114"/>
+<area shape="rect" id="node2" href="./EV3LargeRegulatedMotor.html" title="&lt;TABLE&gt;" alt="" coords="5,937,296,1119"/>
+<area shape="rect" id="node3_2" href="./EV3MediumRegulatedMotor.html" title="ev3dev.actuators.motors.EV3MediumRegulatedMotor" alt="" coords="331,942,613,1114"/>
+<area shape="rect" id="node3" href="./EV3MediumRegulatedMotor.html" title="&lt;TABLE&gt;" alt="" coords="321,937,623,1119"/>
+<area shape="rect" id="node4_3" href="./NXTRegulatedMotor.html" title="ev3dev.actuators.motors.NXTRegulatedMotor" alt="" coords="659,942,899,1114"/>
+<area shape="rect" id="node4" href="./NXTRegulatedMotor.html" title="&lt;TABLE&gt;" alt="" coords="648,937,909,1119"/>
+<area shape="rect" id="node5_4" href="../../hardware/EV3DevMotorDevice.html" title="ev3dev.hardware.EV3DevMotorDevice" alt="" coords="348,11,596,445"/>
+<area shape="rect" id="node5" href="../../hardware/EV3DevMotorDevice.html" title="&lt;TABLE&gt;" alt="" coords="337,6,607,450"/>
+</map>

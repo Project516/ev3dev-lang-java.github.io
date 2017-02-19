@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./EV3DevDevice.html" title="ev3dev.hardware.EV3DevDevice" alt="" coords="145,357,434,573"/>
+<area shape="rect" id="node1" href="./EV3DevDevice.html" title="&lt;TABLE&gt;" alt="" coords="134,352,445,579"/>
+<area shape="rect" id="node2_1" href="./EV3DevMotorDevice.html" title="ev3dev.hardware.EV3DevMotorDevice" alt="" coords="16,632,213,1053"/>
+<area shape="rect" id="node2" href="./EV3DevMotorDevice.html" title="&lt;TABLE&gt;" alt="" coords="5,627,224,1059"/>
+<area shape="rect" id="node4_2" href="./EV3DevSensorDevice.html" title="ev3dev.hardware.EV3DevSensorDevice" alt="" coords="259,779,669,907"/>
+<area shape="rect" id="node4" href="./EV3DevSensorDevice.html" title="&lt;TABLE&gt;" alt="" coords="249,773,679,912"/>
+<area shape="rect" id="node3_3" href="./EV3DevPlatform.html" title="ev3dev.hardware.EV3DevPlatform" alt="" coords="181,185,397,298"/>
+<area shape="rect" id="node3" href="./EV3DevPlatform.html" title="&lt;TABLE&gt;" alt="" coords="171,179,408,303"/>
+<area shape="rect" id="node5_4" href="./SupportedPlatform.html" title="ev3dev.hardware.SupportedPlatform" alt="" coords="220,11,359,125"/>
+<area shape="rect" id="node5" href="./SupportedPlatform.html" title="&lt;TABLE&gt;" alt="" coords="209,6,369,130"/>
+</map>
