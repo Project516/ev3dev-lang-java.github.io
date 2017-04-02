@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./BaseSensor.html" title="ev3dev.sensors.BaseSensor" alt="" coords="15,11,377,373"/>
+<area shape="rect" id="node1" href="./BaseSensor.html" title="&lt;TABLE&gt;" alt="" coords="5,5,387,379"/>
+<area shape="rect" id="node4_1" href="./SensorMode.html" title="ev3dev.sensors.SensorMode" alt="" coords="77,506,203,590"/>
+<area shape="rect" id="node4" href="./SensorMode.html" title="&lt;TABLE&gt;" alt="" coords="66,501,214,595"/>
+<area shape="rect" id="node2_2" href="./Battery.html" title="ev3dev.sensors.Battery" alt="" coords="402,433,606,663"/>
+<area shape="rect" id="node2" href="./Battery.html" title="&lt;TABLE&gt;" alt="" coords="391,427,617,669"/>
+<area shape="rect" id="node3_3" href="./Power.html" title="ev3dev.sensors.Power" alt="" coords="422,143,586,241"/>
+<area shape="rect" id="node3" href="./Power.html" title="&lt;TABLE&gt;" alt="" coords="411,137,597,247"/>
+<area shape="rect" id="node5_4" href="./SensorModes.html" title="ev3dev.sensors.SensorModes" alt="" coords="64,723,328,895"/>
+<area shape="rect" id="node5" href="./SensorModes.html" title="&lt;TABLE&gt;" alt="" coords="53,718,339,901"/>
+</map>

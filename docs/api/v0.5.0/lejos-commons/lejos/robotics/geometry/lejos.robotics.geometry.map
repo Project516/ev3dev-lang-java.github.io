@@ -1,0 +1,32 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./Line.html" title="lejos.robotics.geometry.Line" alt="" coords="43,1542,317,1714"/>
+<area shape="rect" id="node1" href="./Line.html" title="&lt;TABLE&gt;" alt="" coords="32,1537,328,1719"/>
+<area shape="rect" id="node2_1" href="./Line2D.html" title="lejos.robotics.geometry.Line2D" alt="" coords="154,315,830,810"/>
+<area shape="rect" id="node2" href="./Line2D.html" title="&lt;TABLE&gt;" alt="" coords="143,310,841,815"/>
+<area shape="rect" id="node3_2" href="./Line2D.Float.html" title="lejos.robotics.geometry.Line2D.Float" alt="" coords="15,958,345,1218"/>
+<area shape="rect" id="node3" href="./Line2D.Float.html" title="&lt;TABLE&gt;" alt="" coords="5,953,355,1223"/>
+<area shape="rect" id="node4_3" href="./Line2D.Double.html" title="lejos.robotics.geometry.Line2D.Double" alt="" coords="390,965,719,1211"/>
+<area shape="rect" id="node4" href="./Line2D.Double.html" title="&lt;TABLE&gt;" alt="" coords="379,960,730,1216"/>
+<area shape="rect" id="node5_4" href="./Point.html" title="lejos.robotics.geometry.Point" alt="" coords="1289,870,1546,1306"/>
+<area shape="rect" id="node5" href="./Point.html" title="&lt;TABLE&gt;" alt="" coords="1278,865,1557,1311"/>
+<area shape="rect" id="node6_5" href="./Point2D.html" title="lejos.robotics.geometry.Point2D" alt="" coords="1346,11,1742,256"/>
+<area shape="rect" id="node6" href="./Point2D.html" title="&lt;TABLE&gt;" alt="" coords="1335,5,1753,261"/>
+<area shape="rect" id="node7_6" href="./Point2D.Float.html" title="lejos.robotics.geometry.Point2D.Float" alt="" coords="1313,477,1521,649"/>
+<area shape="rect" id="node7" href="./Point2D.Float.html" title="&lt;TABLE&gt;" alt="" coords="1303,471,1532,654"/>
+<area shape="rect" id="node8_7" href="./Point2D.Double.html" title="lejos.robotics.geometry.Point2D.Double" alt="" coords="1567,484,1775,641"/>
+<area shape="rect" id="node8" href="./Point2D.Double.html" title="&lt;TABLE&gt;" alt="" coords="1556,479,1785,647"/>
+<area shape="rect" id="node9_8" href="./Rectangle.html" title="lejos.robotics.geometry.Rectangle" alt="" coords="526,1949,794,2019"/>
+<area shape="rect" id="node9" href="./Rectangle.html" title="&lt;TABLE&gt;" alt="" coords="515,1944,805,2024"/>
+<area shape="rect" id="node10_9" href="./Rectangle2D.html" title="lejos.robotics.geometry.Rectangle2D" alt="" coords="826,958,1243,1218"/>
+<area shape="rect" id="node10" href="./Rectangle2D.html" title="&lt;TABLE&gt;" alt="" coords="815,953,1254,1223"/>
+<area shape="rect" id="node11_10" href="./Rectangle2D.Float.html" title="lejos.robotics.geometry.Rectangle2D.Float" alt="" coords="506,1491,814,1765"/>
+<area shape="rect" id="node11" href="./Rectangle2D.Float.html" title="&lt;TABLE&gt;" alt="" coords="495,1485,825,1771"/>
+<area shape="rect" id="node12_11" href="./Rectangle2D.Double.html" title="lejos.robotics.geometry.Rectangle2D.Double" alt="" coords="859,1491,1210,1765"/>
+<area shape="rect" id="node12" href="./Rectangle2D.Double.html" title="&lt;TABLE&gt;" alt="" coords="849,1485,1221,1771"/>
+<area shape="rect" id="node13_12" href="./RectangleInt32.html" title="lejos.robotics.geometry.RectangleInt32" alt="" coords="1255,1366,1609,1890"/>
+<area shape="rect" id="node13" href="./RectangleInt32.html" title="&lt;TABLE&gt;" alt="" coords="1245,1361,1619,1895"/>
+<area shape="rect" id="node14_13" href="./RectangularShape.html" title="lejos.robotics.geometry.RectangularShape" alt="" coords="875,389,1194,737"/>
+<area shape="rect" id="node14" href="./RectangularShape.html" title="&lt;TABLE&gt;" alt="" coords="865,383,1205,742"/>
+<area shape="rect" id="node15_14" href="./Shape.html" title="lejos.robotics.geometry.Shape" alt="" coords="554,40,926,227"/>
+<area shape="rect" id="node15" href="./Shape.html" title="&lt;TABLE&gt;" alt="" coords="543,35,937,232"/>
+</map>

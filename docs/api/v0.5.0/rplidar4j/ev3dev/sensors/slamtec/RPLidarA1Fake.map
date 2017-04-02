@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./RPLidarA1Fake.html" title="ev3dev.sensors.slamtec.RPLidarA1Fake" alt="" coords="57,185,266,298"/>
+<area shape="rect" id="node1" href="./RPLidarA1Fake.html" title="&lt;TABLE&gt;" alt="" coords="46,179,277,303"/>
+<area shape="rect" id="node3_1" href="./model/Scan.html" title="ev3dev.sensors.slamtec.model.Scan" alt="" coords="16,358,459,439"/>
+<area shape="rect" id="node3" href="./model/Scan.html" title="&lt;TABLE&gt;" alt="" coords="5,353,469,445"/>
+<area shape="rect" id="node2_2" href="./RPLidarProvider.html" title="ev3dev.sensors.slamtec.RPLidarProvider" alt="" coords="163,11,312,125"/>
+<area shape="rect" id="node2" href="./RPLidarProvider.html" title="&lt;TABLE&gt;" alt="" coords="152,6,323,130"/>
+</map>
