@@ -105,7 +105,7 @@ Everyone is welcome to add new fresh ideas to Java for <a href="https://en.wikip
                     <ul>
                         <li>Java 9 JDK support (Brickpi+/PiStorms Raspberry Pi 3)</li>
                         <li>Java 8 JRE (EV3 Brick)</li>
-                        <li>OpenCV 2.44</li>
+                        <li>OpenCV 2.4.x</li>
                         <li>ROS Kinect enabled</li>
                         <li>Serial RXTX</li>
                     </ul>
@@ -130,7 +130,9 @@ Everyone is welcome to add new fresh ideas to Java for <a href="https://en.wikip
                         <li>Logging support</li>
                         <li>ELK Stack compatible</li>
                     </ul>
-                </section>                                 
+                </section> 
+            </section>
+            <section>                                              
                 <section data-markdown data-background="./Media/Images/Base1_5.png">
                     <script type="text/template">
                         ## Compatibility table
@@ -189,13 +191,21 @@ robot@ev3dev:~$ uname -r
             </section>    
             <section>
                 <section data-background="./Media/Images/Base1_5.png">
-                    <h2>Release <a href="https://github.com/ev3dev-lang-java/ev3dev-lang-java/milestone/5" target="_blank">(v0.5.0)</a> [Current]</h2>
+                    <h2>Release <a href="https://github.com/ev3dev-lang-java/ev3dev-lang-java/milestone/6" target="_blank">(v0.6.0) [CURRENT]</a></h2>
                     <ul>
-                        <li>Support for BrickPi 3</li>
-                        <li>Micro Infinity Cruizcore XG1300L</li>
+                        <li>Install Java 9 for EV3 Brick</li>
+                        <li>Add an initial ROSJava support</li>
+                        <li>Add initial differential pilot support</li>
+                    </ul>
+                </section>
+                <section data-background="./Media/Images/Base1_5.png">
+                    <h2>Release <a href="https://github.com/ev3dev-lang-java/ev3dev-lang-java/milestone/5" target="_blank">(v0.5.0)</a></h2>
+                    <ul>
                         <li>Support for LIDAR RPLidar A1</li>
-                        <li>LeJOS local navigation support</li>
-                        <li>Mono Visual Odometry support</li>
+                        <li>Install Java 9 JDK for Brickpi+/PiStorms + Raspberry Pi 3 in a easy way</li>
+                        <li>Enabling sound support for Brickpi+/PiStorms + Raspberry Pi 3</li>
+                        <li>[POC] Install ROS Kinetic on Brickpi+/PiStorms + Raspberry Pi 3</li>
+                        <li>[POC] ROSJava node creation</li>
                     </ul>
                 </section>
                 <section data-background="./Media/Images/Base1_5.png">
@@ -289,7 +299,7 @@ robot@ev3dev:~$ uname -r
                 <section data-background="./Media/Images/Base1_5.png">
                     <h2>Hardware supported</h2>
                     <ul>
-                        <li><a href="https://www.raspberrypi.org/">Raspberry Pi</a></li>
+                        <li><a href="https://www.raspberrypi.org/" target="_blank">Raspberry Pi</a></li>
                     </ul>
                     <p>
                     <ul>
@@ -304,6 +314,24 @@ robot@ev3dev:~$ uname -r
 Although, the EV3Dev support every Raspberry Pi board, the project recommends to use Raspberry Pi 3.
                     </p>
                 </section>
+                <section data-background="./Media/Images/Base1_5.png">
+                    <h2>Hardware supported</h2>
+                    <ul>
+                        <li><a href="https://www.slamtec.com/en/Lidar" target="_blank">RPLidar A1</a></li>
+                    </ul>
+                    <p>
+                    <ul>
+                        <li>RPLidar A1</li>
+                        <li>RPLidar A2 (Coming soon)</li>
+                    </ul>
+                    </p>
+                    <p>
+                        <img src="./Media/Images/rplidar_a1.jpg" width="30%"/>
+                    </p>
+                    <p>
+                        <img src="./Media/Images/rplidar_a2.png" width="30%"/>
+                    </p>                    
+                </section>                
             </section>
             <section>
                 <section data-background="./Media/Images/Base1_5.png">
