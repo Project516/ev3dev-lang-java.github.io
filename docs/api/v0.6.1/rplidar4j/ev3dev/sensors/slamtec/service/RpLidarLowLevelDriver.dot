@@ -180,11 +180,11 @@ digraph G {
 	c310:p -> c312:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
 	// ev3dev.sensors.slamtec.service.RpLidarLowLevelDriver NAVASSOC ev3dev.sensors.slamtec.service.RpLidarListener
 	c310:p -> c309:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open];
-	// ev3dev.sensors.slamtec.RPLidarA1Driver DEPEND ev3dev.sensors.slamtec.service.RpLidarMeasurement
-	c297:p -> c312:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// ev3dev.sensors.slamtec.RPLidarA1Driver DEPEND ev3dev.sensors.slamtec.service.RpLidarDeviceInfo
 	c297:p -> c307:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 	// ev3dev.sensors.slamtec.RPLidarA1Driver DEPEND ev3dev.sensors.slamtec.service.RpLidarHeath
 	c297:p -> c308:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
+	// ev3dev.sensors.slamtec.RPLidarA1Driver DEPEND ev3dev.sensors.slamtec.service.RpLidarMeasurement
+	c297:p -> c312:p [taillabel="", label="", headlabel="", fontname="Helvetica", fontcolor="black", fontsize=10.0, color="black", arrowhead=open, style=dashed];
 }
 
