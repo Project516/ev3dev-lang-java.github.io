@@ -1,0 +1,16 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./Audio.html" title="lejos.hardware.Audio" alt="" coords="15,477,398,693"/>
+<area shape="rect" id="node1" href="./Audio.html" title="&lt;TABLE&gt;" alt="" coords="5,472,409,699"/>
+<area shape="rect" id="node2_1" href="./Key.html" title="lejos.hardware.Key" alt="" coords="322,63,563,367"/>
+<area shape="rect" id="node2" href="./Key.html" title="&lt;TABLE&gt;" alt="" coords="311,57,574,372"/>
+<area shape="rect" id="node3_2" href="./KeyListener.html" title="lejos.hardware.KeyListener" alt="" coords="609,165,751,264"/>
+<area shape="rect" id="node3" href="./KeyListener.html" title="&lt;TABLE&gt;" alt="" coords="598,160,762,269"/>
+<area shape="rect" id="node4_3" href="./Keys.html" title="lejos.hardware.Keys" alt="" coords="797,11,1013,418"/>
+<area shape="rect" id="node4" href="./Keys.html" title="&lt;TABLE&gt;" alt="" coords="787,6,1024,423"/>
+<area shape="rect" id="node5_4" href="./LED.html" title="lejos.hardware.LED" alt="" coords="1059,173,1210,257"/>
+<area shape="rect" id="node5" href="./LED.html" title="&lt;TABLE&gt;" alt="" coords="1049,167,1221,262"/>
+<area shape="rect" id="node6_5" href="./Power.html" title="lejos.hardware.Power" alt="" coords="1255,151,1419,279"/>
+<area shape="rect" id="node6" href="./Power.html" title="&lt;TABLE&gt;" alt="" coords="1245,145,1430,284"/>
+<area shape="rect" id="node7_6" href="./Sounds.html" title="lejos.hardware.Sounds" alt="" coords="137,114,276,315"/>
+<area shape="rect" id="node7" href="./Sounds.html" title="&lt;TABLE&gt;" alt="" coords="127,109,287,321"/>
+</map>
