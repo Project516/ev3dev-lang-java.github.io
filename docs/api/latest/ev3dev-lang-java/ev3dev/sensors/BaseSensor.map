@@ -1,0 +1,20 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="../hardware/EV3DevSensorDevice.html" title="ev3dev.hardware.EV3DevSensorDevice" alt="" coords="627,11,1191,165"/>
+<area shape="rect" id="node1" href="../hardware/EV3DevSensorDevice.html" title="&lt;TABLE&gt;" alt="" coords="616,5,1201,171"/>
+<area shape="rect" id="node2_1" href="./BaseSensor.html" title="ev3dev.sensors.BaseSensor" alt="" coords="728,224,1089,587"/>
+<area shape="rect" id="node2" href="./BaseSensor.html" title="&lt;TABLE&gt;" alt="" coords="717,219,1100,592"/>
+<area shape="rect" id="node3_2" href="./SensorMode.html" title="ev3dev.sensors.SensorMode" alt="" coords="845,1081,972,1165"/>
+<area shape="rect" id="node3" href="./SensorMode.html" title="&lt;TABLE&gt;" alt="" coords="835,1075,983,1170"/>
+<area shape="rect" id="node5_3" href="./ev3/EV3ColorSensor.html" title="ev3dev.sensors.ev3.EV3ColorSensor" alt="" coords="111,646,403,1021"/>
+<area shape="rect" id="node5" href="./ev3/EV3ColorSensor.html" title="&lt;TABLE&gt;" alt="" coords="100,641,413,1026"/>
+<area shape="rect" id="node6_4" href="./ev3/EV3GyroSensor.html" title="ev3dev.sensors.ev3.EV3GyroSensor" alt="" coords="448,756,716,911"/>
+<area shape="rect" id="node6" href="./ev3/EV3GyroSensor.html" title="&lt;TABLE&gt;" alt="" coords="437,751,727,916"/>
+<area shape="rect" id="node7_5" href="./ev3/EV3IRSensor.html" title="ev3dev.sensors.ev3.EV3IRSensor" alt="" coords="761,763,1056,903"/>
+<area shape="rect" id="node7" href="./ev3/EV3IRSensor.html" title="&lt;TABLE&gt;" alt="" coords="751,758,1067,909"/>
+<area shape="rect" id="node8_6" href="./ev3/EV3TouchSensor.html" title="ev3dev.sensors.ev3.EV3TouchSensor" alt="" coords="1102,771,1382,896"/>
+<area shape="rect" id="node8" href="./ev3/EV3TouchSensor.html" title="&lt;TABLE&gt;" alt="" coords="1091,765,1393,901"/>
+<area shape="rect" id="node9_7" href="./ev3/EV3UltrasonicSensor.html" title="ev3dev.sensors.ev3.EV3UltrasonicSensor" alt="" coords="1427,741,1723,925"/>
+<area shape="rect" id="node9" href="./ev3/EV3UltrasonicSensor.html" title="&lt;TABLE&gt;" alt="" coords="1417,736,1734,931"/>
+<area shape="rect" id="node4_8" href="./SensorModes.html" title="ev3dev.sensors.SensorModes" alt="" coords="1207,1225,1471,1397"/>
+<area shape="rect" id="node4" href="./SensorModes.html" title="&lt;TABLE&gt;" alt="" coords="1197,1219,1482,1402"/>
+</map>
