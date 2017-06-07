@@ -42,13 +42,13 @@
                 <h1>EV3Dev-lang-Java</h1>
                 <h3>A <a href="http://openjdk.java.net/" target="_blank">Java</a> project to build Software for Robots using <a href="http://www.ev3dev.org/" target="_blank">EV3Dev</a> hardware &amp; the <a href="http://www.lejos.org/" target="_blank">LeJOS</a> way.</h3>
                 <p>
-<a href="https://github.com/ev3dev-lang-java/ev3dev-lang-java/milestone/6" target="_blank">Iteration</a>&nbsp;|&nbsp;
+<a href="https://github.com/ev3dev-lang-java/ev3dev-lang-java/milestone/7" target="_blank">Iteration</a>&nbsp;|&nbsp;
 <a href="https://github.com/jabrena/ev3dev-lang-java/issues" target="_blank">Backlog</a>&nbsp;|&nbsp;
-<a href="./docs/api/v0.5.0/index.html" target="_blank">Javadoc</a>&nbsp;|&nbsp;
+<a href="./docs/api/latest/index.html" target="_blank">Javadoc</a>&nbsp;|&nbsp;
 <a href="https://github.com/ev3dev-lang-java/examples" target="_blank">Examples</a>&nbsp;|&nbsp;
-<a href="https://www.youtube.com/watch?v=SIwG848ODI8" target="_blank">Demo</a>
+<a href="https://www.youtube.com/watch?v=Gxew3aNH6ks" target="_blank">Demo</a>
                 </p>
-                <p>Maven artifact: <a href="https://jitpack.io/#ev3dev-lang-java/ev3dev-lang-java/v0.5.0" target="_blank">v0.5.0</a></p>
+                <p>Maven artifact: <a href="https://jitpack.io/#ev3dev-lang-java/ev3dev-lang-java/v0.6.1" target="_blank">v0.6.1</a></p>
                 <p>
                     <a class="github-button" href="https://github.com/ev3dev-lang-java/ev3dev-lang-java/subscription" data-icon="octicon-eye" data-style="mega" data-count-href="/ev3dev-lang-java/ev3dev-lang-java/watchers" data-count-api="/repos/ev3dev-lang-java/ev3dev-lang-java#subscribers_count" data-count-aria-label="# watchers on GitHub" aria-label="Watch ev3dev-lang-java/ev3dev-lang-java on GitHub">Watch</a>
                     &nbsp;&nbsp;
@@ -65,28 +65,19 @@
 <a href="https://github.com/jabrena/ev3dev-lang-java" target="_blank">EV3-lang-java</a> is a Java project to build software for robots inheriting concepts from <a href="http://www.lejos.org/" target="_blank">LeJOS</a>. 
                     </p>
                     <p>
-The library interac with <a href="http://www.ev3dev.org/" target="_blank">EV3Dev</a>, a <a href="https://www.debian.org/index.en.html" target="_blank">Debian</a> Linux-based operating which expose a interface to interact with Sensors &amp; Actuators in a easy way.
+The library interact with <a href="http://www.ev3dev.org/" target="_blank">EV3Dev</a>, a <a href="https://www.debian.org/index.en.html" target="_blank">Debian</a> Linux-based operating system which expose a interface to interact with Sensors &amp; Actuators in a easy way.
                     </p>
                 </section>
                 <section data-background="./Media/Images/Base1_5.png">
                     <h2>Why use this project?</h2>
-                    <h3>What is the innovation in this library?</h3>
+                    <h3>What is the innovation?</h3>
                     <ul>
                         <li>Java development on a complete Linux distro</li>
                         <li>Possibility to interact with others programming languages</li>
-                        <li>EV3Dev interface</li>
+                        <li>Usage of the same library for EV3 Brick, BrickPi+ &amp; PiStorms</li>
                         <li>Support for Raspberry Pi</li>
                         <li>Modular design</li>
                     </ul>
-                </section>
-                <section data-background="./Media/Images/Base1_5.png">
-                    <h2>Why use this project?</h2>
-                    <p>
-The project is divided in some libraries. At the moment, it was released a Core library to interact with the hardware managed by EV3Dev. 
-                    </p>
-                    <p>
-Everyone is welcome to add new fresh ideas to Java for <a href="https://en.wikipedia.org/wiki/Lego_Mindstorms" target="_blank">Lego Mindstorms</a>.
-                    </p>
                 </section>
             </section>
             <section>
@@ -101,45 +92,48 @@ Everyone is welcome to add new fresh ideas to Java for <a href="https://en.wikip
                 </section>                        
                 <section data-background="./Media/Images/Base1_5.png">
                     <h2>Features</h2>         
-                    <h3>JVM &amp; Native libraries</h3>
+                    <h3>JVM</h3>
                     <ul>
-                        <li>Java 9 JDK support (Brickpi+/PiStorms Raspberry Pi 3)</li>
-                        <li>Java 8 JRE (EV3 Brick)</li>
+                        <li>Automatic installation of Oracle Java JDK 8 for Brickpi+/PiStorms + Raspberry Pi 3</li>
+                        <li>Partial automatic installation of Oracle Java JRE 8 for EV3 Brick</li>
+                        <li>OpenJDK Java 9 EA support for Brickpi+/PiStorms + Raspberry Pi 3</li>
+                        <li>Java profiling tools Support</li>
+                        <li>Logging support</li>
+                    </ul>
+                </section>
+                <section data-background="./Media/Images/Base1_5.png">
+                    <h2>Features</h2>         
+                    <h3>Native libraries</h3>
+                    <ul>
                         <li>OpenCV 2.4.x</li>
                         <li>ROS Kinect enabled</li>
                         <li>Serial RXTX</li>
                     </ul>
-                </section>
+                </section>                
                 <section data-background="./Media/Images/Base1_5.png">
                     <h2>Features</h2>
                     <h3>Robotics</h3>
                     <ul>
-                        <li>Regulated Motor Support</li>
-                        <li>Unregulated Motor Support</li>
-                        <li>Sensor Support</li>
-                        <li>Sounds</li>
-                        <li>LeJOS Sensor filter</li>
-                        <li>LeJOS subsumption</li>
+                        <li>Regulated Lego Motor Support</li>
+                        <li>Unregulated Lego Motor Support</li>
+                        <li>Lego Sensor Support</li>
+                        <li>LeJOS sensor framework support</li>
+                        <li>LeJOS subsumption support</li>
+                        <li>LeJOS navigation stack support</li>
                         <li>eSpeak TTS (Text to speech) Support</li>
                     </ul>
                 </section>
-                <section data-background="./Media/Images/Base1_5.png">
-                    <h2>Features</h2>
-                    <h3>Others</h3>
-                    <ul>
-                        <li>Logging support</li>
-                        <li>ELK Stack compatible</li>
-                    </ul>
-                </section> 
             </section>
             <section>                                              
                 <section data-markdown data-background="./Media/Images/Base1_5.png">
                     <script type="text/template">
                         ## Compatibility table
 
-The following table is based on some certification tests for latest image from EV3Dev using Java 8 & OpenJDK 9.
+The following table is based on some certification tests for latest image from EV3Dev using Oracle JRE 8 &amp; OpenJDK 9.
 
                         ```
+robot@ev3dev:~$ uname -r
+4.4.47-19-ev3dev-ev3                        
 robot@ev3dev:~$ uname -r
 4.4.47-19-ev3dev-rpi2
                         ```
@@ -149,13 +143,13 @@ robot@ev3dev:~$ uname -r
                     <script type="text/template">
                         ## Compatibility table
 
-| Element         | EV3Brick        | PiStorms v2 | PiStorms v1  | BrickPi+       |
-| ------------- | ------------- |------------- |------------- |------------ |
-| Voltage  | Yes | Yes | Yes | Yes |
-| Current  | Yes  | - |-  |-  |
-| Regulated Motors: | Yes  | Yes  | Yes  | Yes  |
-| Unregulated Motors: | Yes  | -  | -  | -  |
-| Rotate methods | Yes  | - |-  |-  |                       
+| Element         | EV3Brick        | PiStorms v2 | BrickPi+       |
+| ------------- | ------------- |------------- |------------ |
+| Voltage:  | Yes | Yes | Yes |
+| Current:  | Yes  | - |-  |
+| Regulated Motors: | Yes  | Yes  | Yes  |
+| Unregulated Motors: | Yes  | -  | -  |
+| Rotate methods: | Yes  | - |-  |                       
                     </script>
                 </section>
                 <section data-markdown data-background="./Media/Images/Base1_5.png">
@@ -164,13 +158,12 @@ robot@ev3dev:~$ uname -r
                     <script type="text/template">
                         ## Compatibility table
 
-| Element         | EV3Brick        | PiStorms v2 | PiStorms v1  | BrickPi+       |
-| ------------- | ------------- |------------- |------------- |------------ |
-| Speak  | Yes  | - |-  |-  |
-| Light Sensor  | Yes | Yes | Yes | Yes |
-| Touch Sensor  | Yes | Yes | Yes | - |
-| Gyro Sensor:  | Yes | Yes | Yes | Yes |
-| Gyro Sensor G&R  | Yes | Doubts | Doubts | - |                        
+| Element         | EV3Brick        | PiStorms v2 | BrickPi+       |
+| ------------- | ------------- |------------- |------------ |
+| Speak  | Yes  | - |-  |
+| Light Sensor  | Yes | Yes  | Yes |
+| Touch Sensor  | Yes | Yes  | - |
+| Gyro Sensor G&R  | Yes | Doubts  | - |                        
                     </script>
                 </section>
                 <section data-markdown data-background="./Media/Images/Base1_5.png">
@@ -179,23 +172,33 @@ robot@ev3dev:~$ uname -r
                     <script type="text/template">
                         ## Compatibility table
 
-| Element         | EV3Brick        | PiStorms v2 | PiStorms v1  | BrickPi+       |
-| ------------- | ------------- |------------- |------------- |------------ |
-| IR Sensor:  | | | | |
-| IR Sensor Distance  | Yes | - | - | Yes |
-| IR Beacon  | Yes | - | - | - |
-| IR Remote  | Yes | - | - | - |
-| US Sensor  | Yes | - | - | Partially |                        
+| Element         | EV3Brick        | PiStorms v2 | BrickPi+       |
+| ------------- | ------------- |-------------  |------------ |
+| IR Sensor Distance  | Yes | Yes  | Yes |
+| IR Beacon  | Yes | - | - |
+| IR Remote  | Yes | - | - |
+| US Sensor Distance  | Yes | - | Partially |                        
                     </script>
                 </section>                                 
             </section>    
             <section>
                 <section data-background="./Media/Images/Base1_5.png">
-                    <h2>Release <a href="https://github.com/ev3dev-lang-java/ev3dev-lang-java/milestone/6" target="_blank">(v0.6.0)</a> [CURRENT]</h2>
+                    <h2>Release <a href="https://github.com/ev3dev-lang-java/ev3dev-lang-java/milestone/7" target="_blank">(v0.7.0)</a> [CURRENT]</h2>
                     <ul>
-                        <li>Install Java 9 for EV3 Brick</li>
-                        <li>Add an initial ROSJava support</li>
-                        <li>Add initial differential pilot support</li>
+                        <li>Adding Unit testing</li>
+                        <li>Add JMX MBEAN about Battery</li>
+                        <li>Develop ROS nodes</li>
+                    </ul>
+                </section>
+                <section data-background="./Media/Images/Base1_5.png">
+                    <h2>Release <a href="https://github.com/ev3dev-lang-java/ev3dev-lang-java/milestone/6" target="_blank">(v0.6.1)</a></h2>
+                    <ul>
+                        <li>Adding support for Profiling Tools</li>
+                        <li>Enabling Stop modes for BrickPi+ &amp; PiStorms</li>
+                        <li>Add Button, LED &amp; LCD Support for EV3</li>
+                        <li>[POC] ROS2Java test on Ubuntu</li>
+                        <li>Development of Battery Monitor</li>
+                        <li>Adding lejos-navigation</li>
                     </ul>
                 </section>
                 <section data-background="./Media/Images/Base1_5.png">
@@ -339,10 +342,19 @@ Although, the EV3Dev support every Raspberry Pi board, the project recommends to
                 <section data-background="./Media/Images/Base1_5.png">
                     <h2 class="black">Bonus Extra</h2>
                     <p class="black">
-Support for ELK Stack. Centralized logs in an easy way for your robots.
+Support for ELK Stack. <br/>Centralized logs in an easy way for your robots.
                     </p>
                     <p>
 <img src="./Media/Images/kibana.png" width="70%"/>
+                    </p>
+                </section>
+                <section data-background="./Media/Images/Base1_5.png">
+                    <h2 class="black">Bonus Extra</h2>
+                    <p class="black">
+Review the JVM data with your favourite Java profiler.
+                    </p>
+                    <p>
+<img src="./Media/Images/profiler.jpg" width="70%"/>
                     </p>
                 </section>
             </section>          
