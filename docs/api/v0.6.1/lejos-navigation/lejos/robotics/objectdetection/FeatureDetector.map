@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./FeatureDetector.html" title="lejos.robotics.objectdetection.FeatureDetector" alt="" coords="349,11,581,168"/>
+<area shape="rect" id="node1" href="./FeatureDetector.html" title="&lt;TABLE&gt;" alt="" coords="339,5,592,173"/>
+<area shape="rect" id="node2_1" href="./FeatureDetectorAdapter.html" title="lejos.robotics.objectdetection.FeatureDetectorAdapter" alt="" coords="15,257,241,458"/>
+<area shape="rect" id="node2" href="./FeatureDetectorAdapter.html" title="&lt;TABLE&gt;" alt="" coords="5,251,251,463"/>
+<area shape="rect" id="node3_2" href="./FusorDetector.html" title="lejos.robotics.objectdetection.FusorDetector" alt="" coords="287,227,644,487"/>
+<area shape="rect" id="node3" href="./FusorDetector.html" title="&lt;TABLE&gt;" alt="" coords="276,222,655,493"/>
+</map>

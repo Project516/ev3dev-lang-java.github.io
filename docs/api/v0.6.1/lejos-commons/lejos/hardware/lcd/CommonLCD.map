@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./CommonLCD.html" title="lejos.hardware.lcd.CommonLCD" alt="" coords="249,11,890,461"/>
+<area shape="rect" id="node1" href="./CommonLCD.html" title="&lt;TABLE&gt;" alt="" coords="238,5,901,467"/>
+<area shape="rect" id="node2_1" href="./GraphicsLCD.html" title="lejos.hardware.lcd.GraphicsLCD" alt="" coords="15,521,617,1250"/>
+<area shape="rect" id="node2" href="./GraphicsLCD.html" title="&lt;TABLE&gt;" alt="" coords="5,515,627,1255"/>
+<area shape="rect" id="node3_2" href="./TextLCD.html" title="lejos.hardware.lcd.TextLCD" alt="" coords="662,770,983,1001"/>
+<area shape="rect" id="node3" href="./TextLCD.html" title="&lt;TABLE&gt;" alt="" coords="651,765,994,1006"/>
+</map>

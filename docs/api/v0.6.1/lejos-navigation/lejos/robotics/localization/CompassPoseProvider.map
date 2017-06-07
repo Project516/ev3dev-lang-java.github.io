@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./CompassPoseProvider.html" title="lejos.robotics.localization.CompassPoseProvider" alt="" coords="16,374,421,458"/>
+<area shape="rect" id="node1" href="./CompassPoseProvider.html" title="&lt;TABLE&gt;" alt="" coords="5,369,432,463"/>
+<area shape="rect" id="node3_1" href="../navigation/Pose.html" title="lejos.robotics.navigation.Pose" alt="" coords="210,517,478,907"/>
+<area shape="rect" id="node3" href="../navigation/Pose.html" title="&lt;TABLE&gt;" alt="" coords="199,512,489,912"/>
+<area shape="rect" id="node2_2" href="./OdometryPoseProvider.html" title="lejos.robotics.localization.OdometryPoseProvider" alt="" coords="201,11,487,315"/>
+<area shape="rect" id="node2" href="./OdometryPoseProvider.html" title="&lt;TABLE&gt;" alt="" coords="190,5,498,320"/>
+</map>

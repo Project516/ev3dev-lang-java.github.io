@@ -1,0 +1,18 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="../actuators/LCD.html" title="ev3dev.actuators.LCD" alt="" coords="16,475,653,1363"/>
+<area shape="rect" id="node1" href="../actuators/LCD.html" title="&lt;TABLE&gt;" alt="" coords="5,469,664,1368"/>
+<area shape="rect" id="node2_1" href="../actuators/Sound.html" title="ev3dev.actuators.Sound" alt="" coords="699,761,1005,1077"/>
+<area shape="rect" id="node2" href="../actuators/Sound.html" title="&lt;TABLE&gt;" alt="" coords="689,755,1015,1082"/>
+<area shape="rect" id="node3_2" href="../actuators/ev3/EV3Led.html" title="ev3dev.actuators.ev3.EV3Led" alt="" coords="1050,849,1201,989"/>
+<area shape="rect" id="node3" href="../actuators/ev3/EV3Led.html" title="&lt;TABLE&gt;" alt="" coords="1039,843,1211,994"/>
+<area shape="rect" id="node4_3" href="./EV3DevDevice.html" title="ev3dev.hardware.EV3DevDevice" alt="" coords="1090,185,1379,415"/>
+<area shape="rect" id="node4" href="./EV3DevDevice.html" title="&lt;TABLE&gt;" alt="" coords="1079,179,1390,421"/>
+<area shape="rect" id="node5_4" href="./EV3DevMotorDevice.html" title="ev3dev.hardware.EV3DevMotorDevice" alt="" coords="1247,701,1444,1137"/>
+<area shape="rect" id="node5" href="./EV3DevMotorDevice.html" title="&lt;TABLE&gt;" alt="" coords="1236,695,1455,1142"/>
+<area shape="rect" id="node7_5" href="./EV3DevSensorDevice.html" title="ev3dev.hardware.EV3DevSensorDevice" alt="" coords="1490,847,1899,990"/>
+<area shape="rect" id="node7" href="./EV3DevSensorDevice.html" title="&lt;TABLE&gt;" alt="" coords="1479,842,1910,995"/>
+<area shape="rect" id="node8_6" href="../sensors/Battery.html" title="ev3dev.sensors.Battery" alt="" coords="1945,775,2199,1062"/>
+<area shape="rect" id="node8" href="../sensors/Battery.html" title="&lt;TABLE&gt;" alt="" coords="1934,770,2210,1067"/>
+<area shape="rect" id="node6_7" href="./EV3DevPlatforms.html" title="ev3dev.hardware.EV3DevPlatforms" alt="" coords="1127,11,1343,125"/>
+<area shape="rect" id="node6" href="./EV3DevPlatforms.html" title="&lt;TABLE&gt;" alt="" coords="1116,6,1353,130"/>
+</map>

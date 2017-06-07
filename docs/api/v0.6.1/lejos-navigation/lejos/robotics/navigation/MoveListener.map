@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="../localization/BeaconPoseProvider.html" title="lejos.robotics.localization.BeaconPoseProvider" alt="" coords="16,1836,979,2137"/>
+<area shape="rect" id="node1" href="../localization/BeaconPoseProvider.html" title="&lt;TABLE&gt;" alt="" coords="5,1831,989,2143"/>
+<area shape="rect" id="node3_1" href="../localization/OdometryPoseProvider.html" title="lejos.robotics.localization.OdometryPoseProvider" alt="" coords="953,2505,1503,2821"/>
+<area shape="rect" id="node3" href="../localization/OdometryPoseProvider.html" title="&lt;TABLE&gt;" alt="" coords="943,2499,1513,2826"/>
+<area shape="rect" id="node2_2" href="../localization/MCLPoseProvider.html" title="lejos.robotics.localization.MCLPoseProvider" alt="" coords="1024,1528,1912,2445"/>
+<area shape="rect" id="node2" href="../localization/MCLPoseProvider.html" title="&lt;TABLE&gt;" alt="" coords="1013,1523,1923,2451"/>
+<area shape="rect" id="node4_3" href="./DifferentialPilot.html" title="lejos.robotics.navigation.DifferentialPilot" alt="" coords="1002,11,1934,1312"/>
+<area shape="rect" id="node4" href="./DifferentialPilot.html" title="&lt;TABLE&gt;" alt="" coords="991,5,1945,1317"/>
+<area shape="rect" id="node5_4" href="./MoveListener.html" title="lejos.robotics.navigation.MoveListener" alt="" coords="1325,1371,1611,1469"/>
+<area shape="rect" id="node5" href="./MoveListener.html" title="&lt;TABLE&gt;" alt="" coords="1314,1365,1622,1475"/>
+</map>

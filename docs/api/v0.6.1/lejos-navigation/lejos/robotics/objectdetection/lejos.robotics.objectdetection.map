@@ -1,0 +1,22 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./Feature.html" title="lejos.robotics.objectdetection.Feature" alt="" coords="153,33,388,146"/>
+<area shape="rect" id="node1" href="./Feature.html" title="&lt;TABLE&gt;" alt="" coords="142,27,398,151"/>
+<area shape="rect" id="node8_1" href="./RangeFeature.html" title="lejos.robotics.objectdetection.RangeFeature" alt="" coords="124,227,417,458"/>
+<area shape="rect" id="node8" href="./RangeFeature.html" title="&lt;TABLE&gt;" alt="" coords="113,222,428,463"/>
+<area shape="rect" id="node2_2" href="./FeatureDetector.html" title="lejos.robotics.objectdetection.FeatureDetector" alt="" coords="1000,11,1232,168"/>
+<area shape="rect" id="node2" href="./FeatureDetector.html" title="&lt;TABLE&gt;" alt="" coords="989,5,1242,173"/>
+<area shape="rect" id="node3_3" href="./FeatureDetectorAdapter.html" title="lejos.robotics.objectdetection.FeatureDetectorAdapter" alt="" coords="463,242,688,443"/>
+<area shape="rect" id="node3" href="./FeatureDetectorAdapter.html" title="&lt;TABLE&gt;" alt="" coords="452,237,699,449"/>
+<area shape="rect" id="node6_4" href="./FusorDetector.html" title="lejos.robotics.objectdetection.FusorDetector" alt="" coords="806,907,1164,1167"/>
+<area shape="rect" id="node6" href="./FusorDetector.html" title="&lt;TABLE&gt;" alt="" coords="796,902,1174,1173"/>
+<area shape="rect" id="node5_5" href="./FeatureListener.html" title="lejos.robotics.objectdetection.FeatureListener" alt="" coords="677,763,1034,847"/>
+<area shape="rect" id="node5" href="./FeatureListener.html" title="&lt;TABLE&gt;" alt="" coords="666,758,1045,853"/>
+<area shape="rect" id="node9_6" href="./RangeFeatureDetector.html" title="lejos.robotics.objectdetection.RangeFeatureDetector" alt="" coords="72,517,565,704"/>
+<area shape="rect" id="node9" href="./RangeFeatureDetector.html" title="&lt;TABLE&gt;" alt="" coords="61,512,576,709"/>
+<area shape="rect" id="node10_7" href="./TouchFeatureDetector.html" title="lejos.robotics.objectdetection.TouchFeatureDetector" alt="" coords="610,525,1056,697"/>
+<area shape="rect" id="node10" href="./TouchFeatureDetector.html" title="&lt;TABLE&gt;" alt="" coords="600,519,1066,702"/>
+<area shape="rect" id="node4_8" href="./FeatureDetectorAdapter.MonitorThread.html" title="lejos.robotics.objectdetection.FeatureDetectorAdapter.MonitorThread" alt="" coords="1278,47,1391,131"/>
+<area shape="rect" id="node4" href="./FeatureDetectorAdapter.MonitorThread.html" title="&lt;TABLE&gt;" alt="" coords="1267,42,1402,137"/>
+<area shape="rect" id="node7_9" href="./FusorDetector.NotifyThread.html" title="lejos.robotics.objectdetection.FusorDetector.NotifyThread" alt="" coords="1436,47,1539,131"/>
+<area shape="rect" id="node7" href="./FusorDetector.NotifyThread.html" title="&lt;TABLE&gt;" alt="" coords="1426,42,1550,137"/>
+</map>

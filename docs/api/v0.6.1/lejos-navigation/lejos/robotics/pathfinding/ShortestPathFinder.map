@@ -1,0 +1,17 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="../mapping/LineMap.html" title="lejos.robotics.mapping.LineMap" alt="" coords="803,726,1098,954"/>
+<area shape="rect" id="node1" href="../mapping/LineMap.html" title="&lt;TABLE&gt;" alt="" coords="793,721,1109,959"/>
+<area shape="rect" id="node2_1" href="../navigation/Pose.html" title="lejos.robotics.navigation.Pose" alt="" coords="1403,1059,1671,1448"/>
+<area shape="rect" id="node2" href="../navigation/Pose.html" title="&lt;TABLE&gt;" alt="" coords="1393,1053,1682,1453"/>
+<area shape="rect" id="node8_2" href="http://java.sun.com/j2se/1.4.2/docs/api//Line.html" title="Line" alt="" coords="930,1241,971,1265"/>
+<area shape="rect" id="node3_3" href="../navigation/Waypoint.html" title="lejos.robotics.navigation.Waypoint" alt="" coords="16,689,349,991"/>
+<area shape="rect" id="node3" href="../navigation/Waypoint.html" title="&lt;TABLE&gt;" alt="" coords="5,684,360,996"/>
+<area shape="rect" id="node4_4" href="../navigation/WaypointListener.html" title="lejos.robotics.navigation.WaypointListener" alt="" coords="395,785,707,895"/>
+<area shape="rect" id="node4" href="../navigation/WaypointListener.html" title="&lt;TABLE&gt;" alt="" coords="384,779,717,901"/>
+<area shape="rect" id="node5_5" href="./PathFinder.html" title="lejos.robotics.pathfinding.PathFinder" alt="" coords="617,11,925,125"/>
+<area shape="rect" id="node5" href="./PathFinder.html" title="&lt;TABLE&gt;" alt="" coords="606,6,935,130"/>
+<area shape="rect" id="node6_6" href="./ShortestPathFinder.html" title="lejos.robotics.pathfinding.ShortestPathFinder" alt="" coords="683,185,1219,621"/>
+<area shape="rect" id="node6" href="./ShortestPathFinder.html" title="&lt;TABLE&gt;" alt="" coords="672,179,1229,626"/>
+<area shape="rect" id="node7_7" href="./ShortestPathFinder.Node.html" title="lejos.robotics.pathfinding.ShortestPathFinder.Node" alt="" coords="1143,681,1489,999"/>
+<area shape="rect" id="node7" href="./ShortestPathFinder.Node.html" title="&lt;TABLE&gt;" alt="" coords="1133,675,1499,1005"/>
+</map>

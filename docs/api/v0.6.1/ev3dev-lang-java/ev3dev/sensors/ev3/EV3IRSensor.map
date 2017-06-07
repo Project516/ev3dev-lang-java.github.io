@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="../BaseSensor.html" title="ev3dev.sensors.BaseSensor" alt="" coords="15,11,531,386"/>
+<area shape="rect" id="node1" href="../BaseSensor.html" title="&lt;TABLE&gt;" alt="" coords="5,6,542,391"/>
+<area shape="rect" id="node2_1" href="../SensorMode.html" title="ev3dev.sensors.SensorMode" alt="" coords="185,632,362,728"/>
+<area shape="rect" id="node2" href="../SensorMode.html" title="&lt;TABLE&gt;" alt="" coords="174,627,373,733"/>
+<area shape="rect" id="node3_2" href="./EV3IRSensor.html" title="ev3dev.sensors.ev3.EV3IRSensor" alt="" coords="245,445,453,573"/>
+<area shape="rect" id="node3" href="./EV3IRSensor.html" title="&lt;TABLE&gt;" alt="" coords="235,440,464,579"/>
+</map>

@@ -1,0 +1,18 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./BeaconPoseProvider.html" title="lejos.robotics.localization.BeaconPoseProvider" alt="" coords="545,182,1105,471"/>
+<area shape="rect" id="node1" href="./BeaconPoseProvider.html" title="&lt;TABLE&gt;" alt="" coords="535,177,1116,477"/>
+<area shape="rect" id="node3_1" href="./OdometryPoseProvider.html" title="lejos.robotics.localization.OdometryPoseProvider" alt="" coords="1070,531,1357,835"/>
+<area shape="rect" id="node3" href="./OdometryPoseProvider.html" title="&lt;TABLE&gt;" alt="" coords="1059,525,1367,840"/>
+<area shape="rect" id="node5_2" href="../navigation/Move.html" title="lejos.robotics.navigation.Move" alt="" coords="193,894,978,1357"/>
+<area shape="rect" id="node5" href="../navigation/Move.html" title="&lt;TABLE&gt;" alt="" coords="182,889,989,1362"/>
+<area shape="rect" id="node7_3" href="../navigation/MoveProvider.html" title="lejos.robotics.navigation.MoveProvider" alt="" coords="1023,1070,1403,1181"/>
+<area shape="rect" id="node7" href="../navigation/MoveProvider.html" title="&lt;TABLE&gt;" alt="" coords="1013,1065,1414,1186"/>
+<area shape="rect" id="node8_4" href="../navigation/Pose.html" title="lejos.robotics.navigation.Pose" alt="" coords="763,1416,1031,1805"/>
+<area shape="rect" id="node8" href="../navigation/Pose.html" title="&lt;TABLE&gt;" alt="" coords="753,1411,1042,1811"/>
+<area shape="rect" id="node2_5" href="./CompassPoseProvider.html" title="lejos.robotics.localization.CompassPoseProvider" alt="" coords="1449,1083,1855,1167"/>
+<area shape="rect" id="node2" href="./CompassPoseProvider.html" title="&lt;TABLE&gt;" alt="" coords="1439,1078,1865,1173"/>
+<area shape="rect" id="node4_6" href="./PoseProvider.html" title="lejos.robotics.localization.PoseProvider" alt="" coords="742,17,893,116"/>
+<area shape="rect" id="node4" href="./PoseProvider.html" title="&lt;TABLE&gt;" alt="" coords="731,12,903,121"/>
+<area shape="rect" id="node6_7" href="../navigation/MoveListener.html" title="lejos.robotics.navigation.MoveListener" alt="" coords="939,11,1488,122"/>
+<area shape="rect" id="node6" href="../navigation/MoveListener.html" title="&lt;TABLE&gt;" alt="" coords="928,6,1499,127"/>
+</map>
