@@ -1,0 +1,14 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./CompassPilot.html" title="lejos.robotics.navigation.CompassPilot" alt="" coords="15,1529,883,1965"/>
+<area shape="rect" id="node1" href="./CompassPilot.html" title="&lt;TABLE&gt;" alt="" coords="5,1523,894,1970"/>
+<area shape="rect" id="node2_1" href="./DifferentialPilot.html" title="lejos.robotics.navigation.DifferentialPilot" alt="" coords="591,168,1523,1469"/>
+<area shape="rect" id="node2" href="./DifferentialPilot.html" title="&lt;TABLE&gt;" alt="" coords="581,163,1534,1475"/>
+<area shape="rect" id="node3_2" href="./DifferentialPilot.Monitor.html" title="lejos.robotics.navigation.DifferentialPilot.Monitor" alt="" coords="929,1705,1037,1789"/>
+<area shape="rect" id="node3" href="./DifferentialPilot.Monitor.html" title="&lt;TABLE&gt;" alt="" coords="918,1699,1047,1794"/>
+<area shape="rect" id="node5_3" href="./Move.MoveType.html" title="lejos.robotics.navigation.Move.MoveType" alt="" coords="1083,1683,1181,1811"/>
+<area shape="rect" id="node5" href="./Move.MoveType.html" title="&lt;TABLE&gt;" alt="" coords="1072,1677,1192,1816"/>
+<area shape="rect" id="node6_4" href="./MoveListener.html" title="lejos.robotics.navigation.MoveListener" alt="" coords="1227,1697,1514,1796"/>
+<area shape="rect" id="node6" href="./MoveListener.html" title="&lt;TABLE&gt;" alt="" coords="1217,1692,1525,1801"/>
+<area shape="rect" id="node4_5" href="./LineFollowingMoveController.html" title="lejos.robotics.navigation.LineFollowingMoveController" alt="" coords="949,11,1165,109"/>
+<area shape="rect" id="node4" href="./LineFollowingMoveController.html" title="&lt;TABLE&gt;" alt="" coords="939,5,1176,115"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="../navigation/Pose.html" title="lejos.robotics.navigation.Pose" alt="" coords="29,475,297,864"/>
+<area shape="rect" id="node1" href="../navigation/Pose.html" title="&lt;TABLE&gt;" alt="" coords="18,469,307,869"/>
+<area shape="rect" id="node2_1" href="./Feature.html" title="lejos.robotics.objectdetection.Feature" alt="" coords="45,11,280,125"/>
+<area shape="rect" id="node2" href="./Feature.html" title="&lt;TABLE&gt;" alt="" coords="35,6,291,130"/>
+<area shape="rect" id="node3_2" href="./RangeFeature.html" title="lejos.robotics.objectdetection.RangeFeature" alt="" coords="16,185,309,415"/>
+<area shape="rect" id="node3" href="./RangeFeature.html" title="&lt;TABLE&gt;" alt="" coords="5,179,320,421"/>
+</map>

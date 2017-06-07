@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./CompassPilot.html" title="lejos.robotics.navigation.CompassPilot" alt="" coords="47,1371,915,1807"/>
+<area shape="rect" id="node1" href="./CompassPilot.html" title="&lt;TABLE&gt;" alt="" coords="37,1366,926,1813"/>
+<area shape="rect" id="node2_1" href="./CompassPilot.Regulator.html" title="lejos.robotics.navigation.CompassPilot.Regulator" alt="" coords="437,1867,525,1951"/>
+<area shape="rect" id="node2" href="./CompassPilot.Regulator.html" title="&lt;TABLE&gt;" alt="" coords="427,1862,536,1957"/>
+<area shape="rect" id="node3_2" href="./DifferentialPilot.html" title="lejos.robotics.navigation.DifferentialPilot" alt="" coords="15,11,947,1312"/>
+<area shape="rect" id="node3" href="./DifferentialPilot.html" title="&lt;TABLE&gt;" alt="" coords="5,5,958,1317"/>
+</map>

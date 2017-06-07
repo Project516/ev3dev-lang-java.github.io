@@ -1,0 +1,17 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="../mapping/LineMap.html" title="lejos.robotics.mapping.LineMap" alt="" coords="500,689,795,917"/>
+<area shape="rect" id="node1" href="../mapping/LineMap.html" title="&lt;TABLE&gt;" alt="" coords="490,683,806,922"/>
+<area shape="rect" id="node2_1" href="../navigation/Pose.html" title="lejos.robotics.navigation.Pose" alt="" coords="312,1013,580,1403"/>
+<area shape="rect" id="node2" href="../navigation/Pose.html" title="&lt;TABLE&gt;" alt="" coords="302,1008,591,1408"/>
+<area shape="rect" id="node8_2" href="http://java.sun.com/j2se/1.4.2/docs/api//Line.html" title="Line" alt="" coords="631,1196,672,1220"/>
+<area shape="rect" id="node3_3" href="../navigation/Waypoint.html" title="lejos.robotics.navigation.Waypoint" alt="" coords="70,652,404,953"/>
+<area shape="rect" id="node3" href="../navigation/Waypoint.html" title="&lt;TABLE&gt;" alt="" coords="60,647,414,959"/>
+<area shape="rect" id="node4_4" href="../navigation/WaypointListener.html" title="lejos.robotics.navigation.WaypointListener" alt="" coords="1281,747,1593,858"/>
+<area shape="rect" id="node4" href="../navigation/WaypointListener.html" title="&lt;TABLE&gt;" alt="" coords="1270,742,1604,863"/>
+<area shape="rect" id="node5_5" href="./DijkstraPathFinder.html" title="lejos.robotics.pathfinding.DijkstraPathFinder" alt="" coords="748,185,1278,591"/>
+<area shape="rect" id="node5" href="./DijkstraPathFinder.html" title="&lt;TABLE&gt;" alt="" coords="738,179,1288,597"/>
+<area shape="rect" id="node6_6" href="./DijkstraPathFinder.Node.html" title="lejos.robotics.pathfinding.DijkstraPathFinder.Node" alt="" coords="841,651,1185,955"/>
+<area shape="rect" id="node6" href="./DijkstraPathFinder.Node.html" title="&lt;TABLE&gt;" alt="" coords="830,645,1196,960"/>
+<area shape="rect" id="node7_7" href="./PathFinder.html" title="lejos.robotics.pathfinding.PathFinder" alt="" coords="586,11,894,125"/>
+<area shape="rect" id="node7" href="./PathFinder.html" title="&lt;TABLE&gt;" alt="" coords="575,6,904,130"/>
+</map>

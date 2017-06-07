@@ -1,0 +1,20 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="../localization/PoseProvider.html" title="lejos.robotics.localization.PoseProvider" alt="" coords="16,914,299,1025"/>
+<area shape="rect" id="node1" href="../localization/PoseProvider.html" title="&lt;TABLE&gt;" alt="" coords="5,909,309,1030"/>
+<area shape="rect" id="node6_1" href="./Pose.html" title="lejos.robotics.navigation.Pose" alt="" coords="582,1174,850,1551"/>
+<area shape="rect" id="node6" href="./Pose.html" title="&lt;TABLE&gt;" alt="" coords="571,1169,861,1557"/>
+<area shape="rect" id="node2_2" href="./MoveController.html" title="lejos.robotics.navigation.MoveController" alt="" coords="344,832,651,1107"/>
+<area shape="rect" id="node2" href="./MoveController.html" title="&lt;TABLE&gt;" alt="" coords="333,827,661,1112"/>
+<area shape="rect" id="node3_3" href="./NavigationListener.html" title="lejos.robotics.navigation.NavigationListener" alt="" coords="696,913,1072,1026"/>
+<area shape="rect" id="node3" href="./NavigationListener.html" title="&lt;TABLE&gt;" alt="" coords="685,907,1083,1031"/>
+<area shape="rect" id="node4_4" href="./Navigator.html" title="lejos.robotics.navigation.Navigator" alt="" coords="992,168,1352,765"/>
+<area shape="rect" id="node4" href="./Navigator.html" title="&lt;TABLE&gt;" alt="" coords="981,163,1363,771"/>
+<area shape="rect" id="node5_5" href="./Navigator.Nav.html" title="lejos.robotics.navigation.Navigator.Nav" alt="" coords="1118,927,1226,1011"/>
+<area shape="rect" id="node5" href="./Navigator.Nav.html" title="&lt;TABLE&gt;" alt="" coords="1107,922,1237,1017"/>
+<area shape="rect" id="node7_6" href="./Waypoint.html" title="lejos.robotics.navigation.Waypoint" alt="" coords="1323,825,1615,1114"/>
+<area shape="rect" id="node7" href="./Waypoint.html" title="&lt;TABLE&gt;" alt="" coords="1313,819,1626,1119"/>
+<area shape="rect" id="node9_7" href="../pathfinding/Path.html" title="lejos.robotics.pathfinding.Path" alt="" coords="1661,914,1929,1025"/>
+<area shape="rect" id="node9" href="../pathfinding/Path.html" title="&lt;TABLE&gt;" alt="" coords="1650,909,1939,1030"/>
+<area shape="rect" id="node8_8" href="./WaypointListener.html" title="lejos.robotics.navigation.WaypointListener" alt="" coords="1081,11,1263,109"/>
+<area shape="rect" id="node8" href="./WaypointListener.html" title="&lt;TABLE&gt;" alt="" coords="1071,5,1273,115"/>
+</map>

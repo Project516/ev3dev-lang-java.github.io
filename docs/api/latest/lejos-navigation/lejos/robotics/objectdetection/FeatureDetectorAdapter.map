@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./FeatureDetector.html" title="lejos.robotics.objectdetection.FeatureDetector" alt="" coords="196,11,428,168"/>
+<area shape="rect" id="node1" href="./FeatureDetector.html" title="&lt;TABLE&gt;" alt="" coords="185,5,438,173"/>
+<area shape="rect" id="node2_1" href="./FeatureDetectorAdapter.html" title="lejos.robotics.objectdetection.FeatureDetectorAdapter" alt="" coords="199,227,424,429"/>
+<area shape="rect" id="node2" href="./FeatureDetectorAdapter.html" title="&lt;TABLE&gt;" alt="" coords="188,222,435,434"/>
+<area shape="rect" id="node3_2" href="./FeatureListener.html" title="lejos.robotics.objectdetection.FeatureListener" alt="" coords="242,734,600,818"/>
+<area shape="rect" id="node3" href="./FeatureListener.html" title="&lt;TABLE&gt;" alt="" coords="232,729,610,823"/>
+<area shape="rect" id="node4_3" href="./RangeFeatureDetector.html" title="lejos.robotics.objectdetection.RangeFeatureDetector" alt="" coords="65,488,558,675"/>
+<area shape="rect" id="node4" href="./RangeFeatureDetector.html" title="&lt;TABLE&gt;" alt="" coords="54,483,569,680"/>
+<area shape="rect" id="node5_4" href="./TouchFeatureDetector.html" title="lejos.robotics.objectdetection.TouchFeatureDetector" alt="" coords="604,495,1049,667"/>
+<area shape="rect" id="node5" href="./TouchFeatureDetector.html" title="&lt;TABLE&gt;" alt="" coords="593,490,1060,673"/>
+</map>

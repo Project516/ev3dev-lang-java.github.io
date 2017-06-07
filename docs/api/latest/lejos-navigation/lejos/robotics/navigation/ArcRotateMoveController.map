@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./ArcMoveController.html" title="lejos.robotics.navigation.ArcMoveController" alt="" coords="16,19,427,205"/>
+<area shape="rect" id="node1" href="./ArcMoveController.html" title="&lt;TABLE&gt;" alt="" coords="5,13,437,211"/>
+<area shape="rect" id="node2_1" href="./ArcRotateMoveController.html" title="lejos.robotics.navigation.ArcRotateMoveController" alt="" coords="344,273,496,311"/>
+<area shape="rect" id="node2" href="./ArcRotateMoveController.html" title="&lt;TABLE&gt;" alt="" coords="333,267,507,317"/>
+<area shape="rect" id="node3_2" href="./LineFollowingMoveController.html" title="lejos.robotics.navigation.LineFollowingMoveController" alt="" coords="312,371,528,469"/>
+<area shape="rect" id="node3" href="./LineFollowingMoveController.html" title="&lt;TABLE&gt;" alt="" coords="301,365,539,475"/>
+<area shape="rect" id="node4_3" href="./RotateMoveController.html" title="lejos.robotics.navigation.RotateMoveController" alt="" coords="472,11,765,213"/>
+<area shape="rect" id="node4" href="./RotateMoveController.html" title="&lt;TABLE&gt;" alt="" coords="461,6,776,218"/>
+</map>
