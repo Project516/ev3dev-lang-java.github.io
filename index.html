@@ -87,15 +87,16 @@ The library interact with <a href="http://www.ev3dev.org/" target="_blank">EV3De
                     <h3>Platforms Supported</h3>
                     <ul>
                         <li>EV3 Brick</li>
-                        <li>PiStorms v1/v2</li>
+                        <li>BrickPi3</li>
                         <li>BrickPi+</li>
+                        <li>PiStorms v1/v2</li>
                     </ul>
                 </section>                        
                 <section data-background="./Media/Images/Base1_5.png">
                     <h2>Features</h2>         
                     <h3>JVM</h3>
                     <ul>
-                        <li>Automatic installation of Oracle Java JDK 8 for Brickpi+/PiStorms + Raspberry Pi 3</li>
+                        <li>Automatic installation of Oracle Java JDK 8 for Brickpi3/Brickpi+/PiStorms + Raspberry Pi 3</li>
                         <li>Partial automatic installation of Oracle Java JRE 8 for EV3 Brick</li>
                         <li>OpenJDK Java 9 EA support for Brickpi+/PiStorms + Raspberry Pi 3</li>
                         <li>Java profiling tools Support</li>
@@ -106,8 +107,8 @@ The library interact with <a href="http://www.ev3dev.org/" target="_blank">EV3De
                     <h2>Features</h2>         
                     <h3>Native libraries</h3>
                     <ul>
-                        <li>OpenCV 2.4.x</li>
                         <li>ROS Kinect enabled</li>
+                        <li>OpenCV 2.4.x</li>
                         <li>Serial RXTX</li>
                     </ul>
                 </section>                
@@ -134,9 +135,9 @@ The following table is based on some certification tests for latest image from E
 
                         ```
 robot@ev3dev:~$ uname -r
-4.4.47-19-ev3dev-ev3                        
+4.4.68-20-ev3dev-ev3                        
 robot@ev3dev:~$ uname -r
-4.4.47-19-ev3dev-rpi2
+4.4.68-20-ev3dev-rpi2
                         ```
                     </script>
                 </section>
@@ -144,13 +145,13 @@ robot@ev3dev:~$ uname -r
                     <script type="text/template">
                         ## Compatibility table
 
-| Element         | EV3Brick        | PiStorms v2 | BrickPi+       |
-| ------------- | ------------- |------------- |------------ |
-| Voltage:  | Yes | Yes | Yes |
-| Current:  | Yes  | - |-  |
-| Regulated Motors: | Yes  | Yes  | Yes  |
-| Unregulated Motors: | Yes  | -  | -  |
-| Rotate methods: | Yes  | - |-  |                       
+| Element         | EV3Brick        | Brickpi3 | BrickPi+ | PiStorms v2       |
+| ------------- | ------------- |------------- |------------- |------------ |
+| Voltage:  | Yes | Yes | Yes | Yes |
+| Current:  | Yes  | - | - |-  |
+| Regulated Motors: | Yes  Yes  | Yes  | Yes  |
+| Unregulated Motors: | Yes  | -  | -  | -  |
+| Rotate methods: | Yes  | - | -  | -  |                       
                     </script>
                 </section>
                 <section data-markdown data-background="./Media/Images/Base1_5.png">
@@ -159,13 +160,13 @@ robot@ev3dev:~$ uname -r
                     <script type="text/template">
                         ## Compatibility table
 
-| Element         | EV3Brick        | PiStorms v2 | BrickPi+       |
-| ------------- | ------------- |------------- |------------ |
-| Speak  | Yes  | - |-  |
-| Light Sensor  | Yes | Yes  | Yes |
-| Touch Sensor  | Yes | Yes  | Yes |
-| Gyro Sensor Angle  | Yes | -  | Yes | 
-| Gyro Sensor Angle & Rate | Yes | -  | - |                        
+| Element         | EV3Brick    |    BrickPi3      | BrickPi+ | PiStorms v2      |
+| ------------- | ------------- |------------- |------------- |------------ |
+| Speak  | Yes  | - |-  |-  |
+| Light Sensor  | Yes | Yes  Yes  | Yes |
+| Touch Sensor  | Yes | Yes  Yes  | Yes |
+| Gyro Sensor Angle  | Yes | Yes  | Yes | - | 
+| Gyro Sensor Angle & Rate | Yes | Yes | -  | - |                        
                     </script>
                 </section>
                 <section data-markdown data-background="./Media/Images/Base1_5.png">
@@ -174,12 +175,12 @@ robot@ev3dev:~$ uname -r
                     <script type="text/template">
                         ## Compatibility table
 
-| Element         | EV3Brick        | PiStorms v2 | BrickPi+       |
-| ------------- | ------------- |-------------  |------------ |
-| IR Sensor Distance  | Yes | - | Yes |
-| IR Beacon  | Yes | - | - |
-| IR Remote  | Yes | - | - |
-| US Sensor Distance  | Yes | - | Yes |                        
+| Element         | EV3Brick |  BrickPi3    | BrickPi+ | PiStorms v2       |
+| ------------- | ------------- |-------------| -------------   |------------ |
+| IR Sensor Distance  | Yes | Yes | Yes | - |
+| IR Beacon  | Yes | Yes | - | - |
+| IR Remote  | Yes | Yes | - | - |
+| US Sensor Distance  | Yes | Yes | Yes | - |                        
                     </script>
                 </section>                                 
             </section>    
@@ -189,6 +190,7 @@ robot@ev3dev:~$ uname -r
                     <ul>
                         <li>Adding Unit testing</li>
                         <li>Add JMX MBEAN about Battery</li>
+                        <li>BrickPi3 Support</li>
                         <li>Develop ROS nodes</li>
                     </ul>
                 </section>
