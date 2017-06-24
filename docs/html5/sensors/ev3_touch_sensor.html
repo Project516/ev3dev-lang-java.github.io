@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.3">
+<title>EV3 Touch sensor</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<link rel="stylesheet" href="./asciidoctor.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body class="article toc2 toc-left">
+<div id="header">
+<h1>EV3 Touch sensor</h1>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+
+</div>
+</div>
+<div id="content">
+<div class="paragraph">
+<p>The analog EV3 Touch Sensor is a simple but exceptionally precise tool that detects when its front button is pressed or
+ released and is able to count single and multiple presses.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./ev3_touch_sensor.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p><strong>How to use the sensor</strong>
+Example 1: Show the state from a Touch sensor in the EV3 display</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./ev3_touch_sensor_example1.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>Example 2: Example to show how to use a IF statement using a Touch Sensor</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./ev3_touch_sensor_example2.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>Example 3: Show the raw value from a Sensor port in the EV3 display</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./ev3_touch_sensor_example3.png" alt="image"></span></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java" data-lang="java">package ev3dev.sensors.ev3;
+
+import ev3dev.sensors.Battery;
+import lejos.hardware.port.SensorPort;
+import lejos.robotics.SampleProvider;
+import lejos.utility.Delay;
+
+public class TouchSensorDemo {
+
+	//Robot Configuration
+	private static EV3TouchSensor touch1 = new EV3TouchSensor(SensorPort.S1);
+
+	//Configuration
+	private static int HALF_SECOND = 500;
+
+	public static void main(String[] args) {
+
+
+
+		final SampleProvider sp = touch1.getTouchMode();
+		int touchValue = 0;
+
+        //Control loop
+        final int iteration_threshold = 20;
+        for(int i = 0; i &lt;= iteration_threshold; i++) {
+
+        	float [] sample = new float[sp.sampleSize()];
+            sp.fetchSample(sample, 0);
+            touchValue = (int)sample[0];
+
+			System.out.println("Iteration: {}" + i);
+			System.out.println("Touch: {}" + touchValue);
+
+            Delay.msDelay(HALF_SECOND);
+        }
+
+        System.out.println(Battery.getInstance().getVoltage());
+
+	}
+
+}</code></pre>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2017-06-24 13:44:34 BST
+</div>
+</div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+<script>hljs.initHighlighting()</script>
+</body>
+</html>

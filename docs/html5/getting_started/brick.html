@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.3">
+<title>Getting Started on your brick</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<link rel="stylesheet" href="./asciidoctor.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body class="article toc2 toc-left">
+<div id="header">
+<h1>Getting Started on your brick</h1>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_1_install_ev3dev_on_your_brick">1. Install EV3Dev on your brick</a>
+<ul class="sectlevel2">
+<li><a href="#_2_install_java_on_your_brick">2. Install Java on your brick</a></li>
+<li><a href="#_3_create_your_first_project_and_deploy_on_your_brick">3. Create your first Project and deploy on your Brick</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_1_install_ev3dev_on_your_brick">1. Install EV3Dev on your brick</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Follow the link to install EV3Dev on your brick:</p>
+</div>
+<div class="paragraph">
+<p><a href="http://www.ev3dev.org/docs/getting-started/" class="bare">http://www.ev3dev.org/docs/getting-started/</a></p>
+</div>
+<div class="paragraph">
+<p>Once you finish the installation process and the remote <code>ssh</code> connection test,
+you will have a complete Linux distro to run any Programming language.</p>
+</div>
+<div class="paragraph">
+<p><strong>Note:</strong> Please, maintain your brick updated. Execute the following commands
+before jump to the next step in this guide.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get dist-upgrade
+sudo reboot</code></pre>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_2_install_java_on_your_brick">2. Install Java on your brick</h3>
+<div class="paragraph">
+<p>For this step exist 2 paths. One path is for EV3 Brick and another path for BrickPi users and PiStorms users.</p>
+</div>
+<div class="paragraph">
+<p><strong>2.1 EV3 Brick:</strong></p>
+</div>
+<div class="paragraph">
+<p>The EV3 Brick was designed with a SOC based on [ARM EABI](<a href="https://wiki.debian.org/ArmEabiPort" class="bare">https://wiki.debian.org/ArmEabiPort</a>)
+and the best JVM option for that hardware architecture is the Oracle JRE 8 to install in the brick but, it is not possible to install directly in the brick
+ without any human interaction, so you need to download from [here](<a href="http://www.oracle.com/technetwork/java/embedded/downloads/javase/javaseemeddedev3-1982511.html" class="bare">http://www.oracle.com/technetwork/java/embedded/downloads/javase/javaseemeddedev3-1982511.html</a>)
+and later, copy the file <code>ejdk-8-fcs-b132-linux-arm-sflt-03_mar_2014.tar.gz</code> to your brick using the command <code>scp</code>.</p>
+</div>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>scp "./ejdk-8-fcs-b132-linux-arm-sflt-03_mar_2014.tar.gz" "robot@192.168.1.85:/home/robot"</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Once, you have the file on the brick, you can continue the Java installation with the installer or do yourself manually.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/ev3dev-lang-java/installer" class="bare">https://github.com/ev3dev-lang-java/installer</a></p>
+</div>
+<div class="paragraph">
+<p><strong>Using the installer:</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>cd /home/robot
+mkdir installer
+cd installer
+wget -N https://raw.githubusercontent.com/ev3dev-lang-java/installer/develop/installer.sh
+chmod +x installer.sh
+sudo ./installer.sh help
+sudo ./installer.sh</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Manual way:</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>tar -zxvf "/home/robot/ejdk-8-fcs-b132-linux-arm-sflt-03_mar_2014.tar.gz" -C /opt
+sudo update-alternatives --install /usr/bin/java java /opt/ejdk1.8.0/linux_arm_sflt/jre/bin/java 1
+java -version</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Now, you have Java on your EV3 Brick</p>
+</div>
+<div class="paragraph">
+<p><strong>2.2 BrickPi+ / PiStorms:</strong></p>
+</div>
+<div class="paragraph">
+<p>Using the installer, it is possible to automate everything:</p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/ev3dev-lang-java/installer" class="bare">https://github.com/ev3dev-lang-java/installer</a></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>cd /home/robot
+mkdir installer
+cd installer
+wget -N https://raw.githubusercontent.com/ev3dev-lang-java/installer/develop/installer.sh
+chmod +x installer.sh
+sudo ./installer.sh help
+sudo ./installer.sh</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_3_create_your_first_project_and_deploy_on_your_brick">3. Create your first Project and deploy on your Brick</h3>
+<div class="paragraph">
+<p>Once you have the required infrastructure on your Brick, it is possible to experiment with the libraries in some ways:</p>
+</div>
+<div class="paragraph">
+<p><strong>3.1 Using a Gradle template project</strong></p>
+</div>
+<div class="paragraph">
+<p>If you like, you can experiment with the project, using the following project template:</p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/ev3dev-lang-java/template_project_gradle" class="bare">https://github.com/ev3dev-lang-java/template_project_gradle</a></p>
+</div>
+<div class="paragraph">
+<p>Download the project, update the file: <code>config.gradle</code>: with the IP of you Brick:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>remotes {
+    ev3dev {
+        host = '10.0.1.3'
+        user = 'robot'
+        password = 'maker'
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To deploy the example on your brick, open a <code>terminal</code> and type:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>./gradlew deployAndRun</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Besides, exist a task to provide access to a Profiling tool if you execute:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code>./gradlew deployAndProfilingRun</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>3.2 Create a project from scratch:</strong></p>
+</div>
+<div class="paragraph">
+<p>Another alternative is the creation of a project from Scratch using Maven/Gradle.</p>
+</div>
+<div class="paragraph">
+<p>To start a new project with this library, add the following repository and dependency.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml" data-lang="xml">&lt;repositories&gt;
+    &lt;repository&gt;
+        &lt;id&gt;jitpack.io&lt;/id&gt;
+        &lt;url&gt;https://jitpack.io&lt;/url&gt;
+    &lt;/repository&gt;
+&lt;/repositories&gt;</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
+    &lt;groupId&gt;com.github.ev3dev-lang-java&lt;/groupId&gt;
+    &lt;artifactId&gt;ev3dev-lang-java&lt;/artifactId&gt;
+    &lt;version&gt;v0.6.1&lt;/version&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Further information about the Maven dependency: <a href="https://jitpack.io/#ev3dev-lang-java/ev3dev-lang-java/v0.6.1" class="bare">https://jitpack.io/#ev3dev-lang-java/ev3dev-lang-java/v0.6.1</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2017-06-24 13:44:34 BST
+</div>
+</div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+<script>hljs.initHighlighting()</script>
+</body>
+</html>

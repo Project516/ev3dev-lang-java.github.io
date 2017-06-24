@@ -43,8 +43,7 @@
                 <h3>A <a href="http://openjdk.java.net/" target="_blank">Java</a> project to build Software for Robots using <a href="http://www.ev3dev.org/" target="_blank">EV3Dev</a> hardware &amp; the <a href="http://www.lejos.org/" target="_blank">LeJOS</a> way.</h3>
                 <p>
 <a href="https://github.com/ev3dev-lang-java/ev3dev-lang-java/milestone/7" target="_blank">Iteration</a>&nbsp;|&nbsp;
-<a href="https://github.com/jabrena/ev3dev-lang-java/issues" target="_blank">Backlog</a>&nbsp;|&nbsp;
-<a href="https://github.com/ev3dev-lang-java/docs" target="_blank">Docs</a>&nbsp;|&nbsp;
+<a href="./docs/html5/index.html" target="_blank">Docs</a>&nbsp;|&nbsp;
 <a href="https://github.com/ev3dev-lang-java/examples" target="_blank">Examples</a>&nbsp;|&nbsp;
 <a href="./docs/api/latest/index.html" target="_blank">APIs</a>&nbsp;|&nbsp;
 <a href="https://www.youtube.com/watch?v=E2MV6_4um0A&list=PL_mOPipcu4y9-PZ-qYp0_BbH5p157LZX3" target="_blank">Videos</a>
@@ -66,16 +65,17 @@
 <a href="https://github.com/jabrena/ev3dev-lang-java" target="_blank">EV3-lang-java</a> is a Java project to build software for robots inheriting concepts from <a href="http://www.lejos.org/" target="_blank">LeJOS</a>. 
                     </p>
                     <p>
-The library interact with <a href="http://www.ev3dev.org/" target="_blank">EV3Dev</a>, a <a href="https://www.debian.org/index.en.html" target="_blank">Debian</a> Linux-based operating system which expose a interface to interact with Sensors &amp; Actuators in an easy way.
+The library interacts with <a href="http://www.ev3dev.org/" target="_blank">EV3Dev</a>, a <a href="https://www.debian.org/index.en.html" target="_blank">Debian</a> Linux-based operating system which expose a interface to interact with Sensors &amp; Actuators in an easy way.
                     </p>
                 </section>
                 <section data-background="./Media/Images/Base1_5.png">
                     <h2>Why use this project?</h2>
                     <h3>What is the innovation?</h3>
                     <ul>
-                        <li>Java development on top of a complete Linux distro</li>
+                        <li>Java development on top of a Debian, a full featured Linux distro</li>
                         <li>Possibility to interact with others programming languages</li>
-                        <li>Usage of the same library for EV3 Brick, BrickPi+ &amp; PiStorms</li>
+                        <li>Usage of the same library for EV3 Brick, BrickPi3, BrickPi+ &amp; PiStorms</li>
+                        <li>Support USB devices</li>
                         <li>Support for Raspberry Pi</li>
                         <li>Modular design</li>
                     </ul>
@@ -98,7 +98,7 @@ The library interact with <a href="http://www.ev3dev.org/" target="_blank">EV3De
                     <ul>
                         <li>Automatic installation of Oracle Java JDK 8 for Brickpi3/Brickpi+/PiStorms + Raspberry Pi 3</li>
                         <li>Partial automatic installation of Oracle Java JRE 8 for EV3 Brick</li>
-                        <li>OpenJDK Java 9 EA support for Brickpi+/PiStorms + Raspberry Pi 3</li>
+                        <li>OpenJDK Java 9 EA support for BrickPi3/Brickpi+/PiStorms</li>
                         <li>Java profiling tools Support</li>
                         <li>Logging support</li>
                     </ul>
@@ -107,7 +107,7 @@ The library interact with <a href="http://www.ev3dev.org/" target="_blank">EV3De
                     <h2>Features</h2>         
                     <h3>Native libraries</h3>
                     <ul>
-                        <li>ROS Kinect enabled</li>
+                        <li>ROS Kinect</li>
                         <li>OpenCV 2.4.x</li>
                         <li>Serial RXTX</li>
                     </ul>
@@ -327,7 +327,17 @@ robot@ev3dev:~$ uname -r
                     <p>
                         <img src="./Media/Images/rplidar_a2.png" width="40%"/>
                     </p>                    
-                </section>                 
+                </section>
+                <section data-background="./Media/Images/Base1_5.png">
+                    <h2>Hardware supported</h2>
+                    <h3>Arduino BNO055</h3>
+                    <ul>
+                        <li>IMU MEMS (Coming soon)</li>
+                    </ul>
+                    <p>
+                        <img src="./Media/Images/arduino-BNO055.png" width="60%"/>
+                    </p>
+                </section>
             </section>
             <section>
                 <section data-background="./Media/Images/Base1_5.png">

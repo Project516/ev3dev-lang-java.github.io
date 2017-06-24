@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.3">
+<title>EV3 Infrared Sensor</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<link rel="stylesheet" href="./asciidoctor.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body class="article toc2 toc-left">
+<div id="header">
+<h1>EV3 Infrared Sensor</h1>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+
+</div>
+</div>
+<div id="content">
+<div class="paragraph">
+<p>The digital EV3 Infrared Seeking Sensor detects proximity to the robot and reads signals emitted by the EV3 Infrared Beacon.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Some features about this sensor:</p>
+</li>
+<li>
+<p>Proximity measurement of approximately 50-70 cm</p>
+</li>
+<li>
+<p>Working distance from the beacon of up to two meters</p>
+</li>
+<li>
+<p>Supports four signal channels</p>
+</li>
+<li>
+<p>Receives IR remote commands</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./ev3_ir_sensor.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p><strong>How to use the sensor</strong></p>
+</div>
+<div class="paragraph">
+<p>Example 1: Show in the display the value of a Infrared sensor.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./ev3_ir_sensor_example1.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>Example2: Use a Infrared Sensor in a if statement.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./ev3_ir_sensor_example2.png" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>Example3: Play sounds with the help of a IR Sensor.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./ev3_ir_sensor_example3.png" alt="image"></span></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java" data-lang="java">package ev3dev.sensors.ev3;
+
+import ev3dev.sensors.Battery;
+import lejos.hardware.port.SensorPort;
+import lejos.robotics.SampleProvider;
+import lejos.utility.Delay;
+
+public class IRSensorDemo {
+
+	private static EV3IRSensor ir1 = new EV3IRSensor(SensorPort.S1);
+
+	private static int HALF_SECOND = 500;
+
+	public static void main(String[] args) {
+
+		System.out.println(Battery.getInstance().getVoltage());
+
+		final SampleProvider sp = ir1.getDistanceMode();
+		int distanceValue = 0;
+
+		//Control loop
+		final int iteration_threshold = 50;
+		for(int i = 0; i &lt;= iteration_threshold; i++) {
+
+			float [] sample = new float[sp.sampleSize()];
+		    sp.fetchSample(sample, 0);
+		    distanceValue = (int)sample[0];
+
+			System.out.println("Iteration: {}" + i);
+			System.out.println("Distance: {}" + distanceValue);
+
+		    Delay.msDelay(HALF_SECOND);
+		}
+
+		System.out.println(Battery.getInstance().getVoltage());
+
+
+	}
+
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java" data-lang="java">package ev3dev.sensors.ev3;
+
+import ev3dev.sensors.Battery;
+import lejos.hardware.port.SensorPort;
+import lejos.robotics.SampleProvider;
+import lejos.utility.Delay;
+
+public class IRSensorDemo2 {
+
+	//Robot Configuration
+	private static EV3IRSensor ir1 = new EV3IRSensor(SensorPort.S1);
+
+	//Configuration
+	private static int HALF_SECOND = 500;
+
+	public static void main(String[] args) {
+
+		System.out.println(Battery.getInstance().getVoltage());
+
+		final SampleProvider sp = ir1.getSeekMode();
+
+		int beaconInfo1H = 0;
+		int beaconInfo2H = 0;
+		int beaconInfo3H = 0;
+		int beaconInfo4H = 0;
+		int beaconInfo1D = 0;
+		int beaconInfo2D = 0;
+		int beaconInfo3D = 0;
+		int beaconInfo4D = 0;
+
+		//Control loop
+		final int iteration_threshold = 50;
+		for(int i = 0; i &lt;= iteration_threshold; i++) {
+
+			float [] sample = new float[sp.sampleSize()];
+		    sp.fetchSample(sample, 0);
+
+		    beaconInfo1H = (int)sample[0];
+			beaconInfo1D = (int)sample[1];
+
+			beaconInfo2H = (int)sample[2];
+			beaconInfo2D = (int)sample[3];
+
+			beaconInfo3H = (int)sample[4];
+			beaconInfo3D = (int)sample[5];
+
+			beaconInfo4H = (int)sample[6];
+			beaconInfo4D = (int)sample[7];
+
+			System.out.println("Iteration: {}" + i);
+			System.out.println("Beacon Channel 1: Heading: {}, Distance: {}" + beaconInfo1H + beaconInfo1D);
+			System.out.println("Beacon Channel 2: Heading: {}, Distance: {}" + beaconInfo2H + beaconInfo2D);
+			System.out.println("Beacon Channel 3: Heading: {}, Distance: {}" + beaconInfo3H + beaconInfo3D);
+			System.out.println("Beacon Channel 4: Heading: {}, Distance: {}" + beaconInfo4H + beaconInfo4D);
+
+		    Delay.msDelay(HALF_SECOND);
+		}
+
+		System.out.println(Battery.getInstance().getVoltage());
+
+	}
+
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java" data-lang="java">package ev3dev.sensors.ev3;
+
+import lejos.hardware.port.SensorPort;
+import lejos.robotics.SampleProvider;
+import lejos.utility.Delay;
+
+public class IRSensorDemo3 {
+
+	//Robot Configuration
+	private static EV3IRSensor ir1 = new EV3IRSensor(SensorPort.S1);
+
+	//Configuration
+	private static int HALF_SECOND = 500;
+
+	public static void main(String[] args) {
+
+		final SampleProvider sp = ir1.getRemoteMode();
+
+		int beaconInfo1 = 0;
+		int beaconInfo2 = 0;
+		int beaconInfo3 = 0;
+		int beaconInfo4 = 0;
+
+		//Control loop
+		final int iteration_threshold = 50;
+		for(int i = 0; i &lt;= iteration_threshold; i++) {
+
+			float [] sample = new float[sp.sampleSize()];
+		    sp.fetchSample(sample, 0);
+
+			beaconInfo1 = (int)sample[0];
+			beaconInfo2 = (int)sample[1];
+			beaconInfo3 = (int)sample[2];
+			beaconInfo4 = (int)sample[3];
+
+			System.out.println("Iteration: {}" + i);
+			System.out.println("Beacon Channel 1: Remote: {}" + beaconInfo1);
+			System.out.println("Beacon Channel 2: Remote: {}" + beaconInfo2);
+			System.out.println("Beacon Channel 3: Remote: {}" + beaconInfo3);
+			System.out.println("Beacon Channel 4: Remote: {}" + beaconInfo4);
+
+		    Delay.msDelay(HALF_SECOND);
+		}
+
+	}
+
+}</code></pre>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2017-06-24 13:44:33 BST
+</div>
+</div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+<script>hljs.initHighlighting()</script>
+</body>
+</html>
