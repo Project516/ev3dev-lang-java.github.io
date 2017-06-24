@@ -4,11 +4,11 @@
 <meta charset="utf-8">
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 1.5.3">
+<meta name="generator" content="Asciidoctor 1.5.5">
 <title>Getting Started on your computer</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <link rel="stylesheet" href="./asciidoctor.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
@@ -22,9 +22,9 @@
 <li><a href="#_1_2_install_maven_gradle">1.2 Install Maven/Gradle</a></li>
 <li><a href="#_1_3_install_a_git_client">1.3 Install a Git Client</a></li>
 <li><a href="#_1_4_install_a_java_ide">1.4 Install a Java IDE</a></li>
-<li><a href="#_1_5_download_the_repository_on_your_computer">1.5 Download the repository on your computer</a></li>
 </ul>
 </li>
+<li><a href="#_2_test_your_local_environment">2. Test your local environment</a></li>
 </ul>
 </div>
 </div>
@@ -78,24 +78,52 @@ brew install gradle</code></pre>
 <div class="sect2">
 <h3 id="_1_4_install_a_java_ide">1.4 Install a Java IDE</h3>
 <div class="paragraph">
-<p>Install a Java IDE to use this repository with examples about
-ev3dev-lang-java.
+<p>Install a Java IDE to develop Java Software
 <a href="https://www.jetbrains.com/idea/">https://www.jetbrains.com/idea/</a></p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_1_5_download_the_repository_on_your_computer">1.5 Download the repository on your computer</h3>
-<div class="paragraph">
-<p>Using SourceTree, try to donwload the repository on local. The address
-about the repository is: <a href="https://github.com/ev3dev-lang-java/ev3dev-lang-java.git">https://github.com/ev3dev-lang-java/ev3dev-lang-java.git</a></p>
 </div>
+</div>
+<div class="sect1">
+<h2 id="_2_test_your_local_environment">2. Test your local environment</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Once, you have installed everything, it is necessary to verify that everything goes well.</p>
+</div>
+<div class="paragraph">
+<p>Create a file with the name of HelloWorld.java and copy and paste on it the following content:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java" data-lang="java">public class HelloWorld {
+
+    public static void main(String[] args) {
+        // Prints "Hello, World" to the terminal window.
+        System.out.println("Hello, World");
+    }
+
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Later, open a terminal and type:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-java" data-lang="java">javac HelloWorld.java
+java HelloWorld</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You should read: <code>HelloWorld</code> if the answer is <strong>Yes</strong>, your installation process on your
+personal computer has finished.</p>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-06-24 13:44:33 BST
+Last updated 2017-06-24 22:11:32 BST
 </div>
 </div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css">

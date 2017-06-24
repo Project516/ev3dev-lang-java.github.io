@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.5">
+<title>What is EV3Dev-java?</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<link rel="stylesheet" href="./asciidoctor.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+<body class="article toc2 toc-left">
+<div id="header">
+<h1>What is EV3Dev-java?</h1>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_1_introduction">1. Introduction</a></li>
+<li><a href="#_2_ev3dev_java_subprojects">2. EV3Dev-java Subprojects</a></li>
+<li><a href="#_3_competitive_advantages">3. Competitive advantages</a></li>
+<li><a href="#_4_features_out_of_the_box">4. Features out of the box</a></li>
+<li><a href="#_5_timeline_of_the_project">5. Timeline of the project</a></li>
+<li><a href="#_6_evolution_of_java_on_lego_mindstorms_ecosystem">6. Evolution of Java on Lego Mindstorms ecosystem</a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>A Java project to build Software for Robots using hardware supported by EV3Dev &amp; the LeJOS way.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_1_introduction">1. Introduction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Lego Mindstorms ecosystem is
+<code>a fantastic educational way to learn Java, Linux and Robotics</code> to develop your creativity using your favourite Bricks.
+In the the third generation of the product <a href="https://www.lego.com/en-us/mindstorms">Lego Mindstorms EV3</a>,
+others companies like <a href="https://www.dexterindustries.com/">Dexter Industries</a>
+&amp; <a href="http://www.mindsensors.com/">Mindsensors</a> has released boards combining the power of
+<a href="https://www.raspberrypi.org/">Raspberry Pi 3</a> with the usage of Sensors &amp; Actuators from Lego Mindstorms ecosystem.
+The result is very healthy for the Community but&#8230;&#8203; some questions appear in the air:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>How to manage the hardware in an easy way?</p>
+</li>
+<li>
+<p>How to continue using Java with all boards?</p>
+</li>
+<li>
+<p>What happen with amazing LeJOS libraries about <code>local-navigation</code> in this context?</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The answer is this project, <strong>EV3Dev-java</strong>.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./theThreeAmigos.jpg" alt="ScreenShot"></span></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_2_ev3dev_java_subprojects">2. EV3Dev-java Subprojects</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><code>EV3Dev-java</code> has been designed with the modularity in mind from the beginning.</p>
+</div>
+<div class="paragraph">
+<p>The project contains the following Java libraries/scripts:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/ev3dev-lang-java/ev3dev-lang-java">EV3Dev-lang-java</a>:
+Low level interation library with EV3Dev</p>
+</li>
+<li>
+<p><a href="https://github.com/ev3dev-lang-java/lejos-commons">lejos-commons</a>:
+LeJOS interfaces &amp; utilities</p>
+</li>
+<li>
+<p><a href="https://github.com/ev3dev-lang-java/lejos-navigation">lejos-navigation</a>:
+LeJOS navigation stack</p>
+</li>
+<li>
+<p><a href="https://github.com/ev3dev-lang-java/RPLidar4J">RPLidar4J</a>: RPLidar A1
+support</p>
+</li>
+<li>
+<p><a href="https://github.com/ev3dev-lang-java/batteryMonitor">Battery Monitor</a>: A
+battery monitor to protect your hardware against low battery levels</p>
+</li>
+<li>
+<p><a href="https://github.com/ev3dev-lang-java/installer">Installer</a>: A set of
+Bash scripts to automate some operations with your brick</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_3_competitive_advantages">3. Competitive advantages</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This project has the following competitive advantages:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Usage of the same Java libraries for multiple bricks (EV3 Brick, BrickPi 3, BrickPi+ &amp; PiStorms)</p>
+</li>
+<li>
+<p>Usage of USB Connections for Arduino</p>
+</li>
+<li>
+<p>Usage of complex Devices like LIDARs, Webcams or Advanced IMUs with USB.</p>
+</li>
+<li>
+<p>Usage of a Complete Linux</p>
+</li>
+<li>
+<p>Usage of <code>LeJOS</code> libraries</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>If you analyze the hardware, any EV3 Brick uses a
+<code>SoC: Sitara Processor AM1808</code> (from year 2010) to manage Sensors &amp;
+Actuators but now with the usage of a BrickPi/PiStorms unit, it is
+possible to use the power of a Raspberry Pi 3 increasing the
+possibilities to develop complex projects which require por
+Computational consumption.</p>
+</div>
+<div class="paragraph">
+<p><strong>2010 Chip included on EV3 Brick:</strong></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>SoC: Sitara Processor AM1808
+CPU: ARM9 300MHz
+RAM: 16KB of Instruction Cache, 16KB of Data Cache ,8KB of RAM (Vector Table), 64KB of ROM</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>2016 Chip included on Raspberry Pi 3:</strong></p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>SoC: Broadcom BCM2837
+CPU: 4× ARM Cortex-A53, 1.2GHz
+RAM: 1GB LPDDR2 (900 MHz)</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_4_features_out_of_the_box">4. Features out of the box</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Java features</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Automatic installation of Oracle Java JDK 8 for Brickpi+/PiStorms<br>
+Raspberry Pi 3</p>
+</li>
+<li>
+<p>Partial installation of Oracle Java JRE 8 for EV3 Brick</p>
+</li>
+<li>
+<p>OpenJDK Java 9 EA support for Brickpi+/PiStorms + Raspberry Pi 3</p>
+</li>
+<li>
+<p>Java profiling tools Support
+(<a href="http://www.oracle.com/technetwork/java/javaseproducts/mission-control/java-mission-control-1998576.html">Oracle
+mission control</a> &amp;
+<a href="http://docs.oracle.com/javase/7/docs/technotes/guides/management/jconsole.html">JConsole</a>)</p>
+</li>
+<li>
+<p>Logging support based on <a href="https://www.slf4j.org/">SLF4J</a></p>
+</li>
+<li>
+<p>Centralized logs with <a href="https://www.elastic.co/products/kibana">Kibana</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Platforms supported</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>EV3 Brick,</p>
+</li>
+<li>
+<p>BrickPi 3</p>
+</li>
+<li>
+<p>BrickPi+</p>
+</li>
+<li>
+<p>PiStorms v2,</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Lego Mindstorms features</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Regulated Motor Support (Large EV3 Motors, Medium EV3 Motors, NXT
+Motors)</p>
+</li>
+<li>
+<p>Unregulated Motor Support (RCX Motors)</p>
+</li>
+<li>
+<p>Sensor Support (EV3 sensors)</p>
+</li>
+<li>
+<p>Sounds Support</p>
+</li>
+<li>
+<p>EV3 LCD Support</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Robotics</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Automatic installation of <a href="http://opencv.org/">OpenCV</a></p>
+</li>
+<li>
+<p><a href="http://espeak.sourceforge.net/">eSpeak</a> TTS (Text to speech) Support</p>
+</li>
+<li>
+<p><a href="http://sourceforge.net/p/lejos/wiki/Sensor%20Framework/">LeJOS Sensor
+filter</a> Support</p>
+</li>
+<li>
+<p><a href="https://github.com/ev3dev-lang-java/lejos-navigation">LeJOS local
+navigation stack</a> Support</p>
+</li>
+<li>
+<p><a href="https://github.com/ev3dev-lang-java/RPLidar4J">RPLidar A1</a> (2D Lidar)
+Support</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_5_timeline_of_the_project">5. Timeline of the project</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In 2015, EV3Dev is born to offer a solution to install a complete
+<a href="https://www.debian.org">Linux Debian Operating System</a> on
+<a href="https://www.lego.com/en-us/mindstorms">EV3 Brick</a>,
+<a href="https://www.dexterindustries.com/brickpi/">BrickPi Series</a> &amp;
+<a href="http://www.mindsensors.com/content/78-pistorms-lego-interface">PiStorms Series</a>.
+The project provides an agnostic Linux interface to unify the way to interact with Mindstorms Hardware too.</p>
+</div>
+<div class="paragraph">
+<p>At the end of the same year, <code>EV3Dev-lang-java</code> is born with the idea to continue developing Java robots
+on Lego Mindstorms and providing a port of <code>LeJOS</code> libraries like the <code>local-navigation</code> stack.</p>
+</div>
+<div class="paragraph">
+<p>In 2017 Q3, the project will be renamed as <code>EV3Dev-java</code> to be shorted and to not generate confusion with the usage
+of <a href="https://github.com/ev3dev/ev3dev-lang">EV3Dev binding features</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_6_evolution_of_java_on_lego_mindstorms_ecosystem">6. Evolution of Java on Lego Mindstorms ecosystem</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>LeJOS project is the unique Open Source project present on every Lego Mindstorms generations of the product.
+In any generation, the project had to find a solution for the following layers:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Runtime</p>
+</li>
+<li>
+<p>JVM</p>
+</li>
+<li>
+<p>Robotics libraries</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>This premise was solved in every Mindstorms generation:</p>
+</div>
+<table class="tableblock frame-all grid-all spread">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 25%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Product</th>
+<th class="tableblock halign-left valign-top">RCX</th>
+<th class="tableblock halign-left valign-top">NXT</th>
+<th class="tableblock halign-left valign-top">EV3</th>
+</tr>
+</thead>
+<tfoot>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Robotics libraries</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Initial libraries</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">local-navigation-stack</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">~</p></td>
+</tr>
+</tfoot>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Runtime</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Custom firmware</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Custom firmware</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Busybox + Native libraries</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">JVM</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Custom JVM</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Custom JVM</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Oracle JRE 8</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>but now in 2017, any Java developer could have issues with the following scenarios:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The usage of LeJOS objects on BrickPi3/PiStormsV2</p>
+</li>
+<li>
+<p>The USB connection with any Arduino board</p>
+</li>
+<li>
+<p>Make a map with a LIDAR like RPLidar A2</p>
+</li>
+<li>
+<p>Execute a linux command like <code>screen</code> to maintain a <code>ssh</code> session although you close the laptop</p>
+</li>
+<li>
+<p>Install ROS on your Brick</p>
+</li>
+<li>
+<p>Interact with other programming languages</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>So, to solve this kind of projects appear <code>EV3Dev-java</code>.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2017-06-24 21:38:58 BST
+</div>
+</div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
+<script>hljs.initHighlighting()</script>
+</body>
+</html>
