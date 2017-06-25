@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.5">
+<title>docs</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<link rel="stylesheet" href="./asciidoctor.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+<body class="article toc2 toc-left">
+<div id="header">
+<h1>EV3 Ultrasonic Sensor</h1>
+<div class="details">
+<span id="revnumber">version 0.7.0-SNAPSHOT</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#introduction">1. Introduction</a></li>
+<li><a href="#how-to-use-the-sensor">2. How to use the sensor</a>
+<ul class="sectlevel2">
+<li><a href="#example-to-read-distances">2.1. Example to read distances</a></li>
+<li><a href="#example-to-use-the-listen-mode">2.2. Example to use the Listen Mode</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="introduction">1. Introduction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The digital EV3 Ultrasonic Sensor generates sound waves and reads their echoes to detect and measure distance from objects. It can also send single sound waves to work as sonar or listen for a sound wave that triggers the start of a program. Students could design a traffic-monitoring system and measure distances between vehicles, for instance. There is an opportunity to discover how the technology is used in everyday items like automatic doors, cars and manufacturing systems.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Measures distances between one and 250 cm</p>
+</li>
+<li>
+<p>Front illumination is constant while emitting and blinks while listening</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="./ev3_us_sensor.png" alt="image"></span></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="how-to-use-the-sensor">2. How to use the sensor</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="example-to-read-distances">2.1. Example to read distances</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-java" data-lang="java">package ev3dev.sensors.ev3;
+
+import lejos.hardware.port.SensorPort;
+import lejos.robotics.SampleProvider;
+import lejos.utility.Delay;
+
+public class USSensorDemo {
+
+	private static EV3UltrasonicSensor us1 = new EV3UltrasonicSensor(SensorPort.S1);
+
+	public static void main(String[] args) {
+
+		final SampleProvider sp = us1.getDistanceMode();
+		int distanceValue = 0;
+
+        final int iteration_threshold = 100;
+        for(int i = 0; i &lt;= iteration_threshold; i++) {
+
+        	float [] sample = new float[sp.sampleSize()];
+            sp.fetchSample(sample, 0);
+            distanceValue = (int)sample[0];
+
+			System.out.println("Iteration: " + i + ", Distance: " + distanceValue);
+
+			Delay.msDelay(500);
+        }
+
+	}
+
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="example-to-use-the-listen-mode">2.2. Example to use the Listen Mode</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-java" data-lang="java">package ev3dev.sensors.ev3;
+
+import ev3dev.sensors.Battery;
+import lejos.hardware.port.SensorPort;
+import lejos.robotics.SampleProvider;
+import lejos.utility.Delay;
+
+public class USSensorDemo2 {
+
+	//Robot Configuration
+	private static EV3UltrasonicSensor us1 = new EV3UltrasonicSensor(SensorPort.S1);
+
+	//Configuration
+	private static int HALF_SECOND = 500;
+
+	public static void main(String[] args) {
+
+		SampleProvider sp;
+
+		int distanceValue = 0;
+
+		for(int i = 0; i &lt;= 10; i++) {
+
+			sp = us1.getListenMode();
+			int sampleSize = sp.sampleSize();
+			float[] sample = new float[sampleSize];
+			sp.fetchSample(sample, 0);
+
+			Delay.msDelay(2000);
+
+			sp = us1.getDistanceMode();
+			sampleSize = sp.sampleSize();
+			sample = new float[sampleSize];
+			sp.fetchSample(sample, 0);
+
+			distanceValue = (int)sample[0];
+
+			System.out.println("Iteration: {}, Distance: {}" + i + " "+ distanceValue);
+
+		}
+
+		System.out.println(Battery.getInstance().getVoltage());
+	}
+
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>References</strong></p>
+</div>
+<div class="paragraph">
+<p><a href="https://shop.lego.com/en-GB/EV3-Ultrasonic-Sensor-45504" class="bare">https://shop.lego.com/en-GB/EV3-Ultrasonic-Sensor-45504</a></p>
+</div>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-343143-18', 'auto');
+    ga('send', 'pageview');
+</script>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Version 0.7.0-SNAPSHOT<br>
+Last updated 2017-06-25 17:22:55 BST
+</div>
+</div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
+<script>prettyPrint()</script>
+</body>
+</html>

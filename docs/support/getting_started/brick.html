@@ -5,7 +5,7 @@
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 1.5.5">
-<title>Getting Started on your brick</title>
+<title>docs</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <link rel="stylesheet" href="./asciidoctor.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -13,20 +13,23 @@
 <body class="article toc2 toc-left">
 <div id="header">
 <h1>Getting Started on your brick</h1>
+<div class="details">
+<span id="revnumber">version 0.7.0-SNAPSHOT</span>
+</div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_1_install_ev3dev_on_your_brick">1. Install EV3Dev on your brick</a></li>
-<li><a href="#_2_install_java_on_your_brick">2. Install Java on your brick</a>
+<li><a href="#1-install-ev3dev-on-your-brick">1. 1. Install EV3Dev on your brick</a></li>
+<li><a href="#install-java-on-your-brick">2. Install Java on your brick</a>
 <ul class="sectlevel2">
-<li><a href="#_2_1_ev3_brick">2.1 EV3 Brick</a></li>
-<li><a href="#_2_2_brickpi_3_brickpi_pistorms">2.2 BrickPi 3 / BrickPi+ / PiStorms</a></li>
+<li><a href="#ev3-brick">2.1. EV3 Brick</a></li>
+<li><a href="#brickpi-3-brickpi-pistorms">2.2. BrickPi 3 / BrickPi+ / PiStorms</a></li>
 </ul>
 </li>
-<li><a href="#_3_create_your_first_project_and_deploy_on_your_brick">3. Create your first Project and deploy on your Brick</a>
+<li><a href="#create-your-first-project-and-deploy-on-your-brick">3. Create your first Project and deploy on your Brick</a>
 <ul class="sectlevel2">
-<li><a href="#_3_1_using_a_gradle_template_project">3.1 Using a Gradle template project</a></li>
-<li><a href="#_3_2_create_a_project_from_scratch">3.2 Create a project from scratch</a></li>
+<li><a href="#using-a-gradle-template-project">3.1. Using a Gradle template project</a></li>
+<li><a href="#create-a-project-from-scratch">3.2. Create a project from scratch</a></li>
 </ul>
 </li>
 </ul>
@@ -34,7 +37,7 @@
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="_1_install_ev3dev_on_your_brick">1. Install EV3Dev on your brick</h2>
+<h2 id="1-install-ev3dev-on-your-brick">1. 1. Install EV3Dev on your brick</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Follow the link to install EV3Dev on your brick:</p>
@@ -52,7 +55,7 @@ before jump to the next step in this guide.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code>sudo apt-get update
+<pre class="prettyprint highlight"><code>sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get dist-upgrade
 sudo reboot</code></pre>
@@ -61,13 +64,13 @@ sudo reboot</code></pre>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_2_install_java_on_your_brick">2. Install Java on your brick</h2>
+<h2 id="install-java-on-your-brick">2. Install Java on your brick</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>For this step exists 2 paths. One path is for EV3 Brick and another path for BrickPi/PiStorms users.</p>
 </div>
 <div class="sect2">
-<h3 id="_2_1_ev3_brick">2.1 EV3 Brick</h3>
+<h3 id="ev3-brick">2.1. EV3 Brick</h3>
 <div class="paragraph">
 <p>The EV3 Brick was designed with a SOC based on [ARM EABI](<a href="https://wiki.debian.org/ArmEabiPort" class="bare">https://wiki.debian.org/ArmEabiPort</a>)
 and the best JVM option for that hardware architecture is the Oracle JRE 8 to install in the brick but, it is not possible to install directly in the brick
@@ -79,7 +82,7 @@ and later, copy the file <code>ejdk-8-fcs-b132-linux-arm-sflt-03_mar_2014.tar.gz
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code>scp "./ejdk-8-fcs-b132-linux-arm-sflt-03_mar_2014.tar.gz" "robot@192.168.1.85:/home/robot"</code></pre>
+<pre class="prettyprint highlight"><code>scp "./ejdk-8-fcs-b132-linux-arm-sflt-03_mar_2014.tar.gz" "robot@192.168.1.85:/home/robot"</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -89,10 +92,10 @@ and later, copy the file <code>ejdk-8-fcs-b132-linux-arm-sflt-03_mar_2014.tar.gz
 <p><a href="https://github.com/ev3dev-lang-java/installer" class="bare">https://github.com/ev3dev-lang-java/installer</a></p>
 </div>
 <div class="sect3">
-<h4 id="_using_the_installer">Using the installer</h4>
+<h4 id="using-the-installer">2.1.1. Using the installer</h4>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code>cd /home/robot
+<pre class="prettyprint highlight"><code>cd /home/robot
 mkdir installer
 cd installer
 wget -N https://raw.githubusercontent.com/ev3dev-lang-java/installer/develop/installer.sh
@@ -103,10 +106,10 @@ sudo ./installer.sh</code></pre>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_manual_way">Manual way</h4>
+<h4 id="manual-way">2.1.2. Manual way</h4>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code>tar -zxvf "/home/robot/ejdk-8-fcs-b132-linux-arm-sflt-03_mar_2014.tar.gz" -C /opt
+<pre class="prettyprint highlight"><code>tar -zxvf "/home/robot/ejdk-8-fcs-b132-linux-arm-sflt-03_mar_2014.tar.gz" -C /opt
 sudo update-alternatives --install /usr/bin/java java /opt/ejdk1.8.0/linux_arm_sflt/jre/bin/java 1
 java -version</code></pre>
 </div>
@@ -117,7 +120,7 @@ java -version</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_2_2_brickpi_3_brickpi_pistorms">2.2 BrickPi 3 / BrickPi+ / PiStorms</h3>
+<h3 id="brickpi-3-brickpi-pistorms">2.2. BrickPi 3 / BrickPi+ / PiStorms</h3>
 <div class="paragraph">
 <p>Using the installer, it is possible to automate everything:</p>
 </div>
@@ -126,7 +129,7 @@ java -version</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code>cd /home/robot
+<pre class="prettyprint highlight"><code>cd /home/robot
 mkdir installer
 cd installer
 wget -N https://raw.githubusercontent.com/ev3dev-lang-java/installer/develop/installer.sh
@@ -139,13 +142,13 @@ sudo ./installer.sh</code></pre>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_3_create_your_first_project_and_deploy_on_your_brick">3. Create your first Project and deploy on your Brick</h2>
+<h2 id="create-your-first-project-and-deploy-on-your-brick">3. Create your first Project and deploy on your Brick</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Once you have the required infrastructure on your Brick, it is possible to experiment with the libraries in some ways:</p>
 </div>
 <div class="sect2">
-<h3 id="_3_1_using_a_gradle_template_project">3.1 Using a Gradle template project</h3>
+<h3 id="using-a-gradle-template-project">3.1. Using a Gradle template project</h3>
 <div class="paragraph">
 <p>If you like, you can experiment with the project, using the following project template:</p>
 </div>
@@ -157,7 +160,7 @@ sudo ./installer.sh</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code>remotes {
+<pre class="prettyprint highlight"><code>remotes {
     ev3dev {
         host = '10.0.1.3'
         user = 'robot'
@@ -171,7 +174,7 @@ sudo ./installer.sh</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code>./gradlew deployAndRun</code></pre>
+<pre class="prettyprint highlight"><code>./gradlew deployAndRun</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -179,12 +182,12 @@ sudo ./installer.sh</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code>./gradlew deployAndProfilingRun</code></pre>
+<pre class="prettyprint highlight"><code>./gradlew deployAndProfilingRun</code></pre>
 </div>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_3_2_create_a_project_from_scratch">3.2 Create a project from scratch</h3>
+<h3 id="create-a-project-from-scratch">3.2. Create a project from scratch</h3>
 <div class="paragraph">
 <p>Another alternative is the creation of a project from Scratch using Maven/Gradle.</p>
 </div>
@@ -193,7 +196,7 @@ sudo ./installer.sh</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml" data-lang="xml">&lt;repositories&gt;
+<pre class="prettyprint highlight"><code class="language-xml" data-lang="xml">&lt;repositories&gt;
     &lt;repository&gt;
         &lt;id&gt;jitpack.io&lt;/id&gt;
         &lt;url&gt;https://jitpack.io&lt;/url&gt;
@@ -203,7 +206,7 @@ sudo ./installer.sh</code></pre>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
+<pre class="prettyprint highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
     &lt;groupId&gt;com.github.ev3dev-lang-java&lt;/groupId&gt;
     &lt;artifactId&gt;ev3dev-lang-java&lt;/artifactId&gt;
     &lt;version&gt;v0.6.1&lt;/version&gt;
@@ -213,17 +216,27 @@ sudo ./installer.sh</code></pre>
 <div class="paragraph">
 <p>Further information about the Maven dependency: <a href="https://jitpack.io/#ev3dev-lang-java/ev3dev-lang-java/v0.6.1" class="bare">https://jitpack.io/#ev3dev-lang-java/ev3dev-lang-java/v0.6.1</a></p>
 </div>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-343143-18', 'auto');
+    ga('send', 'pageview');
+</script>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-06-24 22:19:35 BST
+Version 0.7.0-SNAPSHOT<br>
+Last updated 2017-06-25 17:22:07 BST
 </div>
 </div>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
-<script>hljs.initHighlighting()</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
+<script>prettyPrint()</script>
 </body>
 </html>

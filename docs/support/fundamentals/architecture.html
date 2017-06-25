@@ -5,40 +5,41 @@
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 1.5.5">
-<title>The robot architecture</title>
+<title>docs</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <link rel="stylesheet" href="./asciidoctor.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 </head>
 <body class="article toc2 toc-left">
 <div id="header">
+<h1>The robot architecture</h1>
+<div class="details">
+<span id="revnumber">version 0.7.0-SNAPSHOT</span>
+</div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#the-robot-architecture">The robot architecture</a>
+<li><a href="#introduction">1. Introduction</a>
 <ul class="sectlevel2">
-<li><a href="#introduction">Introduction</a></li>
+<li><a href="#control-system">1.1. Control System</a></li>
 </ul>
 </li>
-<li><a href="#references">References</a></li>
 </ul>
 </div>
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="the-robot-architecture">The robot architecture</h2>
+<h2 id="introduction">1. Introduction</h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="introduction">Introduction</h3>
 <div class="paragraph">
-<p>A robot <code>architecture</code> primarily refers to the software and hardware
-framework for controlling the robot.</p>
-</div>
-<div class="paragraph">
-<p>Every robot has the following components:</p>
+<p>Any Robot is based on the combination of Software &amp; Hardware.
+The <code>Architecture</code> of any robot is based on the following components:</p>
 </div>
 <div class="ulist">
 <ul>
+<li>
+<p>Control System</p>
+</li>
 <li>
 <p>Sensors</p>
 </li>
@@ -46,32 +47,43 @@ framework for controlling the robot.</p>
 <p>Actuators</p>
 </li>
 <li>
-<p>Control Unit</p>
+<p>Power supply</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="control-system">1.1. Control System</h3>
+<div class="paragraph">
+<p><strong>References:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.cs.cmu.edu/~chuck/robotpg/robofaq/9.html" class="bare">https://www.cs.cmu.edu/~chuck/robotpg/robofaq/9.html</a></p>
+</li>
+<li>
+<p><a href="http://www.yourarticlelibrary.com/robots/robots-5-important-components-of-robots/5692/" class="bare">http://www.yourarticlelibrary.com/robots/robots-5-important-components-of-robots/5692/</a></p>
+</li>
+<li>
+<p><a href="http://sciencing.com/main-parts-robot-7403157.html" class="bare">http://sciencing.com/main-parts-robot-7403157.html</a></p>
+</li>
+<li>
+<p><a href="http://www.mind.ilstu.edu/curriculum/medical_robotics/parts_of_robots.php" class="bare">http://www.mind.ilstu.edu/curriculum/medical_robotics/parts_of_robots.php</a></p>
 </li>
 </ul>
 </div>
 </div>
 </div>
 </div>
-<div class="sect1">
-<h2 id="references">References</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><a href="https://www.cs.cmu.edu/~chuck/robotpg/robofaq/9.html" class="bare">https://www.cs.cmu.edu/~chuck/robotpg/robofaq/9.html</a>
-<a href="http://www.yourarticlelibrary.com/robots/robots-5-important-components-of-robots/5692/" class="bare">http://www.yourarticlelibrary.com/robots/robots-5-important-components-of-robots/5692/</a>
-<a href="http://sciencing.com/main-parts-robot-7403157.html" class="bare">http://sciencing.com/main-parts-robot-7403157.html</a>
-<a href="http://www.mind.ilstu.edu/curriculum/medical_robotics/parts_of_robots.php" class="bare">http://www.mind.ilstu.edu/curriculum/medical_robotics/parts_of_robots.php</a></p>
-</div>
-</div>
-</div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-06-24 13:44:33 BST
+Version 0.7.0-SNAPSHOT<br>
+Last updated 2017-06-25 12:11:26 BST
 </div>
 </div>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
-<script>hljs.initHighlighting()</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
+<script>prettyPrint()</script>
 </body>
 </html>

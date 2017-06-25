@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.5">
+<title>docs</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<link rel="stylesheet" href="./asciidoctor.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+<body class="article toc2 toc-left">
+<div id="header">
+<h1>The robot architecture</h1>
+<div class="details">
+<span id="revnumber">version 0.7.0-SNAPSHOT</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#introduction">1. Introduction</a>
+<ul class="sectlevel2">
+<li><a href="#control-system">1.1. Control System</a></li>
+<li><a href="#sensors">1.2. Sensors</a></li>
+<li><a href="#actuators">1.3. Actuators</a></li>
+<li><a href="#power-supply">1.4. Power supply</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="introduction">1. Introduction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Any Robot is based on the combination of Software &amp; Hardware.
+The <code>Architecture</code> of any robot is based on the following components:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Control System</p>
+</li>
+<li>
+<p>Sensors</p>
+</li>
+<li>
+<p>Actuators</p>
+</li>
+<li>
+<p>Power supply</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="control-system">1.1. Control System</h3>
+<div class="paragraph">
+<p>The pure definition of a <code>Control system</code> is:</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+"A control system manages, commands, directs or regulates the behaviour of other devices or systems."
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>In a Mindstorms context, the Control System is the Brick we use to create Robots.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="ev3-brick.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="sensors">1.2. Sensors</h3>
+<div class="paragraph">
+<p>Sensors measure a physical quantity, and convert it into a usable signal for your control systen.
+When you are designing the robot it is important to choose the correct sensors to enable it to be aware of
+its environment and perform the tasks required.</p>
+</div>
+<div class="paragraph">
+<p>In a Mindstorms context, an Actuator is the EV3 IR Sensor:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="ev3_ir_sensor.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="actuators">1.3. Actuators</h3>
+<div class="paragraph">
+<p>An “actuator” can be defined as a device that converts energy (in robotics, that energy tends to be electrical)
+into physical motion. The vast majority of actuators produce either rotational or linear motion.</p>
+</div>
+<div class="paragraph">
+<p>In a Mindstorms context, an Actuator is the EV3 Large Motor:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="ev3_large_motor.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="power-supply">1.4. Power supply</h3>
+<div class="paragraph">
+<p>An electric battery is a device consisting of one or more electrochemical cells with external connections
+provided to power electrical devices.</p>
+</div>
+<div class="paragraph">
+<p>In a Mindstorms context, the Battery is this element:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="ev3-battery.jpg" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p>The rechargeable battery run in combination with the power adapter:</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="ev3-battery-power-adapter.jpg" alt="image"></span></p>
+</div>
+<div class="paragraph">
+<p><strong>References:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.cs.cmu.edu/~chuck/robotpg/robofaq/9.html" class="bare">https://www.cs.cmu.edu/~chuck/robotpg/robofaq/9.html</a></p>
+</li>
+<li>
+<p><a href="http://sciencing.com/main-parts-robot-7403157.html" class="bare">http://sciencing.com/main-parts-robot-7403157.html</a></p>
+</li>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/Control_system" class="bare">https://en.wikipedia.org/wiki/Control_system</a></p>
+</li>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/Robotic_sensors" class="bare">https://en.wikipedia.org/wiki/Robotic_sensors</a></p>
+</li>
+<li>
+<p><a href="http://www.robotshop.com/blog/en/how-to-make-a-robot-lesson-3-actuators-2-3703" class="bare">http://www.robotshop.com/blog/en/how-to-make-a-robot-lesson-3-actuators-2-3703</a></p>
+</li>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/Battery_(electricity" class="bare">https://en.wikipedia.org/wiki/Battery_(electricity</a>)</p>
+</li>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/Power_supply" class="bare">https://en.wikipedia.org/wiki/Power_supply</a></p>
+</li>
+<li>
+<p><a href="http://www.societyofrobots.com/batteries.shtml" class="bare">http://www.societyofrobots.com/batteries.shtml</a></p>
+</li>
+</ul>
+</div>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-343143-18', 'auto');
+    ga('send', 'pageview');
+</script>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Version 0.7.0-SNAPSHOT<br>
+Last updated 2017-06-25 17:21:57 BST
+</div>
+</div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
+<script>prettyPrint()</script>
+</body>
+</html>
