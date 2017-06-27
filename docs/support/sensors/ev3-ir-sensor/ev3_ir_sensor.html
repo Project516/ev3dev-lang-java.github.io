@@ -10,22 +10,36 @@
 <link rel="stylesheet" href="./asciidoctor.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 </head>
-<body class="article">
+<body class="article toc2 toc-left">
 <div id="header">
 <h1>EV3 Infrared Sensor</h1>
 <div class="details">
 <span id="revnumber">version 0.7.0-SNAPSHOT</span>
 </div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#introduction">1. Introduction</a></li>
+<li><a href="#how-to-use-the-sensor">2. How to use the sensor</a>
+<ul class="sectlevel2">
+<li><a href="#measure-distances">2.1. Measure distances</a></li>
+<li><a href="#detect-a-beacon">2.2. Detect a beacon</a></li>
+<li><a href="#detect-commands-from-a-remote-beacon">2.3. Detect commands from a remote beacon</a></li>
+</ul>
+</li>
+</ul>
+</div>
 </div>
 <div id="content">
+<div class="sect1">
+<h2 id="introduction">1. Introduction</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>The digital EV3 Infrared Seeking Sensor detects proximity to the robot and reads signals emitted by the EV3 Infrared Beacon.</p>
+<p>The digital EV3 Infrared Seeking Sensor detects proximity to the robot and reads signals
+emitted by the EV3 Infrared Beacon. Some features about this sensor:</p>
 </div>
 <div class="ulist">
 <ul>
-<li>
-<p>Some features about this sensor:</p>
-</li>
 <li>
 <p>Proximity measurement of approximately 50-70 cm</p>
 </li>
@@ -43,27 +57,13 @@
 <div class="paragraph">
 <p><span class="image"><img src="./ev3_ir_sensor.png" alt="image"></span></p>
 </div>
-<div class="paragraph">
-<p><strong>How to use the sensor</strong></p>
 </div>
-<div class="paragraph">
-<p>Example 1: Show in the display the value of a Infrared sensor.</p>
 </div>
-<div class="paragraph">
-<p><span class="image"><img src="./ev3_ir_sensor_example1.png" alt="image"></span></p>
-</div>
-<div class="paragraph">
-<p>Example2: Use a Infrared Sensor in a if statement.</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="./ev3_ir_sensor_example2.png" alt="image"></span></p>
-</div>
-<div class="paragraph">
-<p>Example3: Play sounds with the help of a IR Sensor.</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="./ev3_ir_sensor_example3.png" alt="image"></span></p>
-</div>
+<div class="sect1">
+<h2 id="how-to-use-the-sensor">2. How to use the sensor</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="measure-distances">2.1. Measure distances</h3>
 <div class="listingblock">
 <div class="content">
 <pre class="prettyprint highlight"><code class="language-java" data-lang="java">package ev3dev.sensors.ev3;
@@ -108,6 +108,9 @@ public class IRSensorDemo {
 }</code></pre>
 </div>
 </div>
+</div>
+<div class="sect2">
+<h3 id="detect-a-beacon">2.2. Detect a beacon</h3>
 <div class="listingblock">
 <div class="content">
 <pre class="prettyprint highlight"><code class="language-java" data-lang="java">package ev3dev.sensors.ev3;
@@ -175,6 +178,9 @@ public class IRSensorDemo2 {
 }</code></pre>
 </div>
 </div>
+</div>
+<div class="sect2">
+<h3 id="detect-commands-from-a-remote-beacon">2.3. Detect commands from a remote beacon</h3>
 <div class="listingblock">
 <div class="content">
 <pre class="prettyprint highlight"><code class="language-java" data-lang="java">package ev3dev.sensors.ev3;
@@ -236,10 +242,13 @@ public class IRSensorDemo3 {
     ga('send', 'pageview');
 </script>
 </div>
+</div>
+</div>
+</div>
 <div id="footer">
 <div id="footer-text">
 Version 0.7.0-SNAPSHOT<br>
-Last updated 2017-06-25 17:22:44 BST
+Last updated 2017-06-27 08:54:03 BST
 </div>
 </div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css">
