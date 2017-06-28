@@ -10,14 +10,28 @@
 <link rel="stylesheet" href="./asciidoctor.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 </head>
-<body class="article">
+<body class="article toc2 toc-left">
 <div id="header">
 <h1>EV3 Light sensor</h1>
 <div class="details">
 <span id="revnumber">version 0.7.0-SNAPSHOT</span>
 </div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#introduction">1. Introduction</a></li>
+<li><a href="#how-to-use-the-sensor">2. How to use the sensor</a>
+<ul class="sectlevel2">
+<li><a href="#measure-the-reflected-light-intensity-from-the-ev3-light-sensor">2.1. Measure the reflected light intensity from the EV3 light sensor.</a></li>
+</ul>
+</li>
+</ul>
+</div>
 </div>
 <div id="content">
+<div class="sect1">
+<h2 id="introduction">1. Introduction</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>The digital EV3 Color Sensor distinguishes between eight different colors.
 It also serves as a light sensor by detecting light intensities.
@@ -43,13 +57,13 @@ green, yellow, red, white and brown.</p>
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p><strong>How to use the sensor</strong>
-Example 1: Measure the reflected light intensity from the EV3 light sensor.</p>
 </div>
-<div class="paragraph">
-<p><span class="image"><img src="./ev3_light_sensor_example1.png" alt="image"></span></p>
 </div>
+<div class="sect1">
+<h2 id="how-to-use-the-sensor">2. How to use the sensor</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="measure-the-reflected-light-intensity-from-the-ev3-light-sensor">2.1. Measure the reflected light intensity from the EV3 light sensor.</h3>
 <div class="listingblock">
 <div class="content">
 <pre class="prettyprint highlight"><code class="language-java" data-lang="java">package ev3dev.sensors.ev3;
@@ -136,10 +150,13 @@ public class ColorSensorDemo {
 </div>
 </div>
 </div>
+</div>
+</div>
+</div>
 <div id="footer">
 <div id="footer-text">
 Version 0.7.0-SNAPSHOT<br>
-Last updated 2017-06-24 13:44:34 BST
+Last updated 2017-06-28 08:14:47 BST
 </div>
 </div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css">

@@ -10,14 +10,30 @@
 <link rel="stylesheet" href="./asciidoctor.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 </head>
-<body class="article">
+<body class="article toc2 toc-left">
 <div id="header">
 <h1>EV3 Gyro sensor</h1>
 <div class="details">
 <span id="revnumber">version 0.7.0-SNAPSHOT</span>
 </div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#introduction">1. Introduction</a></li>
+<li><a href="#how-to-use-the-sensor">2. How to use the sensor</a>
+<ul class="sectlevel2">
+<li><a href="#read-the-angle">2.1. Read the angle</a></li>
+<li><a href="#use-the-rate-mode">2.2. Use the rate mode</a></li>
+<li><a href="#detect-that-your-robot-turn-90-degrees">2.3. Detect that your robot turn 90 degrees</a></li>
+</ul>
+</li>
+</ul>
+</div>
 </div>
 <div id="content">
+<div class="sect1">
+<h2 id="introduction">1. Introduction</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>The digital EV3 Gyro Sensor measures the robot’s rotational motion and changes in its orientation.</p>
 </div>
@@ -43,12 +59,13 @@
 </li>
 </ol>
 </div>
-<div class="paragraph">
-<p>Example1: Turn your robot using a EV3 Gyro sensor.</p>
 </div>
-<div class="paragraph">
-<p><span class="image"><img src="ev3_gyro_sensor_example1.png" alt="image"></span></p>
 </div>
+<div class="sect1">
+<h2 id="how-to-use-the-sensor">2. How to use the sensor</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="read-the-angle">2.1. Read the angle</h3>
 <div class="listingblock">
 <div class="content">
 <pre class="prettyprint highlight"><code class="language-java" data-lang="java">package ev3dev.sensors.ev3;
@@ -92,6 +109,9 @@ public class GyroSensorDemo {
 }</code></pre>
 </div>
 </div>
+</div>
+<div class="sect2">
+<h3 id="use-the-rate-mode">2.2. Use the rate mode</h3>
 <div class="listingblock">
 <div class="content">
 <pre class="prettyprint highlight"><code class="language-java" data-lang="java">package ev3dev.sensors.ev3;
@@ -122,6 +142,9 @@ public class GyroSensorDemo2 {
 }</code></pre>
 </div>
 </div>
+</div>
+<div class="sect2">
+<h3 id="detect-that-your-robot-turn-90-degrees">2.3. Detect that your robot turn 90 degrees</h3>
 <div class="listingblock">
 <div class="content">
 <pre class="prettyprint highlight"><code class="language-java" data-lang="java">package ev3dev.sensors.ev3;
@@ -184,10 +207,13 @@ public class GyroSensorDemo3 {
     ga('send', 'pageview');
 </script>
 </div>
+</div>
+</div>
+</div>
 <div id="footer">
 <div id="footer-text">
 Version 0.7.0-SNAPSHOT<br>
-Last updated 2017-06-25 17:22:49 BST
+Last updated 2017-06-28 08:33:28 BST
 </div>
 </div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css">

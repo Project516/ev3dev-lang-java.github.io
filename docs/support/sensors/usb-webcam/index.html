@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.5">
+<title>docs</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<link rel="stylesheet" href="./asciidoctor.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+<body class="article toc2 toc-left">
+<div id="header">
+<h1>USB Webcam</h1>
+<div class="details">
+<span id="revnumber">version 0.7.0-SNAPSHOT</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#introduction">1. Introduction</a></li>
+<li><a href="#how-to-use-the-sensor">2. How to use the sensor</a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="introduction">1. Introduction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><span class="image"><img src="logitech-webcam.png" alt="image"></span></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="how-to-use-the-sensor">2. How to use the sensor</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-java" data-lang="java">package opencv;
+
+import org.opencv.core.Core;
+import org.opencv.core.Mat;
+import org.opencv.core.MatOfByte;
+import org.opencv.highgui.Highgui;
+import org.opencv.highgui.VideoCapture;
+
+public class OpenCVTest {
+    static final int READ_IMAGE_CNT = 1000;
+    static final int ENCODE_IMAGE_CNT = 1000;
+    VideoCapture vid;
+    Mat camImage = new Mat();
+
+  void init()
+  {
+      vid = new VideoCapture(0);
+      //vid.set(Highgui.CV_CAP_PROP_FRAME_WIDTH, 160);
+      //vid.set(Highgui.CV_CAP_PROP_FRAME_HEIGHT, 120);
+      //vid.open(0);
+      vid.read(camImage);
+      System.out.println("Image size is: " + camImage.cols() + "x" + camImage.rows());
+  }
+
+  void captureTest()
+  {
+      System.out.println("capture test read " + READ_IMAGE_CNT + " images");
+      long start = System.currentTimeMillis();
+      for(int i = 0; i &lt; READ_IMAGE_CNT; i++)
+          vid.read(camImage);
+      double time = (double)(System.currentTimeMillis() - start)/1000;
+      System.out.println("Time is " + time + " = " + (READ_IMAGE_CNT/time) + "fps");
+  }
+
+  void encodeTest()
+  {
+      System.out.println("Encoding image as jpeg " + ENCODE_IMAGE_CNT + " images");
+      MatOfByte buf = new MatOfByte();
+      long start = System.currentTimeMillis();
+      for(int i = 0; i &lt; READ_IMAGE_CNT; i++)
+          Highgui.imencode(".jpg", camImage, buf);
+      double time = (double)(System.currentTimeMillis() - start)/1000;
+      System.out.println("Time is " + time + " = " + (READ_IMAGE_CNT/time) + "fps");
+  }
+
+
+  public static void main(String[] args) {
+    // Load the native library.
+    System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
+    OpenCVTest test = new OpenCVTest();
+    test.init();
+    test.captureTest();
+    test.encodeTest();
+  }
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Version 0.7.0-SNAPSHOT<br>
+Last updated 2017-06-28 08:52:35 BST
+</div>
+</div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
+<script>prettyPrint()</script>
+</body>
+</html>
