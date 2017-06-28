@@ -10,16 +10,544 @@
 <link rel="stylesheet" href="./asciidoctor.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 </head>
-<body class="article">
+<body class="article toc2 toc-left">
 <div id="header">
+<h1>Actuators</h1>
+<div class="details">
+<span id="revnumber">version 0.7.0-SNAPSHOT</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#introduction">1. Introduction</a></li>
+<li><a href="#regulated-motors">2. Regulated Motors</a></li>
+<li><a href="#how-to-use-the-regulated-motor">3. How to use the regulated motor</a>
+<ul class="sectlevel2">
+<li><a href="#move-a-motor">3.1. Move a motor</a></li>
+<li><a href="#forward-backward">3.2. Forward &amp; Backward</a></li>
+<li><a href="#test-the-different-stop-modes">3.3. Test the different stop modes</a></li>
+<li><a href="#multiple-motors">3.4. Multiple motors</a></li>
+<li><a href="#motor-events">3.5. Motor events</a></li>
+<li><a href="#rotating-a-motor">3.6. Rotating a motor</a></li>
+<li><a href="#rotating-to-a-specific-angle">3.7. Rotating to a specific angle</a></li>
+</ul>
+</li>
+<li><a href="#unregulated-motors">4. Unregulated Motors</a></li>
+<li><a href="#how-to-use-the-regulated-motor-2">5. How to use the regulated motor</a>
+<ul class="sectlevel2">
+<li><a href="#move-a-motor-2">5.1. Move a motor</a></li>
+<li><a href="#move-multiple-motors">5.2. Move multiple motors</a></li>
+</ul>
+</li>
+</ul>
+</div>
 </div>
 <div id="content">
+<div class="sect1">
+<h2 id="introduction">1. Introduction</h2>
+<div class="sectionbody">
 
+</div>
+</div>
+<div class="sect1">
+<h2 id="regulated-motors">2. Regulated Motors</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>EV3 Large Motor</strong></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="ev3_large_motor.png" alt="ScreenShot"></span></p>
+</div>
+<div class="paragraph">
+<p><strong>EV3 Medium Motor</strong></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="ev3_medium_motor.jpg" alt="ScreenShot"></span></p>
+</div>
+<div class="paragraph">
+<p><strong>NXT Motor</strong></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="nxt-lego-motor.png" alt="ScreenShot"></span></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="how-to-use-the-regulated-motor">3. How to use the regulated motor</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="move-a-motor">3.1. Move a motor</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-java" data-lang="java">package ev3dev.actuators.lego.motors;
+
+import lejos.hardware.port.MotorPort;
+import lejos.utility.Delay;
+
+public class LargeMotorDemo {
+
+    public static void main(String[] args) throws InterruptedException {
+
+        System.out.println("Starting motors on A");
+        final EV3LargeRegulatedMotor mA = new EV3LargeRegulatedMotor(MotorPort.A);
+
+        mA.setSpeed(500);
+        mA.brake();
+        mA.forward();
+
+        System.out.println(String.format("Large Motor is moving: %s at speed %d", mA.isMoving(), mA.getSpeed()));
+        Delay.msDelay(2000);
+
+        mA.stop();
+        System.out.println("Stopped motors");
+    }
+
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="forward-backward">3.2. Forward &amp; Backward</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-java" data-lang="java">package ev3dev.actuators.lego.motors;
+
+import lejos.hardware.port.MotorPort;
+import lejos.utility.Delay;
+
+public class LargeMotorDemo2 {
+
+    public static void main(String[] args) throws InterruptedException {
+
+        System.out.println("Starting motors on A");
+        final EV3LargeRegulatedMotor mA = new EV3LargeRegulatedMotor(MotorPort.A);
+        mA.setSpeed(500);
+        mA.brake();
+
+        System.out.println("Forward");
+        mA.forward();
+        System.out.println("Large Motor is moving: " +  mA.isMoving() + " at speed {}" + mA.getSpeed());
+        Delay.msDelay(2000);
+        mA.stop();
+        System.out.println("Stop");
+        System.out.println("Backward");
+        mA.backward();
+        System.out.println("Large Motor is moving: " + mA.isMoving() + " at speed {}" + mA.getSpeed());
+        Delay.msDelay(2000);
+        System.out.println("Stop");
+        mA.stop();
+        System.out.println("Forward");
+        mA.forward();
+        Delay.msDelay(2000);
+        mA.stop();
+        System.out.println("Stop");
+
+    }
+
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="test-the-different-stop-modes">3.3. Test the different stop modes</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-java" data-lang="java">package ev3dev.actuators.lego.motors;
+
+import lejos.hardware.port.MotorPort;
+import lejos.utility.Delay;
+
+public class LargeMotorStopModesExample {
+
+    public static void main(String[] args) throws InterruptedException {
+
+        System.out.println("Starting motors on A");
+        final EV3LargeRegulatedMotor mA = new EV3LargeRegulatedMotor(MotorPort.A);
+        mA.setSpeed(500);
+
+        System.out.println("Testing brake stop mode");
+        mA.brake();
+        mA.forward();
+        System.out.println(String.format("Large Motor is moving: %s at speed %d", mA.isMoving(), mA.getSpeed()));
+        Delay.msDelay(2000);
+        mA.stop();
+
+        Delay.msDelay(2000);
+
+        System.out.println("Testing hold stop mode");
+        mA.hold();
+        mA.forward();
+        System.out.println(String.format("Large Motor is moving: %s at speed %d", mA.isMoving(), mA.getSpeed()));
+        Delay.msDelay(2000);
+        mA.stop();
+
+        Delay.msDelay(2000);
+
+        System.out.println("Testing coast stop mode");
+        mA.coast();
+        mA.forward();
+        System.out.println(String.format("Large Motor is moving: %s at speed %d", mA.isMoving(), mA.getSpeed()));
+        Delay.msDelay(2000);
+        mA.stop();
+
+        System.out.println("Stopped motors");
+    }
+
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="multiple-motors">3.4. Multiple motors</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-java" data-lang="java">package ev3dev.actuators.lego.motors;
+
+import ev3dev.hardware.EV3DevPlatforms;
+import ev3dev.sensors.Battery;
+import lejos.hardware.port.MotorPort;
+import lejos.utility.Delay;
+
+public class MultipleMotorsDemo extends EV3DevPlatforms {
+
+    public static void main(String[] args) throws InterruptedException {
+
+        MultipleMotorsDemo example = new MultipleMotorsDemo();
+
+        System.out.println("Starting motor on A");
+        final EV3LargeRegulatedMotor mA = new EV3LargeRegulatedMotor(MotorPort.A);
+        System.out.println("Starting motor on B");
+        final EV3LargeRegulatedMotor mB = new EV3LargeRegulatedMotor(MotorPort.B);
+
+        //To Stop the motor in case of pkill java for example
+        Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
+            public void run() {
+                mA.stop();
+                mB.stop();
+                System.out.println(Battery.getInstance().getVoltage());
+            }
+        }));
+
+        mA.brake();
+        mB.brake();
+
+        mA.setSpeed(100);
+        mB.setSpeed(100);
+        mA.forward();
+        mB.forward();
+
+        Delay.msDelay(4000);
+        mA.stop();
+        mB.stop();
+        System.out.println("Stopped motors");
+    }
+
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="motor-events">3.5. Motor events</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-java" data-lang="java">package ev3dev.actuators.lego.motors;
+
+
+import lejos.hardware.port.MotorPort;
+import lejos.robotics.RegulatedMotor;
+import lejos.robotics.RegulatedMotorListener;
+import lejos.utility.Delay;
+
+public class MotorEventTest {
+
+    public static void main(String[] args) {
+
+        System.out.println("Testing events with Motors");
+
+        // Listener to stop motors if they get stalled
+        final RegulatedMotorListener listener = new RegulatedMotorListener() {
+
+            @Override
+            public void rotationStarted(
+                    final RegulatedMotor motor,
+                    final int tachoCount,
+                    final boolean stalled,
+                    final long timeStamp) {
+
+                System.out.println("Started");
+            }
+
+            @Override
+            public void rotationStopped(
+                final RegulatedMotor motor,
+                final int tachoCount,
+                final boolean stalled,
+                final long timeStamp) {
+
+                System.out.println("Stopped");
+            }
+        };
+
+        final RegulatedMotor mA = new NXTRegulatedMotor(MotorPort.A);
+        mA.addListener(listener);
+        mA.forward();
+        Delay.msDelay(500);
+        mA.stop();
+
+    }
+
+
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="rotating-a-motor">3.6. Rotating a motor</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-java" data-lang="java">package ev3dev.actuators.lego.motors;
+
+import ev3dev.actuators.Sound;
+import ev3dev.hardware.EV3DevPlatform;
+import ev3dev.hardware.EV3DevPlatforms;
+import lejos.hardware.port.MotorPort;
+import lejos.utility.Delay;
+
+public class RegulatedMotorRotateDemo extends EV3DevPlatforms {
+
+    public static void main(String[] args) {
+
+        RegulatedMotorRotateDemo example = new RegulatedMotorRotateDemo();
+
+		Sound sound = Sound.getInstance();
+
+    	final int degreesToTurn = 90;
+
+        final EV3LargeRegulatedMotor mA = new EV3LargeRegulatedMotor(MotorPort.A);
+        mA.resetTachoCount();
+        mA.setSpeed(100);
+
+        if(example.getPlatform().equals(EV3DevPlatform.EV3BRICK)) {
+            mA.brake();
+
+            sound.beep();
+            System.out.println("" + mA.getTachoCount());
+            mA.rotate(degreesToTurn);
+            sound.beep();
+            Delay.msDelay(1000);
+            System.out.println("" + mA.getTachoCount());
+            mA.rotate(degreesToTurn);
+            sound.beep();
+            Delay.msDelay(1000);
+            System.out.println("" + mA.getTachoCount());
+            mA.rotate(degreesToTurn);
+            sound.beep();
+            Delay.msDelay(1000);
+            System.out.println("" + mA.getTachoCount());
+            mA.rotate(degreesToTurn);
+            sound.beep();
+            Delay.msDelay(1000);
+            System.out.println("" + mA.getTachoCount());
+
+        } else {
+            System.out.println("This feature is exclusive of EV3 Brick with accuracy");
+        }
+
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="rotating-to-a-specific-angle">3.7. Rotating to a specific angle</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-java" data-lang="java">package ev3dev.actuators.lego.motors;
+
+import ev3dev.actuators.Sound;
+import ev3dev.hardware.EV3DevPlatform;
+import ev3dev.hardware.EV3DevPlatforms;
+import lejos.hardware.port.MotorPort;
+import lejos.utility.Delay;
+
+public class RegulatedMotorRotateToDemo extends EV3DevPlatforms {
+
+    public static void main(String[] args) {
+
+        RegulatedMotorRotateToDemo example = new RegulatedMotorRotateToDemo();
+
+        Sound sound = Sound.getInstance();
+
+    	final int degreesToTurn = 90;
+    	int currentDegrees =  0;
+
+        EV3LargeRegulatedMotor mA = new EV3LargeRegulatedMotor(MotorPort.A);
+        mA.resetTachoCount();
+        mA.setSpeed(100);
+
+        if(example.getPlatform().equals(EV3DevPlatform.EV3BRICK)) {
+            mA.brake();
+
+            System.out.println("" + mA.getTachoCount());
+            currentDegrees += degreesToTurn;
+            System.out.println("" + currentDegrees);
+            mA.rotateTo(currentDegrees);
+            sound.beep();
+            Delay.msDelay(1000);
+
+            System.out.println("" + mA.getTachoCount());
+            currentDegrees += degreesToTurn;
+            System.out.println("" + currentDegrees);
+            mA.rotateTo(currentDegrees);
+            sound.beep();
+            Delay.msDelay(1000);
+
+        } else {
+            System.out.println("This feature is exclusive of EV3 Brick with accuracy");
+        }
+
+    }
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="unregulated-motors">4. Unregulated Motors</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>RCX Motors</strong></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="rcx-motor.jpg" alt="ScreenShot"></span></p>
+</div>
+<div class="paragraph">
+<p><strong>Lego Technics Motor</strong></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="technic-motor.jpg" alt="ScreenShot"></span></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="how-to-use-the-regulated-motor-2">5. How to use the regulated motor</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="move-a-motor-2">5.1. Move a motor</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-java" data-lang="java">package ev3dev.actuators.lego.motors;
+
+import lejos.hardware.port.MotorPort;
+import lejos.utility.Delay;
+
+public class UnregulatedMotorDemo {
+
+	//Robot Definition
+	private static UnregulatedMotor umotor1 = new UnregulatedMotor(MotorPort.C);
+
+    //Configuration
+    private final static int motorPower = 50;
+    private final static int ONE_SECOND = 1000;
+
+	public static void main(String[] args) {
+
+		//Set power for DC Motors
+		umotor1.setPower(motorPower);
+
+		//Testing DC-Motor 1
+		umotor1.forward();
+		System.out.println("" + umotor1.isMoving());
+		Delay.msDelay(ONE_SECOND);
+		umotor1.stop();
+		System.out.println("" + umotor1.isMoving());
+		umotor1.backward();
+		System.out.println("" + umotor1.isMoving());
+		Delay.msDelay(ONE_SECOND);
+		umotor1.stop();
+		System.out.println("" + umotor1.isMoving());
+		umotor1.forward();
+		System.out.println("" + umotor1.isMoving());
+		Delay.msDelay(ONE_SECOND);
+		umotor1.stop();
+
+	}
+
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="move-multiple-motors">5.2. Move multiple motors</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-java" data-lang="java">package ev3dev.actuators.lego.motors;
+
+import lejos.hardware.port.MotorPort;
+import lejos.utility.Delay;
+
+public class UnregulatedMutipleMotorDemo {
+
+	//Robot Definition
+	private static UnregulatedMotor umotor1 = new UnregulatedMotor(MotorPort.C);
+	private static UnregulatedMotor umotor2 = new UnregulatedMotor(MotorPort.D);
+
+    //Configuration
+    private final static int motorPower = 50;
+    private final static int ONE_SECOND = 1000;
+
+	public static void main(String[] args) {
+
+		//Set power for DC Motors
+		umotor1.setPower(motorPower);
+		umotor2.setPower(motorPower);
+
+		//Testing DC-Motor 1
+		umotor1.forward();
+		System.out.println("" + umotor1.isMoving());
+		Delay.msDelay(ONE_SECOND);
+		umotor1.stop();
+		System.out.println("" + umotor1.isMoving());
+		umotor1.backward();
+		System.out.println("" + umotor1.isMoving());
+		Delay.msDelay(ONE_SECOND);
+		umotor1.stop();
+		System.out.println("" + umotor1.isMoving());
+		umotor1.forward();
+		System.out.println("" + umotor1.isMoving());
+		Delay.msDelay(ONE_SECOND);
+		umotor1.stop();
+
+		//Testing DC-Motor 2
+		umotor2.forward();
+		System.out.println("" + umotor2.isMoving());
+		Delay.msDelay(ONE_SECOND);
+		umotor2.stop();
+		System.out.println("" + umotor2.isMoving());
+		umotor2.backward();
+		System.out.println("" + umotor2.isMoving());
+		Delay.msDelay(ONE_SECOND);
+		umotor2.stop();
+		System.out.println("" + umotor2.isMoving());
+		umotor2.forward();
+		System.out.println("" + umotor2.isMoving());
+		Delay.msDelay(ONE_SECOND);
+		umotor2.stop();
+
+	}
+
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
 Version 0.7.0-SNAPSHOT<br>
-Last updated 2017-06-28 08:57:52 BST
+Last updated 2017-06-28 21:56:10 BST
 </div>
 </div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css">
