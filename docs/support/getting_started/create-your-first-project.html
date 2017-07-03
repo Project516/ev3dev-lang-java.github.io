@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.5">
+<title>docs</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<link rel="stylesheet" href="./asciidoctor.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+<body class="article toc2 toc-left">
+<div id="header">
+<h1>Create your first Project</h1>
+<div class="details">
+<span id="revnumber">version 0.7.0-SNAPSHOT</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#introduction">1. Introduction</a></li>
+<li><a href="#create-your-first-project-with-a-gradle-template-project">2. Create your first project with a Gradle template project</a>
+<ul class="sectlevel2">
+<li><a href="#deploy-your-program">2.1. Deploy your program</a></li>
+</ul>
+</li>
+<li><a href="#create-your-first-project-from-scratch">3. Create your first project from scratch</a></li>
+<li><a href="#playing-with-more-examples">4. Playing with more examples</a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="introduction">1. Introduction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Create your first project is not complicated, for that action, exist 2 alternatives:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Create your project from a Template Project</p>
+</li>
+<li>
+<p>Create your project from Scratch</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="create-your-first-project-with-a-gradle-template-project">2. Create your first project with a Gradle template project</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The project provide a Gradle template project ready to run in your favourite Java IDE.</p>
+</div>
+<div class="paragraph">
+<p>Visit this <a href="https://github.com/ev3dev-lang-java/template_project_gradle">Git repository</a> to download the project:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code>git clone https://github.com/ev3dev-lang-java/template_project_gradle.git</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Once you have downloaded the project in your personal computer,
+open the project with your Java IDE to edit the file: <code>config.gradle</code>: to update IP of you Brick:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code>remotes {
+    ev3dev {
+        host = '10.0.1.3'
+        user = 'robot'
+        password = 'maker'
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The project are configured to send to the Brick the following example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-java" data-lang="java">package examples;
+
+import ev3dev.actuators.lego.motors.EV3LargeRegulatedMotor;
+import ev3dev.sensors.Battery;
+import lejos.hardware.port.MotorPort;
+import lejos.utility.Delay;
+
+public class MyFirstRobot {
+
+    public static void main(final String[] args){
+
+        System.out.println("Creating Motor A &amp; B");
+        final EV3LargeRegulatedMotor motorLeft = new EV3LargeRegulatedMotor(MotorPort.A);
+        final EV3LargeRegulatedMotor motorRight = new EV3LargeRegulatedMotor(MotorPort.B);
+
+        //To Stop the motor in case of pkill java for example
+        Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
+            public void run() {
+                System.out.println("Emergency Stop");
+                motorLeft.stop();
+                motorRight.stop();
+            }
+        }));
+
+        System.out.println("Defining the Stop mode");
+        motorLeft.brake();
+        motorRight.brake();
+
+        System.out.println("Defining motor speed");
+        final int motorSpeed = 200;
+        motorLeft.setSpeed(motorSpeed);
+        motorRight.setSpeed(motorSpeed);
+
+        System.out.println("Go Forward with the motors");
+        motorLeft.forward();
+        motorRight.forward();
+
+        Delay.msDelay(2000);
+
+        System.out.println("Stop motors");
+        motorLeft.stop();
+        motorRight.stop();
+
+        System.out.println("Go Backward with the motors");
+        motorLeft.backward();
+        motorRight.backward();
+
+        Delay.msDelay(2000);
+
+        System.out.println("Stop motors");
+        motorLeft.stop();
+        motorRight.stop();
+
+        System.out.println("Checking Battery");
+        System.out.println("Votage: " + Battery.getInstance().getVoltage());
+
+        System.exit(0);
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The example was designed to move a mobile robot with 2 motors connected to Port A &amp; Port B.</p>
+</div>
+<div class="sect2">
+<h3 id="deploy-your-program">2.1. Deploy your program</h3>
+<div class="paragraph">
+<p>To deploy the example on your brick, open a <code>terminal</code> and type:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code>./gradlew deployAndRun</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="create-your-first-project-from-scratch">3. Create your first project from scratch</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Another alternative is the creation of a project from Scratch using Maven/Gradle.</p>
+</div>
+<div class="paragraph">
+<p>To start a new project with this library, add the following repository and dependency.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-xml" data-lang="xml">&lt;repositories&gt;
+    &lt;repository&gt;
+        &lt;id&gt;jitpack.io&lt;/id&gt;
+        &lt;url&gt;https://jitpack.io&lt;/url&gt;
+    &lt;/repository&gt;
+&lt;/repositories&gt;</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
+    &lt;groupId&gt;com.github.ev3dev-lang-java&lt;/groupId&gt;
+    &lt;artifactId&gt;ev3dev-lang-java&lt;/artifactId&gt;
+    &lt;version&gt;v0.6.1&lt;/version&gt;
+&lt;/dependency&gt;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Further information about <a href="https://jitpack.io/#ev3dev-lang-java/ev3dev-lang-java/v0.6.1">the dependency</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="playing-with-more-examples">4. Playing with more examples</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The project has a repository with several examples about the usage of the different libraries.</p>
+</div>
+<div class="paragraph">
+<p>Visit the <a href="https://github.com/ev3dev-lang-java/examples">repository about examples</a> to download and test more examples.</p>
+</div>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-343143-18', 'auto');
+    ga('send', 'pageview');
+</script>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Version 0.7.0-SNAPSHOT<br>
+Last updated 2017-07-01 16:36:25 BST
+</div>
+</div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
+<script>prettyPrint()</script>
+</body>
+</html>

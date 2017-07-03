@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.5">
+<title>docs</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<link rel="stylesheet" href="./asciidoctor.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+<body class="article toc2 toc-left">
+<div id="header">
+<h1>Unregulated Motors</h1>
+<div class="details">
+<span id="revnumber">version 0.7.0-SNAPSHOT</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#introduction">1. Introduction</a>
+<ul class="sectlevel2">
+<li><a href="#rcx-motors">1.1. RCX Motors</a></li>
+<li><a href="#lego-technics-motor">1.2. Lego Technics Motor</a></li>
+</ul>
+</li>
+<li><a href="#how-to-use-the-regulated-motor">2. How to use the regulated motor</a>
+<ul class="sectlevel2">
+<li><a href="#move-a-motor">2.1. Move a motor</a></li>
+<li><a href="#move-multiple-motors">2.2. Move multiple motors</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="introduction">1. Introduction</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="rcx-motors">1.1. RCX Motors</h3>
+<div class="paragraph">
+<p><span class="image"><img src="rcx-motor.jpg" alt="ScreenShot"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="lego-technics-motor">1.2. Lego Technics Motor</h3>
+<div class="paragraph">
+<p><span class="image"><img src="technic-motor.jpg" alt="ScreenShot"></span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="how-to-use-the-regulated-motor">2. How to use the regulated motor</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="move-a-motor">2.1. Move a motor</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-java" data-lang="java">package ev3dev.actuators.lego.motors;
+
+import lejos.hardware.port.MotorPort;
+import lejos.utility.Delay;
+
+public class UnregulatedMotorDemo {
+
+	//Robot Definition
+	private static UnregulatedMotor umotor1 = new UnregulatedMotor(MotorPort.C);
+
+    //Configuration
+    private final static int motorPower = 50;
+    private final static int ONE_SECOND = 1000;
+
+	public static void main(String[] args) {
+
+		//Set power for DC Motors
+		umotor1.setPower(motorPower);
+
+		//Testing DC-Motor 1
+		umotor1.forward();
+		System.out.println("" + umotor1.isMoving());
+		Delay.msDelay(ONE_SECOND);
+		umotor1.stop();
+		System.out.println("" + umotor1.isMoving());
+		umotor1.backward();
+		System.out.println("" + umotor1.isMoving());
+		Delay.msDelay(ONE_SECOND);
+		umotor1.stop();
+		System.out.println("" + umotor1.isMoving());
+		umotor1.forward();
+		System.out.println("" + umotor1.isMoving());
+		Delay.msDelay(ONE_SECOND);
+		umotor1.stop();
+
+	}
+
+}</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="move-multiple-motors">2.2. Move multiple motors</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-java" data-lang="java">package ev3dev.actuators.lego.motors;
+
+import lejos.hardware.port.MotorPort;
+import lejos.utility.Delay;
+
+public class UnregulatedMutipleMotorDemo {
+
+	//Robot Definition
+	private static UnregulatedMotor umotor1 = new UnregulatedMotor(MotorPort.C);
+	private static UnregulatedMotor umotor2 = new UnregulatedMotor(MotorPort.D);
+
+    //Configuration
+    private final static int motorPower = 50;
+    private final static int ONE_SECOND = 1000;
+
+	public static void main(String[] args) {
+
+		//Set power for DC Motors
+		umotor1.setPower(motorPower);
+		umotor2.setPower(motorPower);
+
+		//Testing DC-Motor 1
+		umotor1.forward();
+		System.out.println("" + umotor1.isMoving());
+		Delay.msDelay(ONE_SECOND);
+		umotor1.stop();
+		System.out.println("" + umotor1.isMoving());
+		umotor1.backward();
+		System.out.println("" + umotor1.isMoving());
+		Delay.msDelay(ONE_SECOND);
+		umotor1.stop();
+		System.out.println("" + umotor1.isMoving());
+		umotor1.forward();
+		System.out.println("" + umotor1.isMoving());
+		Delay.msDelay(ONE_SECOND);
+		umotor1.stop();
+
+		//Testing DC-Motor 2
+		umotor2.forward();
+		System.out.println("" + umotor2.isMoving());
+		Delay.msDelay(ONE_SECOND);
+		umotor2.stop();
+		System.out.println("" + umotor2.isMoving());
+		umotor2.backward();
+		System.out.println("" + umotor2.isMoving());
+		Delay.msDelay(ONE_SECOND);
+		umotor2.stop();
+		System.out.println("" + umotor2.isMoving());
+		umotor2.forward();
+		System.out.println("" + umotor2.isMoving());
+		Delay.msDelay(ONE_SECOND);
+		umotor2.stop();
+
+	}
+
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Version 0.7.0-SNAPSHOT<br>
+Last updated 2017-07-03 12:31:41 BST
+</div>
+</div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
+<script>prettyPrint()</script>
+</body>
+</html>

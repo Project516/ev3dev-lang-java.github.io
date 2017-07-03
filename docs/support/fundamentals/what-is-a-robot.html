@@ -36,7 +36,7 @@
 <h2 id="definition">1. Definition</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>A Robot is a machine programmable by a computer capable of carrying out
+<p>A Robot is a machine programmable by a <code>Control system</code> capable of carrying out
 a series of actions automatically. Robots can be autonomous or
 semi-autonomous</p>
 </div>
@@ -82,6 +82,31 @@ converted in form, but not created or destroyed.[</p>
 <div class="paragraph">
 <p><a href="https://en.wikipedia.org/wiki/Energy" class="bare">https://en.wikipedia.org/wiki/Energy</a></p>
 </div>
+<div class="paragraph">
+<p>In the project, it is possible to measure the remaining energy that your robot has in the batteries:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-java" data-lang="java">package ev3dev.sensors;
+
+import lejos.utility.Delay;
+
+public class BatteryExample {
+
+	public static void main(String[] args) {
+
+        final Battery battery = Battery.getInstance();
+
+		for(int x = 0; x &lt; 20; x++){
+			System.out.println("Battery Voltage: " + battery.getVoltage());
+
+			Delay.msDelay(1000);
+		}
+	}
+
+}</code></pre>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="technology">2.4. Technology</h3>
@@ -112,7 +137,7 @@ operated without detailed knowledge of their workings.</p>
 <div id="footer">
 <div id="footer-text">
 Version 0.7.0-SNAPSHOT<br>
-Last updated 2017-06-25 17:22:00 BST
+Last updated 2017-07-01 16:43:52 BST
 </div>
 </div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css">

@@ -35,7 +35,7 @@
 <h2 id="introduction">1. Introduction</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>This project is about <code>Java</code> to create Software for <code>Robots</code>, so the first question that you need to answer is:</p>
+<p>This project is about the creation of <code>Java</code> programs for <code>Robots</code>, so the first question that you need to answer is:</p>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -50,9 +50,10 @@ Is my personal computer ready to write Java programs in general?
 </table>
 </div>
 <div class="paragraph">
-<p>If the answer is <strong>Yes</strong>, you could Skip this document and jump directly to the section
-<a href="brick.html">Getting started with your Brick</a> but if you didn´ install Java and other Java components related
-in the computer that you are going to use with this project then it is pretty useful that continue reading this document.</p>
+<p>If the answer is <strong>Yes</strong>, you could jump directly to the section
+<a href="brick.html">Getting started with your Brick</a> but
+if you didn´t install Java and other components related with this Java development
+then continue reading this document.</p>
 </div>
 </div>
 </div>
@@ -60,8 +61,10 @@ in the computer that you are going to use with this project then it is pretty us
 <h2 id="the-modern-java-development-environment">2. The modern Java development environment</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><code>Java</code> is possible to run in the most popular desktop Operating Systems like: <code>OSX</code>, <code>Windows</code> &amp; <code>Ubuntu</code>
-and Robotics platforms like <code>Lego Mindstorms</code>. The components that you will have to install are:</p>
+<p><code>Java</code> is possible to run in the most popular desktop Operating Systems like: <code>OSX</code>, <code>Windows</code> &amp; <code>Ubuntu</code>.</p>
+</div>
+<div class="paragraph">
+<p>The components that you will have to install are:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -83,8 +86,9 @@ and Robotics platforms like <code>Lego Mindstorms</code>. The components that yo
 </ul>
 </div>
 <div class="paragraph">
-<p>The software listed previously is possible to install manually but it is better the usage of Package installer tools
-like <code>Brew</code> for OSX or <code>apt</code> for Ubuntu.</p>
+<p>The software listed previously is possible to install manually but
+it is better the usage of a <code>package installer</code>
+like <code>HomeBrew</code> for OSX or <code>apt</code> for Ubuntu.</p>
 </div>
 <div class="sect2">
 <h3 id="osx">2.1. OSX</h3>
@@ -140,7 +144,7 @@ X11: N/A</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>In the next sections we will continue using HomeBrew for the rest of installation.</p>
+<p>In the next sections, we will continue using HomeBrew for the rest of installation steps.</p>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -162,8 +166,7 @@ the way to install everything.
 <div class="sect3">
 <h4 id="java">2.1.2. Java</h4>
 <div class="paragraph">
-<p>To program, with Java, it is necessary to install in your laptop a
-A Java Development Kit (JDK).</p>
+<p>To program with Java is necessary to install in your laptop a Java Development Kit (JDK).</p>
 </div>
 <div class="paragraph">
 <p>A Java Development Kit (JDK) is a program development environment
@@ -172,7 +175,7 @@ as well as the tools and programming that developers need to compile, debug, and
 written in the Java language.</p>
 </div>
 <div class="paragraph">
-<p>To begin using Java:</p>
+<p>To begin using Java, it is necessary to install the JDK:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -182,7 +185,7 @@ brew install Caskroom/cask/java</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Test your java installation is easy:</p>
+<p>Once you have installed Java JDK, check the installation:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -200,22 +203,23 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.121-b13, mixed mode)</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>To check if you can compile java files, create a file with the name of HelloWorld.java and copy and paste on it the following content:</p>
+<p>To check if you are able to compile Java files,
+create a new file with the name of <code>HelloWorld.java</code> and copy and paste on it the following content:</p>
 </div>
 <div class="listingblock">
 <div class="content">
 <pre class="prettyprint highlight"><code class="language-java" data-lang="java">public class HelloWorld {
 
     public static void main(String[] args) {
-        // Prints "Hello, World" to the terminal window.
-        System.out.println("Hello, World");
+        // Prints "Hello World" to the terminal window.
+        System.out.println("Hello World");
     }
 
 }</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Later, open a terminal and type:</p>
+<p>Save the file and open in a terminal to type the following commands:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -234,7 +238,11 @@ java HelloWorld</code></pre>
 <h4 id="build-systems-maven-gradle">2.1.3. Build Systems (Maven/Gradle)</h4>
 <div class="paragraph">
 <p>Modern Java development use dependencies stored on Software Repositories.
-It is a good idea if you install the popular Build Systems as <code>Maven</code> &amp; <code>Gradle</code></p>
+It is a good idea if you install the popular build Systems as <code>Maven</code> &amp; <code>Gradle</code> for Java.
+This project is modular and it deliver multiple dependencies.</p>
+</div>
+<div class="paragraph">
+<p>The way to install Maven &amp; Gradle is:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -243,35 +251,41 @@ brew install gradle</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Further information about Maven &amp; Gradle:
-<a href="https://maven.apache.org/">https://maven.apache.org/</a>
-<a href="https://gradle.org/">https://gradle.org/</a></p>
+<p>Further information about <a href="https://maven.apache.org/">Maven</a> &amp; <a href="https://gradle.org/">Gradle</a>.</p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="java-ide">2.1.4. Java IDE</h4>
 <div class="paragraph">
-<p>To develop any Java file, with a text editor is enough but the right way to develop Java programs is using a Modern IDE
-like <code>IntelliJ</code> or <code>Eclipse</code></p>
+<p>To develop a single Java file, maybe you could use a simple Text Editor
+but current Java IDE offers several funcionalities to
+help you in the process to develop software with Java. In the market, the most popular Java IDE are <code>IntelliJ</code> &amp; <code>Eclipse</code>.</p>
+</div>
+<div class="paragraph">
+<p>To install <code>IntelliJ</code>:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="prettyprint highlight"><code>brew cask install intellij-idea
-brew cask install eclipse-java</code></pre>
+<pre class="prettyprint highlight"><code>brew cask install intellij-idea</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Install a Java IDE to develop Java Software
-<a href="https://www.jetbrains.com/idea/">https://www.jetbrains.com/idea/</a></p>
+<p>To install <code>Eclipse</code>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code>brew cask install eclipse-java</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Further information about <a href="https://www.jetbrains.com/idea/">IntelliJ</a> &amp; Eclipse</p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="sources-repositories-git-sourcetree">2.1.5. Sources &amp; Repositories (Git &amp; SourceTree)</h4>
 <div class="paragraph">
 <p>Git is a popular technology to manage code. Many ideas that you see on Internet are stored on
-Git repositories so manage this technology is necessary.
-Besides, the project includes some project templates to help you in the process to have your first project
-ready to use with your brick.</p>
+Git repositories so manage this technology is necessary.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -279,8 +293,7 @@ ready to use with your brick.</p>
 </div>
 </div>
 <div class="paragraph">
-<p>Install a visual Git Client to download this repository.
-<a href="https://www.sourcetreeapp.com/">https://www.sourcetreeapp.com/</a></p>
+<p>Further information about <a href="https://www.sourcetreeapp.com/">SourceTree</a></p>
 </div>
 </div>
 </div>
@@ -315,7 +328,7 @@ ready to use with your brick.</p>
 <div id="footer">
 <div id="footer-text">
 Version 0.7.0-SNAPSHOT<br>
-Last updated 2017-07-01 14:04:16 BST
+Last updated 2017-07-03 11:28:11 BST
 </div>
 </div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css">

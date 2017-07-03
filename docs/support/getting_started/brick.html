@@ -18,75 +18,151 @@
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
-<ul class="sectlevel3">
-<li><a href="#debian">1. Debian</a></li>
-<li><a href="#java-jre">2. Java JRE</a></li>
-<li><a href="#1-install-ev3dev-on-your-brick">3. 1. Install EV3Dev on your brick</a></li>
-<li><a href="#install-java-on-your-brick">4. Install Java on your brick</a>
+<ul class="sectlevel1">
+<li><a href="#introduction">1. Introduction</a></li>
+<li><a href="#install-an-operating-system">2. Install an Operating System</a>
 <ul class="sectlevel2">
-<li><a href="#ev3-brick">4.1. EV3 Brick</a></li>
-<li><a href="#brickpi-3-brickpi-pistorms">4.2. BrickPi 3 / BrickPi+ / PiStorms</a></li>
+<li><a href="#test-the-installation">2.1. Test the installation</a></li>
 </ul>
 </li>
-<li><a href="#create-your-first-project-and-deploy-on-your-brick">5. Create your first Project and deploy on your Brick</a>
+<li><a href="#install-java-on-your-brick">3. Install Java on your brick</a>
 <ul class="sectlevel2">
-<li><a href="#using-a-gradle-template-project">5.1. Using a Gradle template project</a></li>
-<li><a href="#create-a-project-from-scratch">5.2. Create a project from scratch</a></li>
+<li><a href="#ev3-brick">3.1. EV3 Brick</a></li>
+<li><a href="#brickpi-3-brickpi-pistorms">3.2. BrickPi 3 / BrickPi+ / PiStorms</a></li>
 </ul>
 </li>
+<li><a href="#test-your-installation">4. Test your installation</a></li>
 </ul>
 </div>
 </div>
 <div id="content">
-<div class="sect3">
-<h4 id="debian">1. Debian</h4>
+<div class="sect1">
+<h2 id="introduction">1. Introduction</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>Debian is a Linux Operating System used in millions of computers on the world.
-This project use Debian delivered by the project <code>EV3Dev</code> which provide a interface
-to interact with Lego Mindstorms EV3 Brick and other boards compatible like <code>BrickPi</code> &amp; <code>PiStorms</code></p>
+<p>In the third generation of Lego Mindstorms exist
+multiple Bricks with compatibility with Sensors &amp; Actuators from
+Lego Mindstorms ecosystem. This fact is a real software engineering challenge
+to manage all Bricks, but for that purpose appeared <code>EV3Dev</code>.</p>
 </div>
-</div>
-<div class="sect3">
-<h4 id="java-jre">2. Java JRE</h4>
 <div class="paragraph">
-<p>Any Java program run on a JVM (Java Virtual Machine) so, it is necessary to install it.</p>
+<p>EV3Dev provides a Debian Installation for the Bricks and
+a set of utilities to interact with the hardware in an easy way.</p>
+</div>
+<div class="paragraph">
+<p>The steps to do in your Brick are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Install a Operating System</p>
+</li>
+<li>
+<p>Install a Java Virtual Machine, JVM</p>
+</li>
+</ul>
+</div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="1-install-ev3dev-on-your-brick">3. 1. Install EV3Dev on your brick</h2>
+<h2 id="install-an-operating-system">2. Install an Operating System</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Follow the link to install EV3Dev on your brick:</p>
+<p>Previously, we mentioned that <code>EV3Dev</code> provides a Debian image to install in a <code>microSD</code>.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Debian is a Linux Operating System used in millions of computers on the world.
+This project use Debian delivered by the project <code>EV3Dev</code> which provide a interface
+to interact with <code>Lego Mindstorms EV3 Brick</code> and other boards compatible like <code>BrickPi</code> &amp; <code>PiStorms</code>.
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
-<p><a href="http://www.ev3dev.org/docs/getting-started/" class="bare">http://www.ev3dev.org/docs/getting-started/</a></p>
+<p>To install <code>EV3Dev</code>, follow the link to <a href="http://www.ev3dev.org/docs/getting-started/">install EV3Dev on your Brick</a></p>
+</div>
+<div class="sect2">
+<h3 id="test-the-installation">2.1. Test the installation</h3>
+<div class="paragraph">
+<p>Once you have finished the process to install the EV3Dev image on your Brick, try to establish a remote <code>ssh</code> connection.
+Verify that your Brick has a connection in the same network than your computer</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code>ssh robot@192.168.1.104</code></pre>
+</div>
 </div>
 <div class="paragraph">
-<p>Once you finish the installation process and the remote <code>ssh</code> connection test,
-you will have a complete Linux distro to run any Programming language.</p>
+<p>And you should the following output</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code>The authenticity of host '10.0.1.2 (10.0.1.2)' can't be established.
+ECDSA key fingerprint is SHA256:21hHcnrpfwFMNaZcgeR9b5YnJw7q6Eojt0ZQM83Ephk.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '10.0.1.2' (ECDSA) to the list of known hosts.
+robot@10.0.1.2's password:
+             _____     _
+   _____   _|___ /  __| | _____   __
+  / _ \ \ / / |_ \ / _` |/ _ \ \ / /
+ |  __/\ V / ___) | (_| |  __/\ V /
+  \___| \_/ |____/ \__,_|\___| \_/
+
+Debian jessie on LEGO MINDSTORMS EV3!
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.</code></pre>
+</div>
 </div>
 <div class="paragraph">
-<p><strong>Note:</strong> Please, maintain your brick updated. Execute the following commands
-before jump to the next step in this guide.</p>
+<p>If you connected with your brick then you have completed this process and
+now you will have a Brick with a complete Linux distro to run any Programming language.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Please, maintain your brick always updated.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Execute the following commands before jump to the next step in this guide.</p>
 </div>
 <div class="listingblock">
 <div class="content">
 <pre class="prettyprint highlight"><code>sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get dist-upgrade
-sudo reboot</code></pre>
+sudo reboot now</code></pre>
+</div>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="install-java-on-your-brick">4. Install Java on your brick</h2>
+<h2 id="install-java-on-your-brick">3. Install Java on your brick</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>For this step exists 2 paths. One path is for EV3 Brick and another path for BrickPi/PiStorms users.</p>
+<p>Any Java program run on a JVM (Java Virtual Machine) so, it is necessary to install it.
+For this step exists 2 paths. One path is for EV3 Brick and another path for BrickPi/PiStorms users.</p>
 </div>
 <div class="sect2">
-<h3 id="ev3-brick">4.1. EV3 Brick</h3>
+<h3 id="ev3-brick">3.1. EV3 Brick</h3>
 <div class="paragraph">
 <p>The EV3 Brick was designed with a SOC based on [ARM EABI](<a href="https://wiki.debian.org/ArmEabiPort" class="bare">https://wiki.debian.org/ArmEabiPort</a>)
 and the best JVM option for that hardware architecture is the Oracle JRE 8 to install in the brick but, it is not possible to install directly in the brick
@@ -108,7 +184,7 @@ and later, copy the file <code>ejdk-8-fcs-b132-linux-arm-sflt-03_mar_2014.tar.gz
 <p><a href="https://github.com/ev3dev-lang-java/installer" class="bare">https://github.com/ev3dev-lang-java/installer</a></p>
 </div>
 <div class="sect3">
-<h4 id="using-the-installer">4.1.1. Using the installer</h4>
+<h4 id="using-the-installer">3.1.1. Using the installer</h4>
 <div class="listingblock">
 <div class="content">
 <pre class="prettyprint highlight"><code>cd /home/robot
@@ -122,12 +198,11 @@ sudo ./installer.sh</code></pre>
 </div>
 </div>
 <div class="sect3">
-<h4 id="manual-way">4.1.2. Manual way</h4>
+<h4 id="manual-way">3.1.2. Manual way</h4>
 <div class="listingblock">
 <div class="content">
 <pre class="prettyprint highlight"><code>tar -zxvf "/home/robot/ejdk-8-fcs-b132-linux-arm-sflt-03_mar_2014.tar.gz" -C /opt
-sudo update-alternatives --install /usr/bin/java java /opt/ejdk1.8.0/linux_arm_sflt/jre/bin/java 1
-java -version</code></pre>
+sudo update-alternatives --install /usr/bin/java java /opt/ejdk1.8.0/linux_arm_sflt/jre/bin/java 1</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -136,7 +211,7 @@ java -version</code></pre>
 </div>
 </div>
 <div class="sect2">
-<h3 id="brickpi-3-brickpi-pistorms">4.2. BrickPi 3 / BrickPi+ / PiStorms</h3>
+<h3 id="brickpi-3-brickpi-pistorms">3.2. BrickPi 3 / BrickPi+ / PiStorms</h3>
 <div class="paragraph">
 <p>Using the installer, it is possible to automate everything:</p>
 </div>
@@ -158,79 +233,19 @@ sudo ./installer.sh</code></pre>
 </div>
 </div>
 <div class="sect1">
-<h2 id="create-your-first-project-and-deploy-on-your-brick">5. Create your first Project and deploy on your Brick</h2>
+<h2 id="test-your-installation">4. Test your installation</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Once you have the required infrastructure on your Brick, it is possible to experiment with the libraries in some ways:</p>
-</div>
-<div class="sect2">
-<h3 id="using-a-gradle-template-project">5.1. Using a Gradle template project</h3>
-<div class="paragraph">
-<p>If you like, you can experiment with the project, using the following project template:</p>
-</div>
-<div class="paragraph">
-<p><a href="https://github.com/ev3dev-lang-java/template_project_gradle" class="bare">https://github.com/ev3dev-lang-java/template_project_gradle</a></p>
-</div>
-<div class="paragraph">
-<p>Download the project, update the file: <code>config.gradle</code>: with the IP of you Brick:</p>
+<p>Once you have your bricks with the JVM, test the installation is easy.
+With the remote connection opened type:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="prettyprint highlight"><code>remotes {
-    ev3dev {
-        host = '10.0.1.3'
-        user = 'robot'
-        password = 'maker'
-    }
-}</code></pre>
+<pre class="prettyprint highlight"><code>java -version</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>To deploy the example on your brick, open a <code>terminal</code> and type:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code>./gradlew deployAndRun</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Besides, exist a task to provide access to a Profiling tool if you execute:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code>./gradlew deployAndProfilingRun</code></pre>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="create-a-project-from-scratch">5.2. Create a project from scratch</h3>
-<div class="paragraph">
-<p>Another alternative is the creation of a project from Scratch using Maven/Gradle.</p>
-</div>
-<div class="paragraph">
-<p>To start a new project with this library, add the following repository and dependency.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code class="language-xml" data-lang="xml">&lt;repositories&gt;
-    &lt;repository&gt;
-        &lt;id&gt;jitpack.io&lt;/id&gt;
-        &lt;url&gt;https://jitpack.io&lt;/url&gt;
-    &lt;/repository&gt;
-&lt;/repositories&gt;</code></pre>
-</div>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
-    &lt;groupId&gt;com.github.ev3dev-lang-java&lt;/groupId&gt;
-    &lt;artifactId&gt;ev3dev-lang-java&lt;/artifactId&gt;
-    &lt;version&gt;v0.6.1&lt;/version&gt;
-&lt;/dependency&gt;</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Further information about the Maven dependency: <a href="https://jitpack.io/#ev3dev-lang-java/ev3dev-lang-java/v0.6.1" class="bare">https://jitpack.io/#ev3dev-lang-java/ev3dev-lang-java/v0.6.1</a></p>
+<p>Now, your Brick is ready to receive your Java programs.</p>
 </div>
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -244,11 +259,10 @@ sudo ./installer.sh</code></pre>
 </div>
 </div>
 </div>
-</div>
 <div id="footer">
 <div id="footer-text">
 Version 0.7.0-SNAPSHOT<br>
-Last updated 2017-06-30 19:12:19 BST
+Last updated 2017-07-02 18:01:49 BST
 </div>
 </div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css">
