@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.5">
+<title>docs</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<link rel="stylesheet" href="./asciidoctor.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+<body class="article toc2 toc-left">
+<div id="header">
+<h1>Arduino 9 axes motion shield (BNO055)</h1>
+<div class="details">
+<span id="revnumber">version 0.7.0-SNAPSHOT</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#introduction">1. Introduction</a></li>
+<li><a href="#naxesmotion-api">2. NAxesMotion API</a></li>
+<li><a href="#arduino-sketch">3. Arduino Sketch</a></li>
+<li><a href="#how-to-use-the-sensor">4. How to use the sensor</a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="introduction">1. Introduction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The sensor BNO055 is an excellent MEMS IMU and Arduino has a Shield to manage the sensor.
+<a href="https://www.bosch-sensortec.com/bst/products/all_products/bno055" class="bare">https://www.bosch-sensortec.com/bst/products/all_products/bno055</a></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="arduino-bno055-shield.jpg" alt="image"></span></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="naxesmotion-api">2. NAxesMotion API</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>void resetSensor(unsigned int address);</p>
+</li>
+<li>
+<p>void setOperationMode(byte operationMode);</p>
+</li>
+<li>
+<p>void setPowerMode(byte powerMode);</p>
+</li>
+<li>
+<p>void updateAccel(void);</p>
+</li>
+<li>
+<p>void updateMag(void);</p>
+</li>
+<li>
+<p>void updateGyro(void);</p>
+</li>
+<li>
+<p>void updateQuat(void);</p>
+</li>
+<li>
+<p>void updateEuler(void);</p>
+</li>
+<li>
+<p>void updateLinearAccel(void);</p>
+</li>
+<li>
+<p>void updateGravAccel(void);</p>
+</li>
+<li>
+<p>void updateCalibStatus(void);</p>
+</li>
+<li>
+<p>void writeAccelConfig(uint8_t range, uint8_t bandwidth, uint8_t powerMode);</p>
+</li>
+<li>
+<p>void updateAccelConfig(void);</p>
+</li>
+<li>
+<p>void accelInterrupts(bool xStatus, bool yStatus, bool zStatus);</p>
+</li>
+<li>
+<p>void resetInterrupt(void);</p>
+</li>
+<li>
+<p>void enableAnyMotion(uint8_t threshold, uint8_t duration);</p>
+</li>
+<li>
+<p>void disableAnyMotion(void);</p>
+</li>
+<li>
+<p>void enableSlowNoMotion(uint8_t threshold, uint8_t duration, bool motion);</p>
+</li>
+<li>
+<p>void disableSlowNoMotion(void);</p>
+</li>
+<li>
+<p>void setUpdateMode(bool updateMode);</p>
+</li>
+<li>
+<p>float readAccelX(void);</p>
+</li>
+<li>
+<p>float readAccelY(void);</p>
+</li>
+<li>
+<p>float readAccelZ(void);</p>
+</li>
+<li>
+<p>float readGyroX(void);</p>
+</li>
+<li>
+<p>float readGyroY(void);</p>
+</li>
+<li>
+<p>float readGyroZ(void);</p>
+</li>
+<li>
+<p>float readMagX(void);</p>
+</li>
+<li>
+<p>float readMagY(void);</p>
+</li>
+<li>
+<p>float readMagZ(void);</p>
+</li>
+<li>
+<p>int16_t readQuatW(void);</p>
+</li>
+<li>
+<p>int16_t readQuatX(void);</p>
+</li>
+<li>
+<p>int16_t readQuatY(void);</p>
+</li>
+<li>
+<p>int16_t readQuatZ(void);</p>
+</li>
+<li>
+<p>float readEulerHeading(void);</p>
+</li>
+<li>
+<p>float readEulerRoll(void);</p>
+</li>
+<li>
+<p>float readEulerPitch(void);</p>
+</li>
+<li>
+<p>float readLinearAccelX(void);</p>
+</li>
+<li>
+<p>float readLinearAccelY(void);</p>
+</li>
+<li>
+<p>float readLinearAccelZ(void);</p>
+</li>
+<li>
+<p>float readGravAccelX(void);</p>
+</li>
+<li>
+<p>float readGravAccelY(void);</p>
+</li>
+<li>
+<p>float readGravAccelZ(void);</p>
+</li>
+<li>
+<p>uint8_t readAccelCalibStatus(void);</p>
+</li>
+<li>
+<p>uint8_t readGyroCalibStatus(void);</p>
+</li>
+<li>
+<p>uint8_t readMagCalibStatus(void);</p>
+</li>
+<li>
+<p>uint8_t readSystemCalibStatus(void);</p>
+</li>
+<li>
+<p>uint8_t readAccelRange(void);</p>
+</li>
+<li>
+<p>uint8_t readAccelBandwidth(void);</p>
+</li>
+<li>
+<p>uint8_t readAccelPowerMode(void);</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="arduino-sketch">3. Arduino Sketch</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-arduino" data-lang="arduino">#include "NAxisMotion.h"
+#include &lt;Wire.h&gt;
+
+NAxisMotion mySensor;
+unsigned long lastStreamTime = 0;
+const int streamPeriod = 20;          //To stream at 50Hz without using additional timers (time period(ms) =1000/frequency(Hz))
+bool updateSensorData = true;         //Flag to update the sensor data. Default is true to perform the first read before the first stream
+
+void setup() //This code is executed once
+{
+  //Peripheral Initialization
+  Serial.begin(115200);           //Initialize the Serial Port to view information on the Serial Monitor
+  I2C.begin();                    //Initialize I2C communication to the let the library communicate with the sensor.
+
+  //Sensor Initialization
+  mySensor.initSensor();          //The I2C Address can be changed here inside this function in the library
+  mySensor.setOperationMode(OPERATION_MODE_NDOF);   //Can be configured to other operation modes as desired
+  mySensor.setUpdateMode(MANUAL);  //The default is AUTO. Changing to MANUAL requires calling the relevant update functions prior to calling the read functions
+  //Setting to MANUAL requires fewer reads to the sensor
+}
+
+void loop()
+{
+  if (updateSensorData)  //Keep the updating of data as a separate task
+  {
+    mySensor.updateEuler();
+    mySensor.updateLinearAccel();
+    mySensor.updateMag();
+    mySensor.updateGyro();
+    mySensor.updateCalibStatus();  //Update the Calibration Status
+    updateSensorData = false;
+  }
+
+  if ((millis() - lastStreamTime) &gt;= streamPeriod)
+  {
+    lastStreamTime = millis();
+
+    //Euler
+
+    //Serial.print(" H: ");
+    Serial.print(mySensor.readEulerHeading());
+    Serial.print(", ");
+
+    //Serial.print(" R: ");
+    Serial.print(mySensor.readEulerRoll());
+    Serial.print(",");
+
+    //Serial.print(" P: ");
+    Serial.print(mySensor.readEulerPitch());
+    Serial.print(", ");
+
+    //Acceleration
+
+    //Serial.print(" AccelX: ");
+    Serial.print(mySensor.readLinearAccelX());
+    Serial.print(", ");
+
+    //Serial.print(" AccelY: ");
+    Serial.print(mySensor.readLinearAccelY());
+    Serial.print(", ");
+
+    //Serial.print(" AccelZ: ");
+    Serial.print(mySensor.readLinearAccelZ());
+    Serial.print(", ");
+
+    //Magnetometer
+
+    //Serial.print(" MagX: ");
+    Serial.print(mySensor.readMagX());
+    Serial.print(", ");
+
+    //Serial.print(" MagY: ");
+    Serial.print(mySensor.readMagY());
+    Serial.print(", ");
+
+    //Serial.print(" MagZ: ");
+    Serial.print(mySensor.readMagZ());
+    Serial.print(", ");
+
+    //Gyroscope
+
+    //Serial.print(" GyroX: ");
+    Serial.print(mySensor.readGyroX());
+    Serial.print(", ");
+
+    //Serial.print(" GyroY: ");
+    Serial.print(mySensor.readGyroY());
+    Serial.print(", ");
+
+    //Serial.print(" GyroZ: ");
+    Serial.print(mySensor.readGyroZ());
+    Serial.print(", ");
+
+    Serial.println();
+
+    updateSensorData = true;
+  }
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="how-to-use-the-sensor">4. How to use the sensor</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-java" data-lang="java">package examples;
+
+import ev3dev.actuators.Sound;
+import ev3dev.arduino.sensors.bn055.BNO055;
+import ev3dev.arduino.sensors.bn055.BNO055Listener;
+import ev3dev.arduino.sensors.bn055.model.BNO055Response;
+import ev3dev.arduino.sensors.bn055.model.Euler;
+import ev3dev.arduino.sensors.bn055.model.Euler;
+import ev3dev.sensors.Battery;
+import ev3dev.sensors.Button;
+import lombok.extern.slf4j.Slf4j;
+
+public @Slf4j class BNO055TurnTest {
+
+	public static void main(String[] args) throws Exception {
+
+		final String port = "/dev/ttyACM0";
+		final BNO055 bno055 = new BNO055(port);
+		bno055.init();
+
+		log.debug("{}", Battery.getInstance().getVoltage());
+
+		bno055.addListener(new BNO055Listener() {
+
+			@Override
+			public void dataReceived(final BNO055Response response) {
+
+				if(response.getEuler() != null){
+
+					final Euler euler = response.getEuler();
+
+					log.debug("Heading: {}", euler.getHeading());
+
+					if( (euler.getHeading() &gt; 90.0f) &amp;&amp;
+						(euler.getHeading() &lt;= 100.00f)) {
+
+						//Sound.getInstance().beep();
+						log.info("REACHED");
+					}
+				}
+			}
+
+		});
+
+		Button.waitForAnyPress();
+		log.debug("{}", Battery.getInstance().getVoltage());
+		bno055.close();
+		log.info("Closing connection with Arduino");
+
+	}
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Version 0.7.0-SNAPSHOT<br>
+Last updated 2017-08-13 11:43:13 BST
+</div>
+</div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
+<script>prettyPrint()</script>
+</body>
+</html>
