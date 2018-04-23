@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="../BaseSensor.html" title="ev3dev.sensors.BaseSensor" alt="" coords="16,11,469,384"/>
+<area shape="rect" id="node1" href="../BaseSensor.html" title="&lt;TABLE&gt;" alt="" coords="5,5,480,389"/>
+<area shape="rect" id="node2_1" href="../SensorMode.html" title="ev3dev.sensors.SensorMode" alt="" coords="155,965,331,1060"/>
+<area shape="rect" id="node2" href="../SensorMode.html" title="&lt;TABLE&gt;" alt="" coords="144,960,341,1065"/>
+<area shape="rect" id="node3_2" href="./AbsoluteIMU.html" title="ev3dev.sensors.mindsensors.AbsoluteIMU" alt="" coords="205,443,453,907"/>
+<area shape="rect" id="node3" href="./AbsoluteIMU.html" title="&lt;TABLE&gt;" alt="" coords="195,437,464,912"/>
+</map>

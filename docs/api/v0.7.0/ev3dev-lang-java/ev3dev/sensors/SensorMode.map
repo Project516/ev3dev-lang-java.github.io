@@ -1,0 +1,18 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./BaseSensor.html" title="ev3dev.sensors.BaseSensor" alt="" coords="601,11,952,372"/>
+<area shape="rect" id="node1" href="./BaseSensor.html" title="&lt;TABLE&gt;" alt="" coords="591,5,963,377"/>
+<area shape="rect" id="node3_1" href="./SensorMode.html" title="ev3dev.sensors.SensorMode" alt="" coords="714,965,839,1048"/>
+<area shape="rect" id="node3" href="./SensorMode.html" title="&lt;TABLE&gt;" alt="" coords="703,960,850,1053"/>
+<area shape="rect" id="node5_2" href="./ev3/EV3ColorSensor.html" title="ev3dev.sensors.ev3.EV3ColorSensor" alt="" coords="129,482,419,855"/>
+<area shape="rect" id="node5" href="./ev3/EV3ColorSensor.html" title="&lt;TABLE&gt;" alt="" coords="118,477,430,861"/>
+<area shape="rect" id="node6_3" href="./ev3/EV3IRSensor.html" title="ev3dev.sensors.ev3.EV3IRSensor" alt="" coords="465,599,758,738"/>
+<area shape="rect" id="node6" href="./ev3/EV3IRSensor.html" title="&lt;TABLE&gt;" alt="" coords="454,594,769,743"/>
+<area shape="rect" id="node7_4" href="./ev3/EV3TouchSensor.html" title="ev3dev.sensors.ev3.EV3TouchSensor" alt="" coords="804,607,1083,731"/>
+<area shape="rect" id="node7" href="./ev3/EV3TouchSensor.html" title="&lt;TABLE&gt;" alt="" coords="793,601,1093,736"/>
+<area shape="rect" id="node8_5" href="./mindsensors/AbsoluteIMU.html" title="ev3dev.sensors.mindsensors.AbsoluteIMU" alt="" coords="1129,431,1441,907"/>
+<area shape="rect" id="node8" href="./mindsensors/AbsoluteIMU.html" title="&lt;TABLE&gt;" alt="" coords="1118,425,1451,912"/>
+<area shape="rect" id="node2_6" href="./EV3DevSensorMode.html" title="ev3dev.sensors.EV3DevSensorMode" alt="" coords="703,1107,850,1277"/>
+<area shape="rect" id="node2" href="./EV3DevSensorMode.html" title="&lt;TABLE&gt;" alt="" coords="693,1101,861,1283"/>
+<area shape="rect" id="node4_7" href="./SensorModes.html" title="ev3dev.sensors.SensorModes" alt="" coords="1127,1107,1389,1277"/>
+<area shape="rect" id="node4" href="./SensorModes.html" title="&lt;TABLE&gt;" alt="" coords="1116,1101,1400,1283"/>
+</map>

@@ -1,0 +1,20 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./BeaconLocator.html" title="lejos.robotics.localization.BeaconLocator" alt="" coords="627,635,803,718"/>
+<area shape="rect" id="node1" href="./BeaconLocator.html" title="&lt;TABLE&gt;" alt="" coords="616,630,813,723"/>
+<area shape="rect" id="node2_1" href="./BeaconPoseProvider.html" title="lejos.robotics.localization.BeaconPoseProvider" alt="" coords="435,179,994,467"/>
+<area shape="rect" id="node2" href="./BeaconPoseProvider.html" title="&lt;TABLE&gt;" alt="" coords="425,173,1005,472"/>
+<area shape="rect" id="node3_2" href="./BeaconTriangle.html" title="lejos.robotics.localization.BeaconTriangle" alt="" coords="198,599,581,755"/>
+<area shape="rect" id="node3" href="./BeaconTriangle.html" title="&lt;TABLE&gt;" alt="" coords="187,593,591,760"/>
+<area shape="rect" id="node4_3" href="./OdometryPoseProvider.html" title="lejos.robotics.localization.OdometryPoseProvider" alt="" coords="949,525,1235,828"/>
+<area shape="rect" id="node4" href="./OdometryPoseProvider.html" title="&lt;TABLE&gt;" alt="" coords="939,520,1245,833"/>
+<area shape="rect" id="node6_4" href="../navigation/Move.html" title="lejos.robotics.navigation.Move" alt="" coords="328,887,1112,1348"/>
+<area shape="rect" id="node6" href="../navigation/Move.html" title="&lt;TABLE&gt;" alt="" coords="317,881,1123,1353"/>
+<area shape="rect" id="node8_5" href="../navigation/MoveProvider.html" title="lejos.robotics.navigation.MoveProvider" alt="" coords="1157,1063,1536,1172"/>
+<area shape="rect" id="node8" href="../navigation/MoveProvider.html" title="&lt;TABLE&gt;" alt="" coords="1147,1057,1547,1177"/>
+<area shape="rect" id="node9_6" href="../navigation/Pose.html" title="lejos.robotics.navigation.Pose" alt="" coords="16,923,283,1311"/>
+<area shape="rect" id="node9" href="../navigation/Pose.html" title="&lt;TABLE&gt;" alt="" coords="5,918,293,1317"/>
+<area shape="rect" id="node5_7" href="./PoseProvider.html" title="lejos.robotics.localization.PoseProvider" alt="" coords="624,17,773,114"/>
+<area shape="rect" id="node5" href="./PoseProvider.html" title="&lt;TABLE&gt;" alt="" coords="613,11,784,119"/>
+<area shape="rect" id="node7_8" href="../navigation/MoveListener.html" title="lejos.robotics.navigation.MoveListener" alt="" coords="819,11,1367,120"/>
+<area shape="rect" id="node7" href="../navigation/MoveListener.html" title="&lt;TABLE&gt;" alt="" coords="809,5,1378,125"/>
+</map>

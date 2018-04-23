@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="../Calibrate.html" title="lejos.robotics.Calibrate" alt="" coords="333,12,449,121"/>
+<area shape="rect" id="node1" href="../Calibrate.html" title="&lt;TABLE&gt;" alt="" coords="322,7,459,127"/>
+<area shape="rect" id="node2_1" href="./AbstractCalibrationFilter.html" title="lejos.robotics.filter.AbstractCalibrationFilter" alt="" coords="257,181,551,572"/>
+<area shape="rect" id="node2" href="./AbstractCalibrationFilter.html" title="&lt;TABLE&gt;" alt="" coords="247,176,561,577"/>
+<area shape="rect" id="node4_2" href="./LinearCalibrationFilter.html" title="lejos.robotics.filter.LinearCalibrationFilter" alt="" coords="16,631,392,1051"/>
+<area shape="rect" id="node4" href="./LinearCalibrationFilter.html" title="&lt;TABLE&gt;" alt="" coords="5,625,403,1056"/>
+<area shape="rect" id="node5_3" href="./LowPassFilter.html" title="lejos.robotics.filter.LowPassFilter" alt="" coords="438,777,789,904"/>
+<area shape="rect" id="node5" href="./LowPassFilter.html" title="&lt;TABLE&gt;" alt="" coords="427,772,799,909"/>
+<area shape="rect" id="node3_4" href="./AbstractFilter.html" title="lejos.robotics.filter.AbstractFilter" alt="" coords="494,11,733,123"/>
+<area shape="rect" id="node3" href="./AbstractFilter.html" title="&lt;TABLE&gt;" alt="" coords="483,5,743,128"/>
+</map>

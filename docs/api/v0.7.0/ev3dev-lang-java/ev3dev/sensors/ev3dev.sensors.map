@@ -1,0 +1,18 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./BaseSensor.html" title="ev3dev.sensors.BaseSensor" alt="" coords="109,106,459,467"/>
+<area shape="rect" id="node1" href="./BaseSensor.html" title="&lt;TABLE&gt;" alt="" coords="98,101,470,473"/>
+<area shape="rect" id="node7_1" href="./SensorMode.html" title="ev3dev.sensors.SensorMode" alt="" coords="167,687,292,770"/>
+<area shape="rect" id="node7" href="./SensorMode.html" title="&lt;TABLE&gt;" alt="" coords="156,682,303,775"/>
+<area shape="rect" id="node2_2" href="./Battery.html" title="ev3dev.sensors.Battery" alt="" coords="505,143,708,431"/>
+<area shape="rect" id="node2" href="./Battery.html" title="&lt;TABLE&gt;" alt="" coords="495,137,719,436"/>
+<area shape="rect" id="node3_3" href="./Button.html" title="ev3dev.sensors.Button" alt="" coords="753,172,964,401"/>
+<area shape="rect" id="node3" href="./Button.html" title="&lt;TABLE&gt;" alt="" coords="743,167,975,407"/>
+<area shape="rect" id="node4_4" href="./EV3DevSensorMode.html" title="ev3dev.sensors.EV3DevSensorMode" alt="" coords="16,895,163,1065"/>
+<area shape="rect" id="node4" href="./EV3DevSensorMode.html" title="&lt;TABLE&gt;" alt="" coords="5,889,173,1071"/>
+<area shape="rect" id="node5_5" href="./EV3Key.html" title="ev3dev.sensors.EV3Key" alt="" coords="1010,11,1587,563"/>
+<area shape="rect" id="node5" href="./EV3Key.html" title="&lt;TABLE&gt;" alt="" coords="999,5,1598,568"/>
+<area shape="rect" id="node6_6" href="./EV3Key.KeyType.html" title="ev3dev.sensors.EV3Key.KeyType" alt="" coords="1177,621,1421,836"/>
+<area shape="rect" id="node6" href="./EV3Key.KeyType.html" title="&lt;TABLE&gt;" alt="" coords="1166,616,1431,841"/>
+<area shape="rect" id="node8_7" href="./SensorModes.html" title="ev3dev.sensors.SensorModes" alt="" coords="209,895,471,1065"/>
+<area shape="rect" id="node8" href="./SensorModes.html" title="&lt;TABLE&gt;" alt="" coords="198,889,482,1071"/>
+</map>

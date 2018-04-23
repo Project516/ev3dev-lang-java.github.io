@@ -1,0 +1,24 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./Delay.html" title="lejos.utility.Delay" alt="" coords="16,128,164,240"/>
+<area shape="rect" id="node1" href="./Delay.html" title="&lt;TABLE&gt;" alt="" coords="5,123,175,245"/>
+<area shape="rect" id="node2_1" href="./EndianTools.html" title="lejos.utility.EndianTools" alt="" coords="210,33,461,335"/>
+<area shape="rect" id="node2" href="./EndianTools.html" title="&lt;TABLE&gt;" alt="" coords="199,27,471,341"/>
+<area shape="rect" id="node3_2" href="./GyroDirectionFinder.html" title="lejos.utility.GyroDirectionFinder" alt="" coords="506,40,845,328"/>
+<area shape="rect" id="node3" href="./GyroDirectionFinder.html" title="&lt;TABLE&gt;" alt="" coords="495,35,855,333"/>
+<area shape="rect" id="node4_3" href="./GyroDirectionFinder.Regulator.html" title="lejos.utility.GyroDirectionFinder.Regulator" alt="" coords="632,790,719,873"/>
+<area shape="rect" id="node4" href="./GyroDirectionFinder.Regulator.html" title="&lt;TABLE&gt;" alt="" coords="621,785,729,878"/>
+<area shape="rect" id="node5_4" href="./Integration.html" title="lejos.utility.Integration" alt="" coords="890,128,1178,240"/>
+<area shape="rect" id="node5" href="./Integration.html" title="&lt;TABLE&gt;" alt="" coords="879,123,1189,245"/>
+<area shape="rect" id="node6_5" href="./KalmanFilter.html" title="lejos.utility.KalmanFilter" alt="" coords="1224,11,1596,357"/>
+<area shape="rect" id="node6" href="./KalmanFilter.html" title="&lt;TABLE&gt;" alt="" coords="1213,5,1607,363"/>
+<area shape="rect" id="node8_6" href="./Matrix.html" title="lejos.utility.Matrix" alt="" coords="1265,416,1555,1247"/>
+<area shape="rect" id="node8" href="./Matrix.html" title="&lt;TABLE&gt;" alt="" coords="1255,411,1565,1252"/>
+<area shape="rect" id="node7_7" href="./LUDecomposition.html" title="lejos.utility.LUDecomposition" alt="" coords="1641,62,1821,306"/>
+<area shape="rect" id="node7" href="./LUDecomposition.html" title="&lt;TABLE&gt;" alt="" coords="1631,57,1832,311"/>
+<area shape="rect" id="node9_8" href="./Stopwatch.html" title="lejos.utility.Stopwatch" alt="" coords="1867,135,1967,233"/>
+<area shape="rect" id="node9" href="./Stopwatch.html" title="&lt;TABLE&gt;" alt="" coords="1856,130,1977,238"/>
+<area shape="rect" id="node10_9" href="./Timer.html" title="lejos.utility.Timer" alt="" coords="2012,99,2245,269"/>
+<area shape="rect" id="node10" href="./Timer.html" title="&lt;TABLE&gt;" alt="" coords="2001,93,2256,275"/>
+<area shape="rect" id="node11_10" href="./TimerListener.html" title="lejos.utility.TimerListener" alt="" coords="2084,790,2173,873"/>
+<area shape="rect" id="node11" href="./TimerListener.html" title="&lt;TABLE&gt;" alt="" coords="2073,785,2184,878"/>
+</map>

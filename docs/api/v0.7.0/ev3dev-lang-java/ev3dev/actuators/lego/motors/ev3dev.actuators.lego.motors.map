@@ -1,0 +1,16 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./BaseRegulatedMotor.html" title="ev3dev.actuators.lego.motors.BaseRegulatedMotor" alt="" coords="51,11,861,592"/>
+<area shape="rect" id="node1" href="./BaseRegulatedMotor.html" title="&lt;TABLE&gt;" alt="" coords="41,5,871,597"/>
+<area shape="rect" id="node3_1" href="./EV3LargeRegulatedMotor.html" title="ev3dev.actuators.lego.motors.EV3LargeRegulatedMotor" alt="" coords="16,651,275,821"/>
+<area shape="rect" id="node3" href="./EV3LargeRegulatedMotor.html" title="&lt;TABLE&gt;" alt="" coords="5,645,285,827"/>
+<area shape="rect" id="node4_2" href="./EV3MediumRegulatedMotor.html" title="ev3dev.actuators.lego.motors.EV3MediumRegulatedMotor" alt="" coords="321,651,591,821"/>
+<area shape="rect" id="node4" href="./EV3MediumRegulatedMotor.html" title="&lt;TABLE&gt;" alt="" coords="310,645,602,827"/>
+<area shape="rect" id="node6_3" href="./NXTRegulatedMotor.html" title="ev3dev.actuators.lego.motors.NXTRegulatedMotor" alt="" coords="637,651,867,821"/>
+<area shape="rect" id="node6" href="./NXTRegulatedMotor.html" title="&lt;TABLE&gt;" alt="" coords="627,645,877,827"/>
+<area shape="rect" id="node2_4" href="./BasicMotor.html" title="ev3dev.actuators.lego.motors.BasicMotor" alt="" coords="923,194,1117,409"/>
+<area shape="rect" id="node2" href="./BasicMotor.html" title="&lt;TABLE&gt;" alt="" coords="913,189,1127,414"/>
+<area shape="rect" id="node7_5" href="./UnregulatedMotor.html" title="ev3dev.actuators.lego.motors.UnregulatedMotor" alt="" coords="912,702,1128,770"/>
+<area shape="rect" id="node7" href="./UnregulatedMotor.html" title="&lt;TABLE&gt;" alt="" coords="901,697,1139,775"/>
+<area shape="rect" id="node5_6" href="./Motor.html" title="ev3dev.actuators.lego.motors.Motor" alt="" coords="1163,245,1293,357"/>
+<area shape="rect" id="node5" href="./Motor.html" title="&lt;TABLE&gt;" alt="" coords="1152,240,1304,363"/>
+</map>

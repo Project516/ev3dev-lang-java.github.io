@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="../robotics/DirectionFinder.html" title="lejos.robotics.DirectionFinder" alt="" coords="95,11,276,120"/>
+<area shape="rect" id="node1" href="../robotics/DirectionFinder.html" title="&lt;TABLE&gt;" alt="" coords="84,5,287,125"/>
+<area shape="rect" id="node3_1" href="./GyroDirectionFinder.html" title="lejos.utility.GyroDirectionFinder" alt="" coords="16,179,355,467"/>
+<area shape="rect" id="node3" href="./GyroDirectionFinder.html" title="&lt;TABLE&gt;" alt="" coords="5,173,365,472"/>
+<area shape="rect" id="node2_2" href="../robotics/Gyroscope.html" title="lejos.robotics.Gyroscope" alt="" coords="17,525,183,664"/>
+<area shape="rect" id="node2" href="../robotics/Gyroscope.html" title="&lt;TABLE&gt;" alt="" coords="6,520,194,669"/>
+<area shape="rect" id="node4_3" href="./GyroDirectionFinder.Regulator.html" title="lejos.utility.GyroDirectionFinder.Regulator" alt="" coords="229,553,315,636"/>
+<area shape="rect" id="node4" href="./GyroDirectionFinder.Regulator.html" title="&lt;TABLE&gt;" alt="" coords="218,548,326,641"/>
+</map>

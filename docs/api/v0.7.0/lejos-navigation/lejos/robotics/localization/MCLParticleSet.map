@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./MCLParticle.html" title="lejos.robotics.localization.MCLParticle" alt="" coords="314,1613,758,1843"/>
+<area shape="rect" id="node1" href="./MCLParticle.html" title="&lt;TABLE&gt;" alt="" coords="303,1608,769,1848"/>
+<area shape="rect" id="node4_1" href="../mapping/RangeMap.html" title="lejos.robotics.mapping.RangeMap" alt="" coords="88,2070,381,2194"/>
+<area shape="rect" id="node4" href="../mapping/RangeMap.html" title="&lt;TABLE&gt;" alt="" coords="77,2065,392,2199"/>
+<area shape="rect" id="node5_2" href="../navigation/Move.html" title="lejos.robotics.navigation.Move" alt="" coords="427,1901,1211,2363"/>
+<area shape="rect" id="node5" href="../navigation/Move.html" title="&lt;TABLE&gt;" alt="" coords="416,1896,1221,2368"/>
+<area shape="rect" id="node2_3" href="./MCLParticleSet.html" title="lejos.robotics.localization.MCLParticleSet" alt="" coords="190,973,882,1555"/>
+<area shape="rect" id="node2" href="./MCLParticleSet.html" title="&lt;TABLE&gt;" alt="" coords="179,968,893,1560"/>
+<area shape="rect" id="node3_4" href="./MCLPoseProvider.html" title="lejos.robotics.localization.MCLPoseProvider" alt="" coords="16,11,648,915"/>
+<area shape="rect" id="node3" href="./MCLPoseProvider.html" title="&lt;TABLE&gt;" alt="" coords="5,5,659,920"/>
+</map>

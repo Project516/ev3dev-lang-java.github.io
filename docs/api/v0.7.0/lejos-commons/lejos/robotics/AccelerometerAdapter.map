@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./Accelerometer.html" title="lejos.robotics.Accelerometer" alt="" coords="16,17,128,129"/>
+<area shape="rect" id="node1" href="./Accelerometer.html" title="&lt;TABLE&gt;" alt="" coords="5,11,139,134"/>
+<area shape="rect" id="node2_1" href="./AccelerometerAdapter.html" title="lejos.robotics.AccelerometerAdapter" alt="" coords="57,193,343,320"/>
+<area shape="rect" id="node2" href="./AccelerometerAdapter.html" title="&lt;TABLE&gt;" alt="" coords="47,188,353,325"/>
+<area shape="rect" id="node3_2" href="./filter/AbstractFilter.html" title="lejos.robotics.filter.AbstractFilter" alt="" coords="173,11,483,135"/>
+<area shape="rect" id="node3" href="./filter/AbstractFilter.html" title="&lt;TABLE&gt;" alt="" coords="163,5,493,140"/>
+</map>

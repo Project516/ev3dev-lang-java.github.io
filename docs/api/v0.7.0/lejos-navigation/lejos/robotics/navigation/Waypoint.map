@@ -1,0 +1,17 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./Navigator.html" title="lejos.robotics.navigation.Navigator" alt="" coords="16,193,375,789"/>
+<area shape="rect" id="node1" href="./Navigator.html" title="&lt;TABLE&gt;" alt="" coords="5,188,385,795"/>
+<area shape="rect" id="node2_1" href="./Waypoint.html" title="lejos.robotics.navigation.Waypoint" alt="" coords="1607,848,1898,1136"/>
+<area shape="rect" id="node2" href="./Waypoint.html" title="&lt;TABLE&gt;" alt="" coords="1597,843,1909,1141"/>
+<area shape="rect" id="node3_2" href="../pathfinding/DijkstraPathFinder.html" title="lejos.robotics.pathfinding.DijkstraPathFinder" alt="" coords="472,283,1372,700"/>
+<area shape="rect" id="node3" href="../pathfinding/DijkstraPathFinder.html" title="&lt;TABLE&gt;" alt="" coords="461,277,1383,705"/>
+<area shape="rect" id="node4_3" href="../pathfinding/NodePathFinder.html" title="lejos.robotics.pathfinding.NodePathFinder" alt="" coords="1418,393,2087,590"/>
+<area shape="rect" id="node4" href="../pathfinding/NodePathFinder.html" title="&lt;TABLE&gt;" alt="" coords="1407,387,2098,595"/>
+<area shape="rect" id="node5_4" href="../pathfinding/PathFinder.html" title="lejos.robotics.pathfinding.PathFinder" alt="" coords="1401,11,2105,135"/>
+<area shape="rect" id="node5" href="../pathfinding/PathFinder.html" title="&lt;TABLE&gt;" alt="" coords="1390,5,2115,140"/>
+<area shape="rect" id="node6_5" href="../pathfinding/RandomPathFinder.html" title="lejos.robotics.pathfinding.RandomPathFinder" alt="" coords="2133,334,2837,649"/>
+<area shape="rect" id="node6" href="../pathfinding/RandomPathFinder.html" title="&lt;TABLE&gt;" alt="" coords="2122,329,2847,654"/>
+<area shape="rect" id="node7_6" href="../pathfinding/ShortestPathFinder.html" title="lejos.robotics.pathfinding.ShortestPathFinder" alt="" coords="2883,268,3783,715"/>
+<area shape="rect" id="node7" href="../pathfinding/ShortestPathFinder.html" title="&lt;TABLE&gt;" alt="" coords="2872,263,3793,720"/>
+<area shape="rect" id="node8_7" href="http://java.sun.com/j2se/1.4.2/docs/api//Point.html" title="Point" alt="" coords="3832,480,3876,503"/>
+</map>

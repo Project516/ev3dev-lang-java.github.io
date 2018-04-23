@@ -1,0 +1,18 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./AbstractFilter.html" title="lejos.robotics.filter.AbstractFilter" alt="" coords="793,11,1031,123"/>
+<area shape="rect" id="node1" href="./AbstractFilter.html" title="&lt;TABLE&gt;" alt="" coords="782,5,1042,128"/>
+<area shape="rect" id="node5_1" href="./SampleBuffer.html" title="lejos.robotics.filter.SampleBuffer" alt="" coords="751,337,1073,537"/>
+<area shape="rect" id="node5" href="./SampleBuffer.html" title="&lt;TABLE&gt;" alt="" coords="741,332,1083,543"/>
+<area shape="rect" id="node6_2" href="./SumFilter.html" title="lejos.robotics.filter.SumFilter" alt="" coords="867,181,1146,279"/>
+<area shape="rect" id="node6" href="./SumFilter.html" title="&lt;TABLE&gt;" alt="" coords="857,176,1157,284"/>
+<area shape="rect" id="node2_3" href="./MaximumFilter.html" title="lejos.robotics.filter.MaximumFilter" alt="" coords="16,618,344,730"/>
+<area shape="rect" id="node2" href="./MaximumFilter.html" title="&lt;TABLE&gt;" alt="" coords="5,613,355,735"/>
+<area shape="rect" id="node3_4" href="./MedianFilter.html" title="lejos.robotics.filter.MedianFilter" alt="" coords="389,633,704,715"/>
+<area shape="rect" id="node3" href="./MedianFilter.html" title="&lt;TABLE&gt;" alt="" coords="379,627,715,721"/>
+<area shape="rect" id="node4_5" href="./MinimumFilter.html" title="lejos.robotics.filter.MinimumFilter" alt="" coords="750,618,1074,730"/>
+<area shape="rect" id="node4" href="./MinimumFilter.html" title="&lt;TABLE&gt;" alt="" coords="739,613,1085,735"/>
+<area shape="rect" id="node7_6" href="./SumFilter.PlainSum.html" title="lejos.robotics.filter.SumFilter.PlainSum" alt="" coords="1119,633,1395,715"/>
+<area shape="rect" id="node7" href="./SumFilter.PlainSum.html" title="&lt;TABLE&gt;" alt="" coords="1109,627,1406,721"/>
+<area shape="rect" id="node8_7" href="./SumFilter.SmartSum.html" title="lejos.robotics.filter.SumFilter.SmartSum" alt="" coords="1441,596,1722,752"/>
+<area shape="rect" id="node8" href="./SumFilter.SmartSum.html" title="&lt;TABLE&gt;" alt="" coords="1430,591,1733,757"/>
+</map>

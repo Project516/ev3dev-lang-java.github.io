@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./Encoder.html" title="lejos.robotics.Encoder" alt="" coords="99,11,237,108"/>
+<area shape="rect" id="node1" href="./Encoder.html" title="&lt;TABLE&gt;" alt="" coords="88,5,248,113"/>
+<area shape="rect" id="node3_1" href="./Tachometer.html" title="lejos.robotics.Tachometer" alt="" coords="91,167,245,249"/>
+<area shape="rect" id="node3" href="./Tachometer.html" title="&lt;TABLE&gt;" alt="" coords="81,161,255,255"/>
+<area shape="rect" id="node2_2" href="./RegulatedMotor.html" title="lejos.robotics.RegulatedMotor" alt="" coords="16,308,320,625"/>
+<area shape="rect" id="node2" href="./RegulatedMotor.html" title="&lt;TABLE&gt;" alt="" coords="5,303,331,631"/>
+</map>

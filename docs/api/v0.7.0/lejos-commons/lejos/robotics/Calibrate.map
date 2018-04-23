@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./Calibrate.html" title="lejos.robotics.Calibrate" alt="" coords="369,11,485,108"/>
+<area shape="rect" id="node1" href="./Calibrate.html" title="&lt;TABLE&gt;" alt="" coords="358,5,495,113"/>
+<area shape="rect" id="node2_1" href="./DirectionFinder.html" title="lejos.robotics.DirectionFinder" alt="" coords="16,319,197,417"/>
+<area shape="rect" id="node2" href="./DirectionFinder.html" title="&lt;TABLE&gt;" alt="" coords="5,314,208,422"/>
+<area shape="rect" id="node4_2" href="./filter/AbstractCalibrationFilter.html" title="lejos.robotics.filter.AbstractCalibrationFilter" alt="" coords="243,167,610,569"/>
+<area shape="rect" id="node4" href="./filter/AbstractCalibrationFilter.html" title="&lt;TABLE&gt;" alt="" coords="233,161,621,575"/>
+<area shape="rect" id="node3_3" href="./DirectionFinderAdapter.html" title="lejos.robotics.DirectionFinderAdapter" alt="" coords="234,628,531,799"/>
+<area shape="rect" id="node3" href="./DirectionFinderAdapter.html" title="&lt;TABLE&gt;" alt="" coords="223,623,542,804"/>
+</map>

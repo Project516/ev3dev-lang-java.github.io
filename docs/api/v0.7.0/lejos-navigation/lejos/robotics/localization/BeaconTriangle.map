@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./BeaconPoseProvider.html" title="lejos.robotics.localization.BeaconPoseProvider" alt="" coords="48,11,607,299"/>
+<area shape="rect" id="node1" href="./BeaconPoseProvider.html" title="&lt;TABLE&gt;" alt="" coords="37,5,617,304"/>
+<area shape="rect" id="node2_1" href="./BeaconTriangle.html" title="lejos.robotics.localization.BeaconTriangle" alt="" coords="16,357,399,513"/>
+<area shape="rect" id="node2" href="./BeaconTriangle.html" title="&lt;TABLE&gt;" alt="" coords="5,352,409,519"/>
+<area shape="rect" id="node3_2" href="../navigation/Pose.html" title="lejos.robotics.navigation.Pose" alt="" coords="194,572,461,960"/>
+<area shape="rect" id="node3" href="../navigation/Pose.html" title="&lt;TABLE&gt;" alt="" coords="183,567,471,965"/>
+</map>

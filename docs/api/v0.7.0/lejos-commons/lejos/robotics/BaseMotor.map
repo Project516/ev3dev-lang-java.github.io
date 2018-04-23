@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./BaseMotor.html" title="lejos.robotics.BaseMotor" alt="" coords="152,11,287,152"/>
+<area shape="rect" id="node1" href="./BaseMotor.html" title="&lt;TABLE&gt;" alt="" coords="141,5,297,157"/>
+<area shape="rect" id="node2_1" href="./DCMotor.html" title="lejos.robotics.DCMotor" alt="" coords="16,321,156,418"/>
+<area shape="rect" id="node2" href="./DCMotor.html" title="&lt;TABLE&gt;" alt="" coords="5,315,167,423"/>
+<area shape="rect" id="node3_2" href="./RegulatedMotor.html" title="lejos.robotics.RegulatedMotor" alt="" coords="202,211,506,528"/>
+<area shape="rect" id="node3" href="./RegulatedMotor.html" title="&lt;TABLE&gt;" alt="" coords="191,205,517,533"/>
+</map>

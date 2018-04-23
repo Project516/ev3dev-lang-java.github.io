@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./RangeFinder.html" title="lejos.robotics.RangeFinder" alt="" coords="16,24,148,121"/>
+<area shape="rect" id="node1" href="./RangeFinder.html" title="&lt;TABLE&gt;" alt="" coords="5,19,159,127"/>
+<area shape="rect" id="node2_1" href="./RangeFinderAdapter.html" title="lejos.robotics.RangeFinderAdapter" alt="" coords="77,193,354,291"/>
+<area shape="rect" id="node2" href="./RangeFinderAdapter.html" title="&lt;TABLE&gt;" alt="" coords="66,188,365,296"/>
+<area shape="rect" id="node3_2" href="./filter/AbstractFilter.html" title="lejos.robotics.filter.AbstractFilter" alt="" coords="194,11,503,135"/>
+<area shape="rect" id="node3" href="./filter/AbstractFilter.html" title="&lt;TABLE&gt;" alt="" coords="183,5,514,140"/>
+</map>

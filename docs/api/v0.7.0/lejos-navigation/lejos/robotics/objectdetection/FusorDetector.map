@@ -1,0 +1,9 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./FeatureDetector.html" title="lejos.robotics.objectdetection.FeatureDetector" alt="" coords="79,11,309,167"/>
+<area shape="rect" id="node1" href="./FeatureDetector.html" title="&lt;TABLE&gt;" alt="" coords="68,5,320,172"/>
+<area shape="rect" id="node3_1" href="./FusorDetector.html" title="lejos.robotics.objectdetection.FusorDetector" alt="" coords="16,225,372,484"/>
+<area shape="rect" id="node3" href="./FusorDetector.html" title="&lt;TABLE&gt;" alt="" coords="5,220,383,489"/>
+<area shape="rect" id="node2_2" href="./FeatureListener.html" title="lejos.robotics.objectdetection.FeatureListener" alt="" coords="16,543,372,625"/>
+<area shape="rect" id="node2" href="./FeatureListener.html" title="&lt;TABLE&gt;" alt="" coords="5,537,383,631"/>
+<area shape="rect" id="node4_3" href="http://java.sun.com/j2se/1.4.2/docs/api//RangeReadings.html" title="RangeReadings" alt="" coords="417,573,520,595"/>
+</map>
