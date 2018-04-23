@@ -1,0 +1,36 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="../localization/BeaconPoseProvider.html" title="lejos.robotics.localization.BeaconPoseProvider" alt="" coords="3845,1156,4806,1456"/>
+<area shape="rect" id="node1" href="../localization/BeaconPoseProvider.html" title="&lt;TABLE&gt;" alt="" coords="3834,1151,4817,1461"/>
+<area shape="rect" id="node2_1" href="../localization/BeaconTriangle.html" title="lejos.robotics.localization.BeaconTriangle" alt="" coords="3350,2365,3794,2533"/>
+<area shape="rect" id="node2" href="../localization/BeaconTriangle.html" title="&lt;TABLE&gt;" alt="" coords="3339,2359,3805,2538"/>
+<area shape="rect" id="node6_2" href="../localization/OdometryPoseProvider.html" title="lejos.robotics.localization.OdometryPoseProvider" alt="" coords="3967,1889,4515,2203"/>
+<area shape="rect" id="node6" href="../localization/OdometryPoseProvider.html" title="&lt;TABLE&gt;" alt="" coords="3957,1883,4526,2209"/>
+<area shape="rect" id="node11_3" href="./Pose.html" title="lejos.robotics.navigation.Pose" alt="" coords="3017,2628,3284,3004"/>
+<area shape="rect" id="node11" href="./Pose.html" title="&lt;TABLE&gt;" alt="" coords="3007,2623,3295,3009"/>
+<area shape="rect" id="node3_4" href="../localization/CompassPoseProvider.html" title="lejos.robotics.localization.CompassPoseProvider" alt="" coords="3891,2401,4426,2496"/>
+<area shape="rect" id="node3" href="../localization/CompassPoseProvider.html" title="&lt;TABLE&gt;" alt="" coords="3881,2396,4437,2501"/>
+<area shape="rect" id="node4_5" href="../localization/MCLParticle.html" title="lejos.robotics.localization.MCLParticle" alt="" coords="3225,1185,3799,1427"/>
+<area shape="rect" id="node4" href="../localization/MCLParticle.html" title="&lt;TABLE&gt;" alt="" coords="3214,1180,3810,1432"/>
+<area shape="rect" id="node9_6" href="../mapping/RangeMap.html" title="lejos.robotics.mapping.RangeMap" alt="" coords="2784,1984,3077,2108"/>
+<area shape="rect" id="node9" href="../mapping/RangeMap.html" title="&lt;TABLE&gt;" alt="" coords="2773,1979,3088,2113"/>
+<area shape="rect" id="node5_7" href="../localization/MCLPoseProvider.html" title="lejos.robotics.localization.MCLPoseProvider" alt="" coords="2241,848,3127,1764"/>
+<area shape="rect" id="node5" href="../localization/MCLPoseProvider.html" title="&lt;TABLE&gt;" alt="" coords="2230,843,3138,1769"/>
+<area shape="rect" id="node7_8" href="../localization/PoseProvider.html" title="lejos.robotics.localization.PoseProvider" alt="" coords="3035,673,3317,782"/>
+<area shape="rect" id="node7" href="../localization/PoseProvider.html" title="&lt;TABLE&gt;" alt="" coords="3025,667,3327,787"/>
+<area shape="rect" id="node8_9" href="../mapping/LineMap.html" title="lejos.robotics.mapping.LineMap" alt="" coords="2317,2335,2611,2562"/>
+<area shape="rect" id="node8" href="../mapping/LineMap.html" title="&lt;TABLE&gt;" alt="" coords="2307,2330,2621,2567"/>
+<area shape="rect" id="node10_10" href="./Navigator.html" title="lejos.robotics.navigation.Navigator" alt="" coords="2997,11,3355,607"/>
+<area shape="rect" id="node10" href="./Navigator.html" title="&lt;TABLE&gt;" alt="" coords="2986,5,3366,612"/>
+<area shape="rect" id="node12_11" href="../objectdetection/RangeFeature.html" title="lejos.robotics.objectdetection.RangeFeature" alt="" coords="4471,2328,4894,2569"/>
+<area shape="rect" id="node12" href="../objectdetection/RangeFeature.html" title="&lt;TABLE&gt;" alt="" coords="4461,2323,4905,2575"/>
+<area shape="rect" id="node13_12" href="../pathfinding/DijkstraPathFinder.html" title="lejos.robotics.pathfinding.DijkstraPathFinder" alt="" coords="1737,1837,2637,2255"/>
+<area shape="rect" id="node13" href="../pathfinding/DijkstraPathFinder.html" title="&lt;TABLE&gt;" alt="" coords="1726,1832,2647,2260"/>
+<area shape="rect" id="node14_13" href="../pathfinding/NodePathFinder.html" title="lejos.robotics.pathfinding.NodePathFinder" alt="" coords="76,1947,745,2145"/>
+<area shape="rect" id="node14" href="../pathfinding/NodePathFinder.html" title="&lt;TABLE&gt;" alt="" coords="65,1942,756,2150"/>
+<area shape="rect" id="node15_14" href="../pathfinding/PathFinder.html" title="lejos.robotics.pathfinding.PathFinder" alt="" coords="889,665,1593,789"/>
+<area shape="rect" id="node15" href="../pathfinding/PathFinder.html" title="&lt;TABLE&gt;" alt="" coords="879,660,1604,795"/>
+<area shape="rect" id="node16_15" href="../pathfinding/RandomPathFinder.html" title="lejos.robotics.pathfinding.RandomPathFinder" alt="" coords="1440,1149,2144,1463"/>
+<area shape="rect" id="node16" href="../pathfinding/RandomPathFinder.html" title="&lt;TABLE&gt;" alt="" coords="1429,1143,2155,1469"/>
+<area shape="rect" id="node17_16" href="../pathfinding/ShortestPathFinder.html" title="lejos.robotics.pathfinding.ShortestPathFinder" alt="" coords="791,1823,1691,2269"/>
+<area shape="rect" id="node17" href="../pathfinding/ShortestPathFinder.html" title="&lt;TABLE&gt;" alt="" coords="781,1817,1702,2275"/>
+</map>

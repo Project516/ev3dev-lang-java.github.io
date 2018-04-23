@@ -1,0 +1,16 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./AbsoluteIMU.html" title="ev3dev.sensors.mindsensors.AbsoluteIMU" alt="" coords="16,11,264,475"/>
+<area shape="rect" id="node1" href="./AbsoluteIMU.html" title="&lt;TABLE&gt;" alt="" coords="5,5,275,480"/>
+<area shape="rect" id="node2_1" href="./AbsoluteIMU.AccelerometerMode.html" title="ev3dev.sensors.mindsensors.AbsoluteIMU.AccelerometerMode" alt="" coords="310,187,549,299"/>
+<area shape="rect" id="node2" href="./AbsoluteIMU.AccelerometerMode.html" title="&lt;TABLE&gt;" alt="" coords="299,181,559,304"/>
+<area shape="rect" id="node3_2" href="./AbsoluteIMU.MagnetometerMode.html" title="ev3dev.sensors.mindsensors.AbsoluteIMU.MagnetometerMode" alt="" coords="594,187,833,299"/>
+<area shape="rect" id="node3" href="./AbsoluteIMU.MagnetometerMode.html" title="&lt;TABLE&gt;" alt="" coords="583,181,843,304"/>
+<area shape="rect" id="node4_3" href="./AbsoluteIMU.GyroMode.html" title="ev3dev.sensors.mindsensors.AbsoluteIMU.GyroMode" alt="" coords="878,187,1117,299"/>
+<area shape="rect" id="node4" href="./AbsoluteIMU.GyroMode.html" title="&lt;TABLE&gt;" alt="" coords="867,181,1127,304"/>
+<area shape="rect" id="node5_4" href="./AbsoluteIMU.CompassMode.html" title="ev3dev.sensors.mindsensors.AbsoluteIMU.CompassMode" alt="" coords="1162,187,1401,299"/>
+<area shape="rect" id="node5" href="./AbsoluteIMU.CompassMode.html" title="&lt;TABLE&gt;" alt="" coords="1151,181,1411,304"/>
+<area shape="rect" id="node6_5" href="./AbsoluteIMU.TiltMode.html" title="ev3dev.sensors.mindsensors.AbsoluteIMU.TiltMode" alt="" coords="1446,187,1685,299"/>
+<area shape="rect" id="node6" href="./AbsoluteIMU.TiltMode.html" title="&lt;TABLE&gt;" alt="" coords="1435,181,1695,304"/>
+<area shape="rect" id="node7_6" href="./NXTCamV5.html" title="ev3dev.sensors.mindsensors.NXTCamV5" alt="" coords="1730,99,1961,387"/>
+<area shape="rect" id="node7" href="./NXTCamV5.html" title="&lt;TABLE&gt;" alt="" coords="1719,93,1971,392"/>
+</map>

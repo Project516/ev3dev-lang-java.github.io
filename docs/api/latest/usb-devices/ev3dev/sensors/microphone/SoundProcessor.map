@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./AtomicFloat.html" title="ev3dev.sensors.microphone.AtomicFloat" alt="" coords="16,484,364,699"/>
+<area shape="rect" id="node1" href="./AtomicFloat.html" title="&lt;TABLE&gt;" alt="" coords="5,479,375,704"/>
+<area shape="rect" id="node2_1" href="./Microphone.html" title="ev3dev.sensors.microphone.Microphone" alt="" coords="85,11,295,108"/>
+<area shape="rect" id="node2" href="./Microphone.html" title="&lt;TABLE&gt;" alt="" coords="75,5,305,113"/>
+<area shape="rect" id="node3_2" href="./SoundProcessor.html" title="ev3dev.sensors.microphone.SoundProcessor" alt="" coords="99,167,281,425"/>
+<area shape="rect" id="node3" href="./SoundProcessor.html" title="&lt;TABLE&gt;" alt="" coords="89,161,291,431"/>
+</map>

@@ -1,0 +1,18 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="../RPLidarA1.html" title="ev3dev.sensors.slamtec.RPLidarA1" alt="" coords="610,11,1038,179"/>
+<area shape="rect" id="node1" href="../RPLidarA1.html" title="&lt;TABLE&gt;" alt="" coords="599,5,1049,184"/>
+<area shape="rect" id="node5_1" href="../RPLidarProvider.html" title="ev3dev.sensors.slamtec.RPLidarProvider" alt="" coords="610,237,1038,391"/>
+<area shape="rect" id="node5" href="../RPLidarProvider.html" title="&lt;TABLE&gt;" alt="" coords="599,232,1049,396"/>
+<area shape="rect" id="node7_2" href="./Scan.html" title="ev3dev.sensors.slamtec.model.Scan" alt="" coords="595,1035,824,1103"/>
+<area shape="rect" id="node7" href="./Scan.html" title="&lt;TABLE&gt;" alt="" coords="584,1029,835,1108"/>
+<area shape="rect" id="node2_3" href="../RPLidarA1Driver.html" title="ev3dev.sensors.slamtec.RPLidarA1Driver" alt="" coords="545,449,1103,764"/>
+<area shape="rect" id="node2" href="../RPLidarA1Driver.html" title="&lt;TABLE&gt;" alt="" coords="534,444,1114,769"/>
+<area shape="rect" id="node6_4" href="../RPLidarProviderListener.html" title="ev3dev.sensors.slamtec.RPLidarProviderListener" alt="" coords="428,852,764,947"/>
+<area shape="rect" id="node6" href="../RPLidarProviderListener.html" title="&lt;TABLE&gt;" alt="" coords="417,847,775,952"/>
+<area shape="rect" id="node8_5" href="./ScanDistance.html" title="ev3dev.sensors.slamtec.model.ScanDistance" alt="" coords="655,1161,764,1273"/>
+<area shape="rect" id="node8" href="./ScanDistance.html" title="&lt;TABLE&gt;" alt="" coords="644,1156,775,1279"/>
+<area shape="rect" id="node3_6" href="../RPLidarA1Driver2.html" title="ev3dev.sensors.slamtec.RPLidarA1Driver2" alt="" coords="16,464,448,749"/>
+<area shape="rect" id="node3" href="../RPLidarA1Driver2.html" title="&lt;TABLE&gt;" alt="" coords="5,459,459,755"/>
+<area shape="rect" id="node4_7" href="../RPLidarA1Fake.html" title="ev3dev.sensors.slamtec.RPLidarA1Fake" alt="" coords="885,823,1313,976"/>
+<area shape="rect" id="node4" href="../RPLidarA1Fake.html" title="&lt;TABLE&gt;" alt="" coords="874,817,1323,981"/>
+</map>

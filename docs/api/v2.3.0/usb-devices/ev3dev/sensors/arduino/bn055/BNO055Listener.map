@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./BNO055.html" title="ev3dev.sensors.arduino.bn055.BNO055" alt="" coords="217,11,472,284"/>
+<area shape="rect" id="node1" href="./BNO055.html" title="&lt;TABLE&gt;" alt="" coords="207,5,483,289"/>
+<area shape="rect" id="node2_1" href="./BNO055Listener.html" title="ev3dev.sensors.arduino.bn055.BNO055Listener" alt="" coords="16,343,284,425"/>
+<area shape="rect" id="node2" href="./BNO055Listener.html" title="&lt;TABLE&gt;" alt="" coords="5,337,295,431"/>
+<area shape="rect" id="node3_2" href="./model/BNO055Response.html" title="ev3dev.sensors.arduino.bn055.model.BNO055Response" alt="" coords="149,484,540,623"/>
+<area shape="rect" id="node3" href="./model/BNO055Response.html" title="&lt;TABLE&gt;" alt="" coords="139,479,551,628"/>
+</map>

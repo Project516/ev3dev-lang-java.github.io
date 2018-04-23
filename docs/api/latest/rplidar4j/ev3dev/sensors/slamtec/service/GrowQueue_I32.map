@@ -1,6 +1,0 @@
-<map id="G" name="G">
-<area shape="rect" id="node1_0" href="./GrowQueue_I32.html" title="ev3dev.sensors.slamtec.service.GrowQueue_I32" alt="" coords="15,273,302,650"/>
-<area shape="rect" id="node1" href="./GrowQueue_I32.html" title="&lt;TABLE&gt;" alt="" coords="5,267,313,655"/>
-<area shape="rect" id="node2_1" href="./RpLidarScan.html" title="ev3dev.sensors.slamtec.service.RpLidarScan" alt="" coords="47,11,270,213"/>
-<area shape="rect" id="node2" href="./RpLidarScan.html" title="&lt;TABLE&gt;" alt="" coords="37,6,281,218"/>
-</map>

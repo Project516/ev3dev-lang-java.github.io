@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="../../SerialSensor.html" title="ev3dev.sensors.SerialSensor" alt="" coords="101,11,186,120"/>
+<area shape="rect" id="node1" href="../../SerialSensor.html" title="&lt;TABLE&gt;" alt="" coords="90,5,197,125"/>
+<area shape="rect" id="node3_1" href="./BNO055EventSensor.html" title="ev3dev.sensors.arduino.bn055.BNO055EventSensor" alt="" coords="16,179,271,276"/>
+<area shape="rect" id="node3" href="./BNO055EventSensor.html" title="&lt;TABLE&gt;" alt="" coords="5,173,281,281"/>
+<area shape="rect" id="node2_2" href="./BNO055.html" title="ev3dev.sensors.arduino.bn055.BNO055" alt="" coords="16,335,271,608"/>
+<area shape="rect" id="node2" href="./BNO055.html" title="&lt;TABLE&gt;" alt="" coords="5,329,281,613"/>
+</map>

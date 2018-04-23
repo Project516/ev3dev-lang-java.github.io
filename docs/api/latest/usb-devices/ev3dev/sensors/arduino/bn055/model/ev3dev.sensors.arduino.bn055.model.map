@@ -1,0 +1,14 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./Acceleration.html" title="ev3dev.sensors.arduino.bn055.model.Acceleration" alt="" coords="16,203,116,301"/>
+<area shape="rect" id="node1" href="./Acceleration.html" title="&lt;TABLE&gt;" alt="" coords="5,198,127,306"/>
+<area shape="rect" id="node2_1" href="./BNO055Response.html" title="ev3dev.sensors.arduino.bn055.model.BNO055Response" alt="" coords="259,11,449,137"/>
+<area shape="rect" id="node2" href="./BNO055Response.html" title="&lt;TABLE&gt;" alt="" coords="249,5,459,143"/>
+<area shape="rect" id="node3_2" href="./Euler.html" title="ev3dev.sensors.arduino.bn055.model.Euler" alt="" coords="161,203,261,301"/>
+<area shape="rect" id="node3" href="./Euler.html" title="&lt;TABLE&gt;" alt="" coords="151,198,272,306"/>
+<area shape="rect" id="node4_3" href="./Gyroscope.html" title="ev3dev.sensors.arduino.bn055.model.Gyroscope" alt="" coords="307,203,401,301"/>
+<area shape="rect" id="node4" href="./Gyroscope.html" title="&lt;TABLE&gt;" alt="" coords="297,198,411,306"/>
+<area shape="rect" id="node5_4" href="./Magnetometer.html" title="ev3dev.sensors.arduino.bn055.model.Magnetometer" alt="" coords="446,203,558,301"/>
+<area shape="rect" id="node5" href="./Magnetometer.html" title="&lt;TABLE&gt;" alt="" coords="435,198,569,306"/>
+<area shape="rect" id="node6_5" href="./Quaternion.html" title="ev3dev.sensors.arduino.bn055.model.Quaternion" alt="" coords="604,196,699,308"/>
+<area shape="rect" id="node6" href="./Quaternion.html" title="&lt;TABLE&gt;" alt="" coords="593,191,709,313"/>
+</map>

@@ -1,0 +1,8 @@
+ev3dev.sensors
+ev3dev.sensors.arduino.bn055
+ev3dev.sensors.arduino.bn055.model
+ev3dev.sensors.gps
+ev3dev.sensors.microphone
+ev3dev.sensors.slamtec
+ev3dev.sensors.slamtec.model
+ev3dev.sensors.slamtec.service

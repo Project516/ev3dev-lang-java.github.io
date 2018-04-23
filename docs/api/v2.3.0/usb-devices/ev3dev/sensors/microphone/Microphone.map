@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./Microphone.html" title="ev3dev.sensors.microphone.Microphone" alt="" coords="16,11,225,108"/>
+<area shape="rect" id="node1" href="./Microphone.html" title="&lt;TABLE&gt;" alt="" coords="5,5,236,113"/>
+<area shape="rect" id="node2_1" href="./SoundProcessor.html" title="ev3dev.sensors.microphone.SoundProcessor" alt="" coords="30,167,211,425"/>
+<area shape="rect" id="node2" href="./SoundProcessor.html" title="&lt;TABLE&gt;" alt="" coords="19,161,222,431"/>
+</map>

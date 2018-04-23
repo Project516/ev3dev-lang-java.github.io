@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./GGASentence.html" title="lejos.hardware.gps.GGASentence" alt="" coords="16,548,435,983"/>
+<area shape="rect" id="node1" href="./GGASentence.html" title="&lt;TABLE&gt;" alt="" coords="5,543,445,988"/>
+<area shape="rect" id="node2_1" href="./GPS.html" title="lejos.hardware.gps.GPS" alt="" coords="480,658,741,873"/>
+<area shape="rect" id="node2" href="./GPS.html" title="&lt;TABLE&gt;" alt="" coords="469,653,752,878"/>
+<area shape="rect" id="node3_2" href="./GSASentence.html" title="lejos.hardware.gps.GSASentence" alt="" coords="787,614,941,917"/>
+<area shape="rect" id="node3" href="./GSASentence.html" title="&lt;TABLE&gt;" alt="" coords="776,609,952,922"/>
+<area shape="rect" id="node4_3" href="./SimpleGPS.html" title="lejos.hardware.gps.SimpleGPS" alt="" coords="607,11,868,489"/>
+<area shape="rect" id="node4" href="./SimpleGPS.html" title="&lt;TABLE&gt;" alt="" coords="596,5,879,495"/>
+<area shape="rect" id="node5_4" href="./VTGSentence.html" title="lejos.hardware.gps.VTGSentence" alt="" coords="987,665,1141,865"/>
+<area shape="rect" id="node5" href="./VTGSentence.html" title="&lt;TABLE&gt;" alt="" coords="976,660,1152,871"/>
+</map>
