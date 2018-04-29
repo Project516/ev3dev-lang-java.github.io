@@ -14,7 +14,7 @@
 <div id="header">
 <h1>Sensors</h1>
 <div class="details">
-<span id="revnumber">version 0.7.0-SNAPSHOT</span>
+<span id="revnumber">version 0.8.0</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -25,16 +25,22 @@
 <li><a href="#proprioceptors-sensors">1.2. Proprioceptors sensors</a></li>
 </ul>
 </li>
-<li><a href="#source-of-sensors">2. Source of sensors</a>
+<li><a href="#lego-sensors">2. LEGO Sensors</a>
 <ul class="sectlevel2">
 <li><a href="#lego-31313-kit">2.1. LEGO 31313 Kit</a></li>
 <li><a href="#lego-45544-kit">2.2. LEGO 45544 Kit</a></li>
 <li><a href="#dexter-industries-brickpi">2.3. Dexter Industries BrickPi</a></li>
 <li><a href="#mindsensors-pistorms">2.4. Mindsensors PiStorms</a></li>
 <li><a href="#mindsensors-sensors">2.5. Mindsensors Sensors</a></li>
-<li><a href="#usb-cameras">2.6. USB Cameras</a></li>
-<li><a href="#grove-sensors">2.7. Grove Sensors</a></li>
-<li><a href="#slamtec-sensors">2.8. Slamtec Sensors</a></li>
+<li><a href="#grove-sensors">2.6. Grove Sensors</a></li>
+</ul>
+</li>
+<li><a href="#usb-sensors">3. USB Sensors</a>
+<ul class="sectlevel2">
+<li><a href="#cameras">3.1. Cameras</a></li>
+<li><a href="#lidar-sensors">3.2. LIDAR Sensors</a></li>
+<li><a href="#imu-sensors">3.3. IMU Sensors</a></li>
+<li><a href="#gps-sensors">3.4. GPS Sensors</a></li>
 </ul>
 </li>
 </ul>
@@ -113,10 +119,10 @@ the environment is quite similar. Sensors are classifid by the nature of the inf
 </div>
 </div>
 <div class="sect1">
-<h2 id="source-of-sensors">2. Source of sensors</h2>
+<h2 id="lego-sensors">2. LEGO Sensors</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Lego mindstorms ecosystem offer several several sensors to use with your Bricks.
+<p>Lego mindstorms ecosystem offers several sensors to use with your Bricks.
 In the following lists, we will show some examples about sensors available to use with
 this project.</p>
 </div>
@@ -249,24 +255,7 @@ In the future, the list will grow.
 </div>
 </div>
 <div class="sect2">
-<h3 id="usb-cameras">2.6. USB Cameras</h3>
-<div class="paragraph">
-<p>USB Cameras is another way to measure the world.
-Using OpenCV, it is possible to manage a webcam with Java.</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="usb-camera/index.html">USB Cameras</a></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="images/logitech-webcam.png" alt="image"></span></p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="grove-sensors">2.7. Grove Sensors</h3>
+<h3 id="grove-sensors">2.6. Grove Sensors</h3>
 <div class="paragraph">
 <p>Grove System, offer a rich set of sensors to measure the environment.
 Grove is a modular, standardized connector prototyping system.
@@ -304,8 +293,30 @@ but not to the point where it becomes dumbed down.</p>
 <p>Further information about <a href="http://wiki.seeed.cc/Grove_System/">Grove Sensors</a></p>
 </div>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="usb-sensors">3. USB Sensors</h2>
+<div class="sectionbody">
 <div class="sect2">
-<h3 id="slamtec-sensors">2.8. Slamtec Sensors</h3>
+<h3 id="cameras">3.1. Cameras</h3>
+<div class="paragraph">
+<p>USB Cameras is another way to measure the world.
+Using OpenCV, it is possible to manage a webcam with Java.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="usb-camera/index.html">USB Cameras</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="images/logitech-webcam.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="lidar-sensors">3.2. LIDAR Sensors</h3>
 <div class="ulist">
 <ul>
 <li>
@@ -318,6 +329,18 @@ but not to the point where it becomes dumbed down.</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="images/slamtec-rplidar-a2.png" alt="image"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="imu-sensors">3.3. IMU Sensors</h3>
+<div class="paragraph">
+<p><span class="image"><img src="images/Arduino-9-Axes-Motion-Shield.jpg" alt="image"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="gps-sensors">3.4. GPS Sensors</h3>
+<div class="paragraph">
+<p><span class="image"><img src="images/usb-gps.jpg" alt="image"></span></p>
 </div>
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -334,8 +357,8 @@ but not to the point where it becomes dumbed down.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 0.7.0-SNAPSHOT<br>
-Last updated 2017-07-03 12:36:02 BST
+Version 0.8.0<br>
+Last updated 2018-04-26 18:51:33 BST
 </div>
 </div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css">

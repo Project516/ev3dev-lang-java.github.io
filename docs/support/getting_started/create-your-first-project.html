@@ -14,7 +14,7 @@
 <div id="header">
 <h1>Create your first Project</h1>
 <div class="details">
-<span id="revnumber">version 0.7.0-SNAPSHOT</span>
+<span id="revnumber">version 0.8.0</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -22,11 +22,15 @@
 <li><a href="#introduction">1. Introduction</a></li>
 <li><a href="#create-your-first-project-using-the-gradle-template-project">2. Create your first project using the Gradle template project</a>
 <ul class="sectlevel2">
-<li><a href="#deploy-your-program">2.1. Deploy your program</a></li>
+<li><a href="#clone-download-the-project-in-your-computer">2.1. Clone/Download the project in your computer</a></li>
+<li><a href="#configure-the-brick-ip">2.2. Configure the Brick IP</a></li>
+<li><a href="#deploy-the-default-program">2.3. Deploy the default program</a></li>
+<li><a href="#add-a-new-java-program">2.4. Add a new Java program</a></li>
 </ul>
 </li>
 <li><a href="#create-your-first-project-from-scratch">3. Create your first project from scratch</a></li>
 <li><a href="#playing-with-more-examples">4. Playing with more examples</a></li>
+<li><a href="#the-next-step">5. The Next Step</a></li>
 </ul>
 </div>
 </div>
@@ -35,8 +39,8 @@
 <h2 id="introduction">1. Introduction</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Create your first project is not complicated, the project provides a <code>Template project</code>
-using <code>Gradle</code> but you could create a new project from Scratch too.</p>
+<p>Create your first project is not complicated but the process requires time and this is the reason to
+develop a <code>Template project</code> using <code>Gradle</code>.</p>
 </div>
 <div class="paragraph">
 <p>The advantages of the usage of the Template project are:</p>
@@ -50,20 +54,47 @@ using <code>Gradle</code> but you could create a new project from Scratch too.</
 <p>Dependencies defined</p>
 </li>
 <li>
-<p>Tasks defined for the interaction with the Brick</p>
+<p>Tasks defined to interact with the Brick</p>
 </li>
 </ul>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+If you installed Debian Jessie on your Brick, use the branch Master of the repository
+<a href="https://github.com/ev3dev-lang-java/template_project_gradle/">https://github.com/ev3dev-lang-java/template_project_gradle/</a>
+but if you installed Debian Stretch on your Brick, use the branch develop of the repository
+<a href="https://github.com/ev3dev-lang-java/template_project_gradle/tree/develop">https://github.com/ev3dev-lang-java/template_project_gradle/tree/develop</a>
+</td>
+</tr>
+</table>
 </div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="create-your-first-project-using-the-gradle-template-project">2. Create your first project using the Gradle template project</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>The project provide a Gradle template project ready to run in your favourite Java IDE like IntelliJ or Eclipse.</p>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Warning"></i>
+</td>
+<td class="content">
+The whole guide is designed for Debian Jessie
+</td>
+</tr>
+</table>
 </div>
+<div class="sect2">
+<h3 id="clone-download-the-project-in-your-computer">2.1. Clone/Download the project in your computer</h3>
 <div class="paragraph">
-<p>Visit this <a href="https://github.com/ev3dev-lang-java/template_project_gradle">Git repository</a> to download the template project:</p>
+<p>The project <code>Template project</code> is hosted on Github and it possible to download the content of a Git branch or
+execute the following statement to clone the project in local.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -71,8 +102,15 @@ using <code>Gradle</code> but you could create a new project from Scratch too.</
 </div>
 </div>
 <div class="paragraph">
-<p>Once you have downloaded the project in your personal computer,
-open the project with your Java IDE to edit the file: <code>config.gradle</code>: to update IP of you Brick:</p>
+<p>Now you have you have in local the project.
+Open the project with your favourite Java IDE.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="configure-the-brick-ip">2.2. Configure the Brick IP</h3>
+<div class="paragraph">
+<p>In the project opened, open the file: <code>config.gradle</code>: to update IP of you Brick connected to the network
+where your computer is connected:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -86,7 +124,7 @@ open the project with your Java IDE to edit the file: <code>config.gradle</code>
 </div>
 </div>
 <div class="paragraph">
-<p>to check that the java IDE connect with the brick, execute the following Gradle task:</p>
+<p>to check that the Java IDE connects with the Brick, execute the following Gradle task:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -94,7 +132,25 @@ open the project with your Java IDE to edit the file: <code>config.gradle</code>
 </div>
 </div>
 <div class="paragraph">
-<p>The project are configured to send to the Brick the following example:</p>
+<p>If the execution of the task was successfully then your computer has a direct connection with your Brick.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="deploy-the-default-program">2.3. Deploy the default program</h3>
+<div class="paragraph">
+<p>The template project includes a Default program named <code>MyFirstRobot.java</code>.
+The example was designed to move a Mobile Robot with 2 motors connected to Port A &amp; Port B.
+If you need inspiration to create your Physical robot, <code>LEGO Education</code> provides some excellent
+<a href="https://education.lego.com/en-us/support/mindstorms-ev3/building-instructions">Building Instructions Guides</a></p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="baseRobot.png" alt="Base Robot"></span></p>
+</div>
+<div class="paragraph">
+<p>Follow the <a href="https://le-www-live-s.legocdn.com/sc/media/lessons/mindstorms-ev3/building-instructions/ev3-rem-driving-base-79bebfc16bd491186ea9c9069842155e.pdf">link</a> to build the Base Robot.</p>
+</div>
+<div class="paragraph">
+<p><strong>MyFirstRobot.java</strong></p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -160,12 +216,50 @@ public class MyFirstRobot {
 </div>
 </div>
 <div class="paragraph">
-<p>The example was designed to move a mobile robot with 2 motors connected to Port A &amp; Port B.</p>
+<p>To deploy the example on your brick, open a <code>terminal</code> and type:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code>./gradlew deployAndRun</code></pre>
+</div>
+</div>
 </div>
 <div class="sect2">
-<h3 id="deploy-your-program">2.1. Deploy your program</h3>
+<h3 id="add-a-new-java-program">2.4. Add a new Java program</h3>
 <div class="paragraph">
-<p>To deploy the example on your brick, open a <code>terminal</code> and type:</p>
+<p>Once you feel comfortable with the Template project and the Gradle Tasks, you could feel the need to add your
+own program. In this case, add in the project the new Java file like this one:</p>
+</div>
+<div class="paragraph">
+<p><strong>HelloWorld.java</strong></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-java" data-lang="java">public class HelloWorld {
+
+    public static void main(String[] args) {
+        // Prints "Hello World" to the terminal window.
+        System.out.println("Hello World");
+    }
+
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In order to run the new program, you will have to open the file MANIFEST.MF and update the field about <code>Main-Class</code>
+indicating the new class, in this case <code>HelloWorld</code></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-java" data-lang="java">Manifest-Version: 1.0
+Implementation-Title: EV3Dev-lang-java // Template project
+Implementation-Version: 0.3.0
+Implementation-Vendor: YOUR NAME
+Main-Class: HelloWorld</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>To deploy the new example on your brick, open a <code>terminal</code> and type:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -199,12 +293,12 @@ public class MyFirstRobot {
 <pre class="prettyprint highlight"><code class="language-xml" data-lang="xml">&lt;dependency&gt;
     &lt;groupId&gt;com.github.ev3dev-lang-java&lt;/groupId&gt;
     &lt;artifactId&gt;ev3dev-lang-java&lt;/artifactId&gt;
-    &lt;version&gt;v0.6.1&lt;/version&gt;
+    &lt;version&gt;0.7.0&lt;/version&gt;
 &lt;/dependency&gt;</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>Further information about <a href="https://jitpack.io/#ev3dev-lang-java/ev3dev-lang-java/v0.6.1">the dependency</a></p>
+<p>Further information about <a href="https://jitpack.io/#ev3dev-lang-java/ev3dev-lang-java/0.7.0">the dependency</a></p>
 </div>
 </div>
 </div>
@@ -216,6 +310,14 @@ public class MyFirstRobot {
 </div>
 <div class="paragraph">
 <p>Visit the <a href="https://github.com/ev3dev-lang-java/examples">repository about examples</a> to download and test more examples.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="the-next-step">5. The Next Step</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Continue with the next section about: <a href="../#fundamentals-of-robotics">Fundamentals of Robotics</a></p>
 </div>
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -231,8 +333,8 @@ public class MyFirstRobot {
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 0.7.0-SNAPSHOT<br>
-Last updated 2017-07-10 08:52:36 BST
+Version 0.8.0<br>
+Last updated 2018-04-29 11:12:05 BST
 </div>
 </div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css">

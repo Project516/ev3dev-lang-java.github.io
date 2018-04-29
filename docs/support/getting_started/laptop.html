@@ -14,19 +14,14 @@
 <div id="header">
 <h1>Getting Started with your personal computer</h1>
 <div class="details">
-<span id="revnumber">version 0.7.0-SNAPSHOT</span>
+<span id="revnumber">version 0.8.0</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
 <li><a href="#introduction">1. Introduction</a></li>
-<li><a href="#the-modern-java-development-environment">2. The modern Java development environment</a>
-<ul class="sectlevel2">
-<li><a href="#osx">2.1. OSX</a></li>
-<li><a href="#windows">2.2. Windows</a></li>
-<li><a href="#ubuntu">2.3. Ubuntu</a></li>
-</ul>
-</li>
+<li><a href="#the-modern-java-development-environment">2. The modern Java development environment</a></li>
+<li><a href="#next-step">3. Next step</a></li>
 </ul>
 </div>
 </div>
@@ -35,25 +30,9 @@
 <h2 id="introduction">1. Introduction</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>This project is about the creation of <code>Java</code> programs for <code>Robots</code>, so the first question that you need to answer is:</p>
-</div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-Is my personal computer ready to write Java programs in general?
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>If the answer is <strong>Yes</strong>, you could jump directly to the section
-<a href="brick.html">Getting started with your Brick</a> but
-if you didn´t install Java and other components related with this Java development
-then continue reading this document.</p>
+<p>In this section, you will learn how to install a Modern Java development environment.
+If previously you have developed with Java, maybe you could skip this section and put the focus
+on the <a href="brick.html">Brick</a> requirements.</p>
 </div>
 </div>
 </div>
@@ -61,10 +40,11 @@ then continue reading this document.</p>
 <h2 id="the-modern-java-development-environment">2. The modern Java development environment</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><code>Java</code> is possible to run in the most popular desktop Operating Systems like: <code>OSX</code>, <code>Windows</code> &amp; <code>Ubuntu</code>.</p>
+<p><code>Java</code> is a General purpose programming language and is possible to run
+in the most popular desktop Operating Systems like: <code>Windows</code>, <code>OSX</code> &amp; <code>Ubuntu</code>.</p>
 </div>
 <div class="paragraph">
-<p>The components that you will have to install are:</p>
+<p>A modern Java development environment require the following elements to be installed in your computer:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -88,63 +68,7 @@ then continue reading this document.</p>
 <div class="paragraph">
 <p>The software listed previously is possible to install manually but
 it is better the usage of a <code>package installer</code>
-like <code>HomeBrew</code> for OSX or <code>apt</code> for Ubuntu.</p>
-</div>
-<div class="sect2">
-<h3 id="osx">2.1. OSX</h3>
-<div class="paragraph">
-<p>If your personal computer is manufactured from Apple, the following instructions will help you.</p>
-</div>
-<div class="sect3">
-<h4 id="homebrew-the-package-manager-for-osx">2.1.1. Homebrew, the package manager for OSX</h4>
-<div class="paragraph">
-<p>Homebrew is a free and open-source software package management system that simplifies the installation of software on Apple&#8217;s macOS operating system.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code>/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>To check if you installed Homebrew:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code>brew config</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>You should view the following output:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code>HOMEBREW_VERSION: 1.2.2
-ORIGIN: https://github.com/Homebrew/brew.git
-HEAD: 54e01d76db34a3a649c79b189873bfd0a52dbc9f
-Last commit: 4 weeks ago
-Core tap ORIGIN: https://github.com/Homebrew/homebrew-core
-Core tap HEAD: 530b7f9b6884bec2a8ea618d0a52c9691cef76bb
-Core tap last commit: 3 weeks ago
-HOMEBREW_PREFIX: /usr/local
-HOMEBREW_REPOSITORY: /usr/local/Homebrew
-HOMEBREW_CELLAR: /usr/local/Cellar
-HOMEBREW_BOTTLE_DOMAIN: https://homebrew.bintray.com
-CPU: quad-core 64-bit ivybridge
-Homebrew Ruby: 2.0.0-p648
-Clang: 8.1 build 802
-Git: 2.11.0 =&gt; /Library/Developer/CommandLineTools/usr/bin/git
-Perl: /usr/bin/perl
-Python: /usr/bin/python
-Ruby: /usr/bin/ruby =&gt; /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/bin/ruby
-Java: 9, 1.8.0_121, 1.8.0_05, 1.7.0_51
-macOS: 10.12.5-x86_64
-Xcode: N/A
-CLT: 8.3.2.0.1.1492020469
-X11: N/A</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>In the next sections, we will continue using HomeBrew for the rest of installation steps.</p>
+like <code>HomeBrew</code> for OSX or <code>apt</code> for Linux.</p>
 </div>
 <div class="admonitionblock tip">
 <table>
@@ -153,164 +77,37 @@ X11: N/A</code></pre>
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-If you have some problem with some concrete installation, you could install manually but it is bettert to unify
-the way to install everything.
+A package manager or package management system is a collection of software tools that automates the process of
+installing, upgrading, configuring, and removing computer programs for a computer&#8217;s operating system
+in a consistent manner.
+Source: <a href="https://en.wikipedia.org/wiki/Package_manager">Wikipedia</a>
 </td>
 </tr>
 </table>
 </div>
 <div class="paragraph">
-<p>Further information about <a href="https://brew.sh/">Homebrew</a></p>
+<p>Click in the Operating System installed in your personal computer to check the requirements.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="laptop_windows.html">Windows</a></p>
+</li>
+<li>
+<p><a href="laptop_osx.html">OSX</a></p>
+</li>
+<li>
+<p>Linux</p>
+</li>
+</ul>
 </div>
 </div>
-<div class="sect3">
-<h4 id="java">2.1.2. Java</h4>
+</div>
+<div class="sect1">
+<h2 id="next-step">3. Next step</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>To program with Java is necessary to install in your laptop a Java Development Kit (JDK).</p>
-</div>
-<div class="paragraph">
-<p>A Java Development Kit (JDK) is a program development environment
-for writing Java applications. It consists of a runtime environment that "sits on top" of the operating system layer
-as well as the tools and programming that developers need to compile, debug, and run applications
-written in the Java language.</p>
-</div>
-<div class="paragraph">
-<p>To begin using Java, it is necessary to install the JDK:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code>brew update
-brew tap caskroom/cask
-brew install Caskroom/cask/java</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Once you have installed Java JDK, check the installation:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code>java -version</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>You should view the following output:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code>java version "1.8.0_121"
-Java(TM) SE Runtime Environment (build 1.8.0_121-b13)
-Java HotSpot(TM) 64-Bit Server VM (build 25.121-b13, mixed mode)</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>To check if you are able to compile Java files,
-create a new file with the name of <code>HelloWorld.java</code> and copy and paste on it the following content:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code class="language-java" data-lang="java">public class HelloWorld {
-
-    public static void main(String[] args) {
-        // Prints "Hello World" to the terminal window.
-        System.out.println("Hello World");
-    }
-
-}</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Save the file and open in a terminal to type the following commands:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code class="language-java" data-lang="java">javac HelloWorld.java
-java HelloWorld</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>You should read: <code>HelloWorld</code> in the terminal.</p>
-</div>
-<div class="paragraph">
-<p>Further information about <a href="https://www.java.com/es/about/whatis_java.jsp">Java</a></p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="build-systems-maven-gradle">2.1.3. Build Systems (Maven/Gradle)</h4>
-<div class="paragraph">
-<p>Modern Java development use dependencies stored on Software Repositories.
-It is a good idea if you install the popular build Systems as <code>Maven</code> &amp; <code>Gradle</code> for Java.
-This project is modular and it deliver multiple dependencies.</p>
-</div>
-<div class="paragraph">
-<p>The way to install Maven &amp; Gradle is:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code>brew install maven
-brew install gradle</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Further information about <a href="https://maven.apache.org/">Maven</a> &amp; <a href="https://gradle.org/">Gradle</a>.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="java-ide">2.1.4. Java IDE</h4>
-<div class="paragraph">
-<p>To develop a single Java file, maybe you could use a simple Text Editor
-but current Java IDE offers several funcionalities to
-help you in the process to develop software with Java. In the market, the most popular Java IDE are <code>IntelliJ</code> &amp; <code>Eclipse</code>.</p>
-</div>
-<div class="paragraph">
-<p>To install <code>IntelliJ</code>:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code>brew cask install intellij-idea</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>To install <code>Eclipse</code>:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code>brew cask install eclipse-java</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Further information about <a href="https://www.jetbrains.com/idea/">IntelliJ</a> &amp; Eclipse</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="sources-repositories-git-sourcetree">2.1.5. Sources &amp; Repositories (Git &amp; SourceTree)</h4>
-<div class="paragraph">
-<p>Git is a popular technology to manage code. Many ideas that you see on Internet are stored on
-Git repositories so manage this technology is necessary.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code>brew cask install sourcetree</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Further information about <a href="https://www.sourcetreeapp.com/">SourceTree</a></p>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="windows">2.2. Windows</h3>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code>PENDING</code></pre>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="ubuntu">2.3. Ubuntu</h3>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code>PENDING</code></pre>
-</div>
+<p>Continue in the section about <a href="brick.html">Getting Started with your Brick</a></p>
 </div>
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -324,11 +121,10 @@ Git repositories so manage this technology is necessary.</p>
 </div>
 </div>
 </div>
-</div>
 <div id="footer">
 <div id="footer-text">
-Version 0.7.0-SNAPSHOT<br>
-Last updated 2017-07-03 11:28:11 BST
+Version 0.8.0<br>
+Last updated 2018-04-29 08:10:04 BST
 </div>
 </div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css">
