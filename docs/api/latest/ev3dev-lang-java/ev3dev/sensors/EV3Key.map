@@ -1,6 +1,6 @@
 <map id="G" name="G">
-<area shape="rect" id="node1_0" href="./EV3Key.html" title="ev3dev.sensors.EV3Key" alt="" coords="16,11,593,563"/>
-<area shape="rect" id="node1" href="./EV3Key.html" title="&lt;TABLE&gt;" alt="" coords="5,5,604,568"/>
-<area shape="rect" id="node2_1" href="./EV3Key.KeyType.html" title="ev3dev.sensors.EV3Key.KeyType" alt="" coords="183,621,427,836"/>
-<area shape="rect" id="node2" href="./EV3Key.KeyType.html" title="&lt;TABLE&gt;" alt="" coords="172,616,437,841"/>
+<area shape="rect" id="node1_0" href="./EV3Key.html" title="ev3dev.sensors.EV3Key" alt="" coords="16,11,605,595"/>
+<area shape="rect" id="node1" href="./EV3Key.html" title="&lt;TABLE&gt;" alt="" coords="5,5,616,600"/>
+<area shape="rect" id="node2_1" href="./EV3Key.KeyType.html" title="ev3dev.sensors.EV3Key.KeyType" alt="" coords="187,653,434,885"/>
+<area shape="rect" id="node2" href="./EV3Key.KeyType.html" title="&lt;TABLE&gt;" alt="" coords="177,648,445,891"/>
 </map>

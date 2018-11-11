@@ -1,0 +1,10 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./NativeDevice.html" title="ev3dev.utils.io.NativeDevice" alt="" coords="250,461,551,597"/>
+<area shape="rect" id="node1" href="./NativeDevice.html" title="&lt;TABLE&gt;" alt="" coords="239,456,562,603"/>
+<area shape="rect" id="node3_1" href="./NativeFramebuffer.html" title="ev3dev.utils.io.NativeFramebuffer" alt="" coords="16,680,404,864"/>
+<area shape="rect" id="node3" href="./NativeFramebuffer.html" title="&lt;TABLE&gt;" alt="" coords="5,675,415,869"/>
+<area shape="rect" id="node4_2" href="./NativeTTY.html" title="ev3dev.utils.io.NativeTTY" alt="" coords="449,656,734,888"/>
+<area shape="rect" id="node4" href="./NativeTTY.html" title="&lt;TABLE&gt;" alt="" coords="438,651,745,893"/>
+<area shape="rect" id="node2_3" href="./NativeFile.html" title="ev3dev.utils.io.NativeFile" alt="" coords="231,11,570,403"/>
+<area shape="rect" id="node2" href="./NativeFile.html" title="&lt;TABLE&gt;" alt="" coords="221,5,581,408"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="../../hardware/display/OwnedDisplay.html" title="ev3dev.hardware.display.OwnedDisplay" alt="" coords="16,11,387,256"/>
+<area shape="rect" id="node1" href="../../hardware/display/OwnedDisplay.html" title="&lt;TABLE&gt;" alt="" coords="5,5,397,261"/>
+<area shape="rect" id="node3_1" href="./NativeTTY.html" title="ev3dev.utils.io.NativeTTY" alt="" coords="249,315,535,547"/>
+<area shape="rect" id="node3" href="./NativeTTY.html" title="&lt;TABLE&gt;" alt="" coords="239,309,545,552"/>
+<area shape="rect" id="node2_2" href="./NativeDevice.html" title="ev3dev.utils.io.NativeDevice" alt="" coords="432,65,733,201"/>
+<area shape="rect" id="node2" href="./NativeDevice.html" title="&lt;TABLE&gt;" alt="" coords="421,60,744,207"/>
+</map>
