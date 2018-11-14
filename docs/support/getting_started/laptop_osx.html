@@ -14,7 +14,7 @@
 <div id="header">
 <h1>Getting Started with your personal computer</h1>
 <div class="details">
-<span id="revnumber">version 0.8.0</span>
+<span id="revnumber">version 2.4.16</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -40,69 +40,26 @@
 <div class="sect2">
 <h3 id="package-manager">1.1. Package manager</h3>
 <div class="paragraph">
-<p>Homebrew is a free and open-source software package management system that simplifies the installation of software on Apple&#8217;s macOS operating system.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code>/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</code></pre>
-</div>
+<p>In OSX, you have excellent package managers like <code>HomeBrew</code> and <code>Sdkman</code>.
+Homebrew is a free and open-source software package management system that simplifies the installation of software
+on Apple&#8217;s macOS operating system.
+SDKMAN! is a tool for managing parallel versions of multiple Software Development Kits on most Unix based systems.</p>
 </div>
 <div class="paragraph">
-<p>To check if you installed Homebrew:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code>brew config</code></pre>
-</div>
+<p>Using Homebrewl, we will install some packages and using Sdkman, we will install others.</p>
 </div>
 <div class="paragraph">
-<p>You should view the following output:</p>
+<p>Once you have installed both, continue with the next section.</p>
 </div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code>HOMEBREW_VERSION: 1.2.2
-ORIGIN: https://github.com/Homebrew/brew.git
-HEAD: 54e01d76db34a3a649c79b189873bfd0a52dbc9f
-Last commit: 4 weeks ago
-Core tap ORIGIN: https://github.com/Homebrew/homebrew-core
-Core tap HEAD: 530b7f9b6884bec2a8ea618d0a52c9691cef76bb
-Core tap last commit: 3 weeks ago
-HOMEBREW_PREFIX: /usr/local
-HOMEBREW_REPOSITORY: /usr/local/Homebrew
-HOMEBREW_CELLAR: /usr/local/Cellar
-HOMEBREW_BOTTLE_DOMAIN: https://homebrew.bintray.com
-CPU: quad-core 64-bit ivybridge
-Homebrew Ruby: 2.0.0-p648
-Clang: 8.1 build 802
-Git: 2.11.0 =&gt; /Library/Developer/CommandLineTools/usr/bin/git
-Perl: /usr/bin/perl
-Python: /usr/bin/python
-Ruby: /usr/bin/ruby =&gt; /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/bin/ruby
-Java: 9, 1.8.0_121, 1.8.0_05, 1.7.0_51
-macOS: 10.12.5-x86_64
-Xcode: N/A
-CLT: 8.3.2.0.1.1492020469
-X11: N/A</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>In the next sections, we will continue using HomeBrew for the rest of installation steps.</p>
-</div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-If you have some problem with some concrete installation, you could install manually but it is bettert to unify
-the way to install everything.
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
+<div class="ulist">
+<ul>
+<li>
 <p>Further information about <a href="https://brew.sh/">Homebrew</a></p>
+</li>
+<li>
+<p>Further information about <a href="https://sdkman.io/">Sdkman</a></p>
+</li>
+</ul>
 </div>
 </div>
 <div class="sect2">
@@ -121,9 +78,7 @@ written in the Java language.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="prettyprint highlight"><code>brew update
-brew tap caskroom/cask
-brew install Caskroom/cask/java</code></pre>
+<pre class="prettyprint highlight"><code>sdk install java</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -173,7 +128,17 @@ java HelloWorld</code></pre>
 <p>You should read: <code>HelloWorld</code> in the terminal.</p>
 </div>
 <div class="paragraph">
-<p>Further information about <a href="https://www.java.com/es/about/whatis_java.jsp">Java</a></p>
+<p><strong>Switching from one Java version to another one</strong></p>
+</div>
+<div class="paragraph">
+<p>Using <code>sdk</code>, it is very easy to switch from one Java version to another one. Check your JDK installed and package
+available in Sdk:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-java" data-lang="java">sdk list java
+sdk use java 10.0.1-open</code></pre>
+</div>
 </div>
 <div class="sect3">
 <h4 id="build-systems">1.2.1. Build Systems</h4>
@@ -187,8 +152,8 @@ This project is modular and it deliver multiple dependencies.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="prettyprint highlight"><code>brew install maven
-brew install gradle</code></pre>
+<pre class="prettyprint highlight"><code>sdk install maven
+sdk install gradle</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -229,6 +194,10 @@ help you in the process to develop software with Java. In the market, the most p
 <p>Git is a popular technology to manage code. Many ideas that you see on Internet are stored on
 Git repositories so manage this technology is necessary.</p>
 </div>
+<div class="paragraph">
+<p>You could use the Version control features from <a href="https://www.jetbrains.com/help/idea/version-control-integration.html">IntelliJ</a>
+or use a dedicated tool like <a href="https://www.sourcetreeapp.com/">SourceTree</a></p>
+</div>
 <div class="listingblock">
 <div class="content">
 <pre class="prettyprint highlight"><code>brew cask install sourcetree</code></pre>
@@ -252,8 +221,8 @@ Git repositories so manage this technology is necessary.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 0.8.0<br>
-Last updated 2018-04-26 06:39:54 BST
+Version 2.4.16<br>
+Last updated 2018-11-14 10:04:49 CET
 </div>
 </div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css">
