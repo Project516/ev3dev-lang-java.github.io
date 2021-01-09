@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="./RGBFramebufferProvider.html" title="ev3dev.hardware.display.RGBFramebufferProvider" alt="" coords="53,187,535,275"/>
+<area shape="rect" id="node1" href="./RGBFramebufferProvider.html" title="&lt;TABLE&gt;" alt="" coords="42,181,546,280"/>
+<area shape="rect" id="node3_1" href="../../utils/io/NativeFramebuffer.html" title="ev3dev.utils.io.NativeFramebuffer" alt="" coords="204,333,672,531"/>
+<area shape="rect" id="node3" href="../../utils/io/NativeFramebuffer.html" title="&lt;TABLE&gt;" alt="" coords="193,328,683,536"/>
+<area shape="rect" id="node2_2" href="./spi/FramebufferProvider.html" title="ev3dev.hardware.display.spi.FramebufferProvider" alt="" coords="16,11,860,128"/>
+<area shape="rect" id="node2" href="./spi/FramebufferProvider.html" title="&lt;TABLE&gt;" alt="" coords="5,5,871,133"/>
+</map>

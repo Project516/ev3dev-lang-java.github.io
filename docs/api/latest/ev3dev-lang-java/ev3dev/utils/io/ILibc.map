@@ -1,0 +1,12 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="../../hardware/display/OwnedDisplay.html" title="ev3dev.hardware.display.OwnedDisplay" alt="" coords="16,84,387,329"/>
+<area shape="rect" id="node1" href="../../hardware/display/OwnedDisplay.html" title="&lt;TABLE&gt;" alt="" coords="5,79,397,335"/>
+<area shape="rect" id="node3_1" href="./ILibc.html" title="ev3dev.utils.io.ILibc" alt="" coords="359,461,876,693"/>
+<area shape="rect" id="node3" href="./ILibc.html" title="&lt;TABLE&gt;" alt="" coords="348,456,887,699"/>
+<area shape="rect" id="node2_2" href="../../hardware/display/StolenDisplay.html" title="ev3dev.hardware.display.StolenDisplay" alt="" coords="432,132,803,281"/>
+<area shape="rect" id="node2" href="../../hardware/display/StolenDisplay.html" title="&lt;TABLE&gt;" alt="" coords="421,127,813,287"/>
+<area shape="rect" id="node5_3" href="./NativeLibc.html" title="ev3dev.utils.io.NativeLibc" alt="" coords="359,752,876,984"/>
+<area shape="rect" id="node5" href="./NativeLibc.html" title="&lt;TABLE&gt;" alt="" coords="348,747,887,989"/>
+<area shape="rect" id="node4_4" href="./NativeFile.html" title="ev3dev.utils.io.NativeFile" alt="" coords="848,11,1187,403"/>
+<area shape="rect" id="node4" href="./NativeFile.html" title="&lt;TABLE&gt;" alt="" coords="837,5,1197,408"/>
+</map>

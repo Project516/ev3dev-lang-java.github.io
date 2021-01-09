@@ -1,0 +1,13 @@
+<map id="G" name="G">
+<area shape="rect" id="node1_0" href="../../hardware/display/LinuxFramebuffer.html" title="ev3dev.hardware.display.LinuxFramebuffer" alt="" coords="16,11,615,560"/>
+<area shape="rect" id="node1" href="../../hardware/display/LinuxFramebuffer.html" title="&lt;TABLE&gt;" alt="" coords="5,5,625,565"/>
+<area shape="rect" id="node3_1" href="./NativeFramebuffer.fb_var_screeninfo.html" title="ev3dev.utils.io.NativeFramebuffer.fb_var_screeninfo" alt="" coords="177,619,453,1171"/>
+<area shape="rect" id="node3" href="./NativeFramebuffer.fb_var_screeninfo.html" title="&lt;TABLE&gt;" alt="" coords="167,613,464,1176"/>
+<area shape="rect" id="node2_2" href="./NativeFramebuffer.fb_bitfield.ByValue.html" title="ev3dev.utils.io.NativeFramebuffer.fb_bitfield.ByValue" alt="" coords="275,1229,356,1301"/>
+<area shape="rect" id="node2" href="./NativeFramebuffer.fb_bitfield.ByValue.html" title="&lt;TABLE&gt;" alt="" coords="264,1224,367,1307"/>
+<area shape="rect" id="node4_3" href="./NativeFramebuffer.fb_var_screeninfo.ByReference.html" title="ev3dev.utils.io.NativeFramebuffer.fb_var_screeninfo.ByReference" alt="" coords="402,1229,509,1301"/>
+<area shape="rect" id="node4" href="./NativeFramebuffer.fb_var_screeninfo.ByReference.html" title="&lt;TABLE&gt;" alt="" coords="391,1224,519,1307"/>
+<area shape="rect" id="node5_4" href="./NativeFramebuffer.fb_var_screeninfo.ByValue.html" title="ev3dev.utils.io.NativeFramebuffer.fb_var_screeninfo.ByValue" alt="" coords="555,1229,636,1301"/>
+<area shape="rect" id="node5" href="./NativeFramebuffer.fb_var_screeninfo.ByValue.html" title="&lt;TABLE&gt;" alt="" coords="544,1224,647,1307"/>
+<area shape="rect" id="node6_5" href="http://java.sun.com/j2se/1.4.2/docs/api//Structure.html" title="Structure" alt="" coords="661,273,727,297"/>
+</map>
