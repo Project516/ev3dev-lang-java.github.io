@@ -1,4 +1,4 @@
-package ev3dev.sensors;
+package sensors.battery;
 
 import lejos.utility.Delay;
 

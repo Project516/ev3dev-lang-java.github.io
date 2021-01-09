@@ -14,7 +14,7 @@
 <div id="header">
 <h1>What is EV3Dev-lang-java?</h1>
 <div class="details">
-<span id="revnumber">version 0.8.0</span>
+<span id="revnumber">version 2.4.16</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -93,29 +93,29 @@ The result is very healthy for the Community but&#8230;&#8203; some questions ap
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ev3dev-lang-java</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">0.7.0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2.3.0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.4.16</p></td>
 </tr>
 </tfoot>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Platforms</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">EV3 BrickPi BrickPi3 PiStorms</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">BrickPi BrickPi3 PiStorms</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">EV3</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">OS</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Debian Jessie</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Debian Stretch</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Debian Jessie/Stretch</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">JVM</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Oracle JRE 8</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">OpenJDK JRI 10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OpenJDK 11</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OpenJDK JRI 11/12 ea</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">EV3Dev Kernel</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">4.4.47-19-ev3dev-ev3 4.4.47-19-ev3dev-rpi2</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">4.9.58-ev3dev-1.6.0-ev3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4.14.71-ev3dev-2.3.0-ev3</p></td>
 </tr>
 </tbody>
 </table>
@@ -134,7 +134,7 @@ for next January of 2020.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>OpenJDK Java 10 support for EV3 Brick, Brickpi+/PiStorms + Raspberry Pi 3</p>
+<p>OpenJDK Java 11/12 ea support for EV3 Brick, Brickpi+/PiStorms + Raspberry Pi 3</p>
 </li>
 <li>
 <p>Java profiling tools Support (<a href="http://www.oracle.com/technetwork/java/javaseproducts/mission-control/java-mission-control-1998576.html">Oracle mission control</a> &amp; <a href="http://docs.oracle.com/javase/7/docs/technotes/guides/management/jconsole.html">JConsole</a>)</p>
@@ -212,6 +212,9 @@ for next January of 2020.</p>
 <div class="ulist">
 <ul>
 <li>
+<p><a href="https://github.com/ev3dev-lang-java/openjdk-ev3">OpenJDK for EV3</a>: A custom OpenJDK JRE build for EV3</p>
+</li>
+<li>
 <p><a href="https://github.com/ev3dev-lang-java/ev3dev-lang-java">EV3Dev-lang-java</a>: Low level interation with EV3Dev</p>
 </li>
 <li>
@@ -237,12 +240,6 @@ for next January of 2020.</p>
 <p><a href="https://github.com/ev3dev-lang-java/lejos-navigation">lejos-navigation</a>: LeJOS navigation stack</p>
 </li>
 <li>
-<p><a href="https://github.com/ev3dev-lang-java/batteryMonitor">Battery Monitor</a>: A battery monitor to protect your hardware against low battery levels</p>
-</li>
-<li>
-<p><a href="https://github.com/ev3dev-lang-java/openjdk-ev3">OpenJDK for EV3</a>: A custom OpenJDK JRE build for EV3</p>
-</li>
-<li>
 <p><a href="https://github.com/ev3dev-lang-java/usb-devices">Usb Devices</a>: A library to use Arduino, Grove Sensors, GPS, IMU, LIDAR, and more devices&#8230;&#8203;</p>
 </li>
 <li>
@@ -260,6 +257,9 @@ for next January of 2020.</p>
 </div>
 <div class="ulist">
 <ul>
+<li>
+<p>Development Java robots with modern Java versions</p>
+</li>
 <li>
 <p>Support for Multiple Bricks like EV3 Brick, BrickPi &amp; PiStorms</p>
 </li>
@@ -312,7 +312,7 @@ Computational consumption.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">CPU</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ARM9 300MHz</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ARM9 300MHz / 456 Mhz</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">4× ARM Cortex-A53, 1.4GHz</p></td>
 </tr>
 <tr>
@@ -395,7 +395,7 @@ In any generation, the project had to find a solution for the following layers:<
 <td class="tableblock halign-left valign-top"><p class="tableblock">17/12/2006</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">03/02/2015</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">16/11/2015</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">23/04/2018</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">13/11/2018</p></td>
 </tr>
 </tfoot>
 <tbody>
@@ -411,7 +411,7 @@ In any generation, the project had to find a solution for the following layers:<
 <td class="tableblock halign-left valign-top"><p class="tableblock">Custom JVM</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Custom JVM</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Oracle JRE 8</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">OpenJDK 10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OpenJDK 11/12 ea</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Robotics libraries</p></td>
@@ -436,8 +436,8 @@ In any generation, the project had to find a solution for the following layers:<
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 0.8.0<br>
-Last updated 2018-04-29 11:49:06 BST
+Version 2.4.16<br>
+Last updated 2021-01-09 15:26:14 CET
 </div>
 </div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css">

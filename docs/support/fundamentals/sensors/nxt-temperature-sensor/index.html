@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 1.5.5">
+<title>docs</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
+<link rel="stylesheet" href="./asciidoctor.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+<body class="article toc2 toc-left">
+<div id="header">
+<h1>NXT Temperature Sensor</h1>
+<div class="details">
+<span id="revnumber">version 2.4.16</span>
+</div>
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#introduction">1. Introduction</a></li>
+<li><a href="#how-to-use-the-sensor">2. How to use the sensor</a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="introduction">1. Introduction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Temperature is a physical quantity that expresses hot and cold. It is the manifestation of thermal energy,
+present in all matter, which is the source of the occurrence of heat, a flow of energy,
+when a body is in contact with another that is colder or hotter.</p>
+</div>
+<div class="paragraph">
+<p>Temperature is measured with a thermometer.
+Thermometers are calibrated in various temperature scales that historically have used various reference points
+and thermometric substances for definition.
+The most common scales are the Celsius scale (formerly called centigrade, denoted as °C),
+the Fahrenheit scale (denoted as °F), and the Kelvin scale (denoted as K), the last of which is predominantly
+used for scientific purposes by conventions of the International System of Units (SI).</p>
+</div>
+<div class="paragraph">
+<p>You could connect this sensor to the brick to retrieve the Temperature.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="temperature-sensor.jpg" alt="image"></span></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="how-to-use-the-sensor">2. How to use the sensor</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-java" data-lang="java">import ev3dev.sensors.nxt.NXTTemperatureSensor;
+import java.util.stream.IntStream;
+import lejos.hardware.port.SensorPort;
+import lejos.robotics.SampleProvider;
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
+public class NXTTemperatureSensorDemo {
+
+    public static void main(String[] args) {
+
+        NXTTemperatureSensor temp1 = new NXTTemperatureSensor(SensorPort.S1);
+
+        final SampleProvider sp = temp1.getCelsiusMode();
+        float [] sample = new float[sp.sampleSize()];
+
+        IntStream.range(1,10).boxed()
+            .map(i -&gt; {
+                sp.fetchSample(sample, 0);
+                return sample[0];
+            })
+            .forEach(temp -&gt; LOGGER.info("Temperature: {}", temp));
+    }
+
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>References:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://en.wikipedia.org/wiki/Temperature" class="bare">https://en.wikipedia.org/wiki/Temperature</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Version 2.4.16<br>
+Last updated 2021-01-09 15:26:15 CET
+</div>
+</div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.js"></script>
+<script>prettyPrint()</script>
+</body>
+</html>

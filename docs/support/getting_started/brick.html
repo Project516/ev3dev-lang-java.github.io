@@ -14,7 +14,7 @@
 <div id="header">
 <h1>Getting Started with your Brick</h1>
 <div class="details">
-<span id="revnumber">version 0.8.0</span>
+<span id="revnumber">version 2.4.16</span>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
@@ -22,8 +22,8 @@
 <li><a href="#introduction">1. Introduction</a></li>
 <li><a href="#operating-system">2. Operating System</a>
 <ul class="sectlevel2">
-<li><a href="#stable-version-debian-jessie">2.1. Stable version: Debian Jessie</a></li>
-<li><a href="#development-version-debian-stretch">2.2. Development version: Debian Stretch</a></li>
+<li><a href="#debian-stretch-ev3">2.1. Debian Stretch (EV3)</a></li>
+<li><a href="#debian-jessie-brickpi-brickpi3-pistorms">2.2. Debian Jessie (BrickPi+/BrickPi3/PiStorms)</a></li>
 <li><a href="#test-the-installation">2.3. Test the installation</a></li>
 </ul>
 </li>
@@ -104,32 +104,27 @@ to interact with <code>Lego Mindstorms EV3 Brick</code> and other boards compati
 <p><span class="image"><img src="microsd.jpg" alt="image"></span></p>
 </div>
 <div class="sect2">
-<h3 id="stable-version-debian-jessie">2.1. Stable version: Debian Jessie</h3>
+<h3 id="debian-stretch-ev3">2.1. Debian Stretch (EV3)</h3>
 <div class="paragraph">
 <p>EV3Dev has an excellent step by step guide to install the Debian image in the Brick.
 Please, follow the link to <a href="http://www.ev3dev.org/docs/getting-started/">install EV3Dev on your Brick</a></p>
 </div>
+<div class="sect3">
+<h4 id="increase-the-cpu">2.1.1. Increase the CPU</h4>
+<div class="paragraph">
+<p>Read the following article to increase the EV3 CPU:
+<a href="https://lechnology.com/2018/06/overclocking-lego-mindstorms-ev3-part-2/" class="bare">https://lechnology.com/2018/06/overclocking-lego-mindstorms-ev3-part-2/</a></p>
+</div>
+<div class="paragraph">
+<p>It is possible to increase the CPU from 300Mhz to 456Mhz. You will observe a great performance improvement when you
+run your Java programs or when you use Apt.</p>
+</div>
+</div>
 </div>
 <div class="sect2">
-<h3 id="development-version-debian-stretch">2.2. Development version: Debian Stretch</h3>
+<h3 id="debian-jessie-brickpi-brickpi3-pistorms">2.2. Debian Jessie (BrickPi+/BrickPi3/PiStorms)</h3>
 <div class="paragraph">
-<p>Debian Stretch for EV3Dev is not stable but it has new features to use.
-In the document <a href="http://www.ev3dev.org/downloads/">EV3Dev downloads</a> it is possible to download the latest
-stable version and some snapshots.</p>
-</div>
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-warning" title="Warning"></i>
-</td>
-<td class="content">
-The snapshot used in the last version of this project is: <a href="https://oss.jfrog.org/list/oss-snapshot-local/org/ev3dev/brickstrap/2018-03-16/">2018-03-16</a>.
-Current Debian Stretch support is for EV3 Brick only. If you have BrickPi or PiStorms, It is better if you use the classic
-Debian Jessie image at the moment.
-</td>
-</tr>
-</table>
+<p>If you have BrickPi or PiStorms, It is better if you use the classic Debian Jessie image at the moment.</p>
 </div>
 </div>
 <div class="sect2">
@@ -212,19 +207,12 @@ Depending of the Hardware and the Debian version, you will have different option
 <div class="sect2">
 <h3 id="ev3-brick">3.1. EV3 Brick</h3>
 <div class="paragraph">
-<p>EV3 Brick has a SOC from 2010 and it is a bit Old.
-Further information about <a href="https://wiki.debian.org/ArmEabiPort">ARM EABI architecture</a>.</p>
-</div>
-<div class="paragraph">
-<p>Available JVM:</p>
+<p>For EV3, it is possible to install the following JVM:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Oracle JRE 8 for Debian Jessie</p>
-</li>
-<li>
-<p>Open JDK 10 for Debian Stretch</p>
+<p>Open JDK 11 for Debian</p>
 </li>
 </ul>
 </div>
@@ -244,55 +232,33 @@ Further information about <a href="https://wiki.debian.org/ArmEabiPort">ARM EABI
 </li>
 </ul>
 </div>
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-warning" title="Warning"></i>
-</td>
-<td class="content">
-Not all alternatives are enabled for all cases. Review the documentation carefully and if you
-continue with doubts, <a href="https://github.com/ev3dev-lang-java/ev3dev-lang-java/issues">open a support issue</a> to clarify and improve the documentation.
-</td>
-</tr>
-</table>
-</div>
 <div class="sect3">
-<h4 id="debian-jessie">3.1.1. Debian Jessie</h4>
-<div class="sect4">
-<h5 id="manual">Manual</h5>
+<h4 id="manual">3.1.1. Manual</h4>
 <div class="paragraph">
-<p>On Debian Jessie + EV3 Brick the JVM available to use is Oracle JRE 8.
-To install this JVM in the Brick you need to download from <a href="http://www.oracle.com/technetwork/java/embedded/downloads/javase/javaseemeddedev3-1982511.html">here</a>
-and later, copy the file <code>ejdk-8-fcs-b132-linux-arm-sflt-03_mar_2014.tar.gz</code> to your brick using the command <code>scp</code>.</p>
+<p>You can download the last OpenJDK build for EV3 from <a href="https://ci.adoptopenjdk.net/view/ev3dev/">AdoptOpenJDK CI</a></p>
 </div>
 <div class="paragraph">
-<p><strong>Example:</strong></p>
+<p>Using the terminal, execute the following statements on a remote connection session from your EV3 Brick to
+install OpenJDK on your brick.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="prettyprint highlight"><code>scp "./ejdk-8-fcs-b132-linux-arm-sflt-03_mar_2014.tar.gz" "robot@192.168.1.85:/home/robot"</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Once, you have the file on the Brick, execute the following statements in a Terminal to unzip and
-enable the <code>java</code> command in the system:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code>sudo tar -zxvf "/home/robot/ejdk-8-fcs-b132-linux-arm-sflt-03_mar_2014.tar.gz" -C /opt
-sudo update-alternatives --install /usr/bin/java java /opt/ejdk1.8.0/linux_arm_sflt/jre/bin/java 8</code></pre>
+<pre class="prettyprint highlight"><code>wget -N https://ci.adoptopenjdk.net/view/ev3dev/job/openjdk11_build_ev3_linux/lastSuccessfulBuild/artifact/build/jri-ev3.tar.gz
+sudo tar -zxvf jri-ev3.tar.gz -C /opt
+mv /opt/jri-ev3/ /opt/jri-11
+update-alternatives --install /usr/bin/java java /opt/jri-11/bin/java 1011
+java -Xshare:dump</code></pre>
 </div>
 </div>
 <div class="paragraph">
 <p><strong>Now, you have Java on your EV3 Brick!</strong></p>
 </div>
 </div>
-<div class="sect4">
-<h5 id="installer">Installer</h5>
+<div class="sect3">
+<h4 id="installer">3.1.2. Installer</h4>
 <div class="paragraph">
-<p>Using the project <a href="https://github.com/ev3dev-lang-java/installer">Installer</a> is possible to automate
-some operations like Java installation once Oracle JRE 8 zip is on the brick on path: <code>/home/robot/</code></p>
+<p>Using the terminal, execute the following statements on a remote connection session from your EV3 Brick to
+to execute the installer.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -302,12 +268,38 @@ cd installer
 wget -N https://raw.githubusercontent.com/ev3dev-lang-java/installer/master/installer.sh
 chmod +x installer.sh
 sudo ./installer.sh help
-sudo ./installer.sh</code></pre>
+sudo ./installer.sh java</code></pre>
 </div>
 </div>
 </div>
-<div class="sect4">
-<h5 id="gradle-template-project">Gradle Template project</h5>
+<div class="sect3">
+<h4 id="gradle-template-project">3.1.3. Gradle Template project</h4>
+<div class="paragraph">
+<p>The template project provides some Gradle tasks to interact with Installer project to install Java.</p>
+</div>
+<div class="paragraph">
+<p>The available tasks:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>getInstaller</p>
+</li>
+<li>
+<p>installJava</p>
+</li>
+<li>
+<p>javaVersion</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="brickpi-3-brickpi-pistorms">3.2. BrickPi 3 / BrickPi+ / PiStorms</h3>
+<div class="paragraph">
+<p>Bricks using Raspberry Pi hardware has more CPU/Memory capacity and it is possible to install from Debian Packages.</p>
+</div>
 <div class="admonitionblock warning">
 <table>
 <tr>
@@ -315,41 +307,34 @@ sudo ./installer.sh</code></pre>
 <i class="fa icon-warning" title="Warning"></i>
 </td>
 <td class="content">
-This option is not available for Debian Jessie at the moment.
+The project only offer support for Debian Jessie at the moment.
 </td>
 </tr>
 </table>
 </div>
-</div>
-</div>
 <div class="sect3">
-<h4 id="debian-stretch">3.1.2. Debian Stretch</h4>
-<div class="paragraph">
-<p>In Debian Stretch, we are able to build <code>OpenJDK 10</code> for <code>EV3</code> so the Java installation experience is improved because
-it is possible to automate the whole Java instalation process.</p>
-</div>
-<div class="paragraph">
-<p>Now, it is possible to download OpenJDK from this <a href="https://github.com/ev3dev-lang-java/openjdk-ev3/">repository</a>.</p>
-</div>
+<h4 id="debian-jessie">3.2.1. Debian Jessie</h4>
 <div class="sect4">
-<h5 id="manual-way">Manual way</h5>
+<h5 id="manual-2">Manual</h5>
 <div class="paragraph">
-<p>Using the terminal, execute the following statements on a remote connection session from your EV3 Brick to
-install OpenJDK on your brick.</p>
+<p>Using the terminal, execute the following statements on a remote connection session from your Brick to
+install Oracle JRE 8 on your brick.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="prettyprint highlight"><code>wget -N https://github.com/ev3dev-lang-java/openjdk-ev3/releases/download/v0.5.0/jri10-ev3.tar.gz
-sudo tar -zxvf jri10-ev3.tar.gz -C /opt
-mv /opt/jri-ev3/ /opt/jri-10-build-050
-update-alternatives --install /usr/bin/java java /opt/jri-10-build-050/bin/java 10</code></pre>
+<pre class="prettyprint highlight"><code>apt-key adv --recv-key --keyserver keyserver.ubuntu.com EEA14886
+echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" | sudo tee -a /etc/apt/sources.list
+echo "deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" | sudo tee -a /etc/apt/sources.list
+sudo apt-get update
+sudo apt-get install oracle-java8-installer
+java -Xshare:dump</code></pre>
 </div>
 </div>
 </div>
 <div class="sect4">
 <h5 id="installer-2">Installer</h5>
 <div class="paragraph">
-<p>Using the terminal, execute the following statements on a remote connection session from your EV3 Brick to
+<p>Using the terminal, execute the following statements on a remote connection session from your Brick to
 to execute the installer.</p>
 </div>
 <div class="listingblock">
@@ -367,8 +352,10 @@ sudo ./installer.sh java</code></pre>
 <div class="sect4">
 <h5 id="gradle-template-project-2">Gradle Template project</h5>
 <div class="paragraph">
-<p>The template project provides some Gradle tasks to interact with Installer project to install Java.
-The available tasks:</p>
+<p>The template project provides some Gradle tasks to interact with Installer project to install Java.</p>
+</div>
+<div class="paragraph">
+<p>The available tasks:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -382,76 +369,6 @@ The available tasks:</p>
 <p>javaVersion</p>
 </li>
 </ul>
-</div>
-</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="brickpi-3-brickpi-pistorms">3.2. BrickPi 3 / BrickPi+ / PiStorms</h3>
-<div class="paragraph">
-<p>Bricks using Raspberry Pi hardware has more CPU/Memory capacity and it is possible to install from Debian Packages.</p>
-</div>
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-warning" title="Warning"></i>
-</td>
-<td class="content">
-The project only offer support for Debian Jessie.
-</td>
-</tr>
-</table>
-</div>
-<div class="sect3">
-<h4 id="debian-jessie-2">3.2.1. Debian Jessie</h4>
-<div class="sect4">
-<h5 id="manual-2">Manual</h5>
-<div class="paragraph">
-<p>Using the terminal, execute the following statements on a remote connection session from your Brick to
-install Oracle JRE 8 on your brick.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code>apt-key adv --recv-key --keyserver keyserver.ubuntu.com EEA14886
-echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" | sudo tee -a /etc/apt/sources.list
-echo "deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu trusty main" | sudo tee -a /etc/apt/sources.list
-sudo apt-get update
-sudo apt-get install oracle-java8-installer</code></pre>
-</div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="installer-3">Installer</h5>
-<div class="paragraph">
-<p>Using the terminal, execute the following statements on a remote connection session from your Brick to
-to execute the installer.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code>cd /home/robot
-mkdir installer
-cd installer
-wget -N https://raw.githubusercontent.com/ev3dev-lang-java/installer/master/installer.sh
-chmod +x installer.sh
-sudo ./installer.sh help
-sudo ./installer.sh</code></pre>
-</div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="gradle-template-project-3">Gradle Template project</h5>
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-warning" title="Warning"></i>
-</td>
-<td class="content">
-This option is not available for Debian Jessie at the moment.
-</td>
-</tr>
-</table>
 </div>
 </div>
 </div>
@@ -493,8 +410,8 @@ Execute the following statement to check that Java command is running in the rig
 </div>
 <div id="footer">
 <div id="footer-text">
-Version 0.8.0<br>
-Last updated 2018-04-29 09:28:39 BST
+Version 2.4.16<br>
+Last updated 2021-01-09 15:26:15 CET
 </div>
 </div>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.min.css">

@@ -1,4 +1,4 @@
-package examples;
+package sensors.arduino;
 
 import ev3dev.actuators.Sound;
 import ev3dev.arduino.sensors.bn055.BNO055;

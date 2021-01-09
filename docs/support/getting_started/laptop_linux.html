@@ -19,13 +19,12 @@
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#the-modern-java-development-environment-for-windows">1. The modern Java development environment for Windows</a>
-<ul class="sectlevel3">
+<li><a href="#the-modern-java-development-environment-for-linux">1. The modern Java development environment for Linux</a>
+<ul class="sectlevel2">
 <li><a href="#package-manager">1.1. Package manager</a></li>
 <li><a href="#java-virtual-machine">1.2. Java Virtual Machine</a></li>
-<li><a href="#build-systems">1.3. Build Systems</a></li>
-<li><a href="#java-ide">1.4. Java IDE</a></li>
-<li><a href="#source-control-management">1.5. Source Control Management</a></li>
+<li><a href="#java-ide">1.3. Java IDE</a></li>
+<li><a href="#source-control-management">1.4. Source Control Management</a></li>
 </ul>
 </li>
 </ul>
@@ -33,46 +32,37 @@
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="the-modern-java-development-environment-for-windows">1. The modern Java development environment for Windows</h2>
+<h2 id="the-modern-java-development-environment-for-linux">1. The modern Java development environment for Linux</h2>
 <div class="sectionbody">
-<div class="sect3">
-<h4 id="package-manager">1.1. Package manager</h4>
 <div class="paragraph">
-<p>Windows has a popular package manager named <a href="https://chocolatey.org">Choco</a>. I recommend to read
-the <a href="https://chocolatey.org/docs/commands-reference">technical documentation</a> and install it.</p>
+<p>If your personal computer is manufactured from Apple, the following instructions will help you.</p>
 </div>
+<div class="sect2">
+<h3 id="package-manager">1.1. Package manager</h3>
 <div class="paragraph">
-<p>To install openJDK in your computer with Choco, type:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code>choco install jdk8</code></pre>
-</div>
-</div>
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-warning" title="Warning"></i>
-</td>
-<td class="content">
-In the future, we will recommend the installation of OpenJDK 11, but at the moment, we detect an issue between OpenJDK
-&amp; Gradle, so I prefer to recommend to install Java 8.
-</td>
-</tr>
-</table>
+<p>In OSX, you have excellent package managers like <code>Apt</code> and <code>Sdkman</code>.
+APT (for Advanced Package Tool) is a set of tools for managing Debian packages.
+SDKMAN! is a tool for managing parallel versions of multiple Software Development Kits on most Unix based systems.</p>
 </div>
 <div class="paragraph">
-<p>To install OpenJDK 11:</p>
+<p>Using Homebrewl, we will install some packages and using Sdkman, we will install others.</p>
 </div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code>choco install openjdk</code></pre>
+<div class="paragraph">
+<p>Once you have installed both, continue with the next section.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Further information about <a href="https://wiki.debian.org/Apt">Apt</a></p>
+</li>
+<li>
+<p>Further information about <a href="https://sdkman.io/">Sdkman</a></p>
+</li>
+</ul>
 </div>
 </div>
-</div>
-<div class="sect3">
-<h4 id="java-virtual-machine">1.2. Java Virtual Machine</h4>
+<div class="sect2">
+<h3 id="java-virtual-machine">1.2. Java Virtual Machine</h3>
 <div class="paragraph">
 <p>To program with Java is necessary to install in your laptop a Java Development Kit (JDK).</p>
 </div>
@@ -81,6 +71,14 @@ In the future, we will recommend the installation of OpenJDK 11, but at the mome
 for writing Java applications. It consists of a runtime environment that "sits on top" of the operating system layer
 as well as the tools and programming that developers need to compile, debug, and run applications
 written in the Java language.</p>
+</div>
+<div class="paragraph">
+<p>To begin using Java, it is necessary to install the JDK:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code>sdk install java</code></pre>
+</div>
 </div>
 <div class="paragraph">
 <p>Once you have installed Java JDK, check the installation:</p>
@@ -95,9 +93,9 @@ written in the Java language.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="prettyprint highlight"><code>java version "1.8.0_181"
-Java(TM) SE Runtime Environment (build 1.8.0_181-b13)
-Java HotSpot(TM) Client VM (build 25.181-b13, mixed mode)</code></pre>
+<pre class="prettyprint highlight"><code>java version "1.8.0_121"
+Java(TM) SE Runtime Environment (build 1.8.0_121-b13)
+Java HotSpot(TM) 64-Bit Server VM (build 25.121-b13, mixed mode)</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -129,55 +127,71 @@ java HelloWorld</code></pre>
 <p>You should read: <code>HelloWorld</code> in the terminal.</p>
 </div>
 <div class="paragraph">
-<p>Further information about <a href="https://openjdk.java.net/">OpenJDK</a></p>
+<p><strong>Switching from one Java version to another one</strong></p>
+</div>
+<div class="paragraph">
+<p>Using <code>sdk</code>, it is very easy to switch from one Java version to another one. Check your JDK installed and package
+available in Sdk:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="prettyprint highlight"><code class="language-java" data-lang="java">sdk list java
+sdk use java 10.0.1-open</code></pre>
 </div>
 </div>
 <div class="sect3">
-<h4 id="build-systems">1.3. Build Systems</h4>
+<h4 id="build-systems">1.2.1. Build Systems</h4>
 <div class="paragraph">
 <p>Modern Java development use dependencies stored on Software Repositories.
 It is a good idea if you install the popular build Systems as <code>Maven</code> &amp; <code>Gradle</code> for Java.
 This project is modular and it deliver multiple dependencies.</p>
 </div>
 <div class="paragraph">
-<p>Using choco, it is possible install Maven &amp; Gradle easily:</p>
+<p>The way to install Maven &amp; Gradle is:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="prettyprint highlight"><code>choco install maven
-choco install gradle</code></pre>
+<pre class="prettyprint highlight"><code>sdk install maven
+sdk install gradle</code></pre>
 </div>
 </div>
 <div class="paragraph">
 <p>Further information about <a href="https://maven.apache.org/">Maven</a> &amp; <a href="https://gradle.org/">Gradle</a>.</p>
 </div>
 </div>
+</div>
 <div class="sect2">
-<h3 id="java-ide">1.4. Java IDE</h3>
+<h3 id="java-ide">1.3. Java IDE</h3>
 <div class="paragraph">
 <p>To develop a single Java file, maybe you could use a simple Text Editor
 but current Java IDE offers several funcionalities to
 help you in the process to develop software with Java. In the market, the most popular Java IDE are <code>IntelliJ</code> &amp; <code>Eclipse</code>.</p>
 </div>
-<div class="listingblock">
-<div class="content">
-<pre class="prettyprint highlight"><code>choco install intellijidea-community
-choco install eclipse</code></pre>
+<div class="paragraph">
+<p>In Linux, it is better to install the IDE manually:</p>
 </div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://www.jetbrains.com/idea/download/" class="bare">https://www.jetbrains.com/idea/download/</a></p>
+</li>
+<li>
+<p><a href="http://www.eclipse.org/downloads/" class="bare">http://www.eclipse.org/downloads/</a></p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
 <p>Further information about <a href="https://www.jetbrains.com/idea/">IntelliJ</a> &amp; <a href="http://www.eclipse.org/">Eclipse</a></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="source-control-management">1.5. Source Control Management</h3>
+<h3 id="source-control-management">1.4. Source Control Management</h3>
 <div class="paragraph">
 <p>Git is a popular technology to manage code. Many ideas that you see on Internet are stored on
 Git repositories so manage this technology is necessary.</p>
 </div>
 <div class="paragraph">
-<p>You could use the Version control features from <a href="https://www.jetbrains.com/help/idea/version-control-integration.html">IntelliJ</a>
-or use a dedicated tool like <a href="https://www.sourcetreeapp.com/">SourceTree</a></p>
+<p>You could use the Version control features from <a href="https://www.jetbrains.com/help/idea/version-control-integration.html">IntelliJ</a></p>
 </div>
 <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
